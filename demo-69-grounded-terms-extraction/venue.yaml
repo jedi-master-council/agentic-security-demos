@@ -1,0 +1,24 @@
+demo: 69
+slug: grounded-terms-extraction
+title: "Is Every Extracted Clause in the Source? Grounding Checks for Model-Assisted Extraction of AI Service Access Terms"
+option_a:
+  venue: "USENIX Security '27, Cycle 2"
+  url: "https://www.usenix.org/conference/usenixsecurity27/call-for-papers"
+  dates: "mandatory registration 19 Jan 2027; papers 26 Jan 2027; early reject 9 Mar 2027; rebuttal 8 to 15 Apr 2027; notification 6 May 2027 (all AoE)"
+  rules: "up to 13 pages of body text plus unlimited appendices and references; Open Science appendix required; ethics appendix recommended; at most seven papers per author per cycle; ML-focused work must be relevant to the systems security and privacy community (official CFP read 19 Nov 2026). The README already allocates six Cycle 2 papers, so this one fills the cap"
+  markdown: |-
+    🟡 [USENIX Sec C2](https://www.usenix.org/conference/usenixsecurity27)<br>🟡 [papers 26 Jan (reg 19 Jan)](https://www.usenix.org/conference/usenixsecurity27/call-for-papers)
+option_b:
+  venue: "ACM Transactions on Privacy and Security (TOPS)"
+  url: "https://dl.acm.org/journal/tops"
+  dates: "rolling submission"
+  markdown: |-
+    🔵 [ACM TOPS](https://dl.acm.org/journal/tops)
+  constraint: "use only after USENIX Security's notification on 6 May 2027. Use only after option A's official notification."
+option_c:
+  venue: "PoPETs 2028"
+  url: "https://petsymposium.org/"
+  dates: "call not yet published (UNVERIFIED)"
+  markdown: |-
+    🔵 [PoPETs 2028 (call unpublished)](https://petsymposium.org/)
+  constraint: "use only after ACM TOPS' decision; record the official call before relying on any date. Use only after option B's official notification. Not IJCAI 2027."
