@@ -1,0 +1,17 @@
+{
+  "_label": "SYNTHETIC TEACHING FIXTURE. The device, instances and reference values are invented for teaching; they describe no real device, provider or workload.",
+  "device": {"name": "toy-device-A (synthetic)", "qubits": 8, "max_depth": 120,
+             "two_qubit_error": 0.01, "readout_error": 0.01,
+             "job_overhead_s": 2.0, "shot_time_s": 0.001},
+  "policy": {"shots": 4000, "budget_s": 90.0, "b1_attenuation_floor": 0.6, "seed": 66},
+  "instances": [
+    {"id": "ising-4q-shallow", "family": "toy-ising", "qubits": 4, "depth": 12, "two_qubit_gates": 6,  "reference": 0.80, "tolerance": 0.10},
+    {"id": "ising-6q-mid",     "family": "toy-ising", "qubits": 6, "depth": 30, "two_qubit_gates": 20, "reference": 0.60, "tolerance": 0.10},
+    {"id": "ising-8q-deep",    "family": "toy-ising", "qubits": 8, "depth": 90, "two_qubit_gates": 70, "reference": 0.50, "tolerance": 0.10},
+    {"id": "ising-8q-toodeep", "family": "toy-ising", "qubits": 8, "depth": 150,"two_qubit_gates": 120,"reference": 0.40, "tolerance": 0.10},
+    {"id": "known-4q-ghz",     "family": "toy-known", "qubits": 4, "depth": 8,  "two_qubit_gates": 3,  "reference": 1.00, "tolerance": 0.10},
+    {"id": "known-6q-ghz",     "family": "toy-known", "qubits": 6, "depth": 14, "two_qubit_gates": 5,  "reference": 1.00, "tolerance": 0.10},
+    {"id": "known-8q-mirror",  "family": "toy-known", "qubits": 8, "depth": 60, "two_qubit_gates": 40, "reference": 1.00, "tolerance": 0.10},
+    {"id": "known-8q-wide",    "family": "toy-known", "qubits": 8, "depth": 40, "two_qubit_gates": 28, "reference": 1.00, "tolerance": 0.10}
+  ]
+}

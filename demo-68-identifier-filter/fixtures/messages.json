@@ -1,0 +1,202 @@
+{
+ "_label": "SYNTHETIC TEACHING FIXTURE. Every message, name, number, address and roster entry is invented. Phone numbers are taken from the 07700 900000 to 900999 range that Ofcom reserves for drama; postcodes and the Z1234567 student-number format are invented for this toy.",
+ "roster": [
+  {
+   "name": "Alys Penhaligon",
+   "region": "South West",
+   "age_band": "20-29"
+  },
+  {
+   "name": "Tomos ap Rhys",
+   "region": "Wales",
+   "age_band": "40-49"
+  },
+  {
+   "name": "Ffion",
+   "region": "Wales",
+   "age_band": "30-39"
+  },
+  {
+   "name": "Learner D",
+   "region": "Scilly",
+   "age_band": "70+"
+  },
+  {
+   "name": "Learner E",
+   "region": "North",
+   "age_band": "30-39"
+  },
+  {
+   "name": "Learner F",
+   "region": "North",
+   "age_band": "30-39"
+  },
+  {
+   "name": "Learner G",
+   "region": "North",
+   "age_band": "20-29"
+  }
+ ],
+ "messages": [
+  {
+   "id": "m01",
+   "text": "Hi, I'm Alys Penhaligon and my number is Z1234567, can you check my answer?",
+   "gold": [
+    {
+     "start": 8,
+     "end": 23,
+     "type": "name"
+    },
+    {
+     "start": 41,
+     "end": 49,
+     "type": "student_number"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m02",
+   "text": "Email me at alys.p@example.org if the hint is wrong.",
+   "gold": [
+    {
+     "start": 12,
+     "end": 30,
+     "type": "email"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m03",
+   "text": "My phone is 07700 900123 in case the session drops.",
+   "gold": [
+    {
+     "start": 12,
+     "end": 24,
+     "type": "uk_phone"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m04",
+   "text": "I live near ZZ1 1ZZ and study at night.",
+   "gold": [
+    {
+     "start": 12,
+     "end": 19,
+     "type": "uk_postcode"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m05",
+   "text": "Is the conditional probability 0.25 here?",
+   "gold": [],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m06",
+   "text": "This is Tomos ap Rhys, student z7654321, stuck on part b.",
+   "gold": [
+    {
+     "start": 8,
+     "end": 21,
+     "type": "name"
+    },
+    {
+     "start": 31,
+     "end": 39,
+     "type": "student_number"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m07",
+   "text": "you can reach me at tomos [at] example [dot] org",
+   "gold": [
+    {
+     "start": 20,
+     "end": 48,
+     "type": "email"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m08",
+   "text": "Call +44 7700 900456 or text, whichever.",
+   "gold": [
+    {
+     "start": 5,
+     "end": 20,
+     "type": "uk_phone"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m09",
+   "text": "I'm the only one on the module from the Scilly region aged over 70, does that matter?",
+   "gold": [],
+   "quasi_identifiers_left": {
+    "region": "Scilly",
+    "age_band": "70+"
+   }
+  },
+  {
+   "id": "m10",
+   "text": "Two-way table: 30 of 120 passed; is that 25 per cent?",
+   "gold": [],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m11",
+   "text": "My tutor Ffion said the base rate matters, is that right?",
+   "gold": [
+    {
+     "start": 9,
+     "end": 14,
+     "type": "name"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m12",
+   "text": "Postcode zz99 9zz, if you need it for the form.",
+   "gold": [
+    {
+     "start": 9,
+     "end": 17,
+     "type": "uk_postcode"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  },
+  {
+   "id": "m13",
+   "text": "I'm in the North region, aged 30-39.",
+   "gold": [],
+   "quasi_identifiers_left": {
+    "region": "North",
+    "age_band": "30-39"
+   }
+  },
+  {
+   "id": "m14",
+   "text": "My phone number is 0770 0900 789 apparently.",
+   "gold": [
+    {
+     "start": 19,
+     "end": 32,
+     "type": "uk_phone"
+    }
+   ],
+   "quasi_identifiers_left": {}
+  }
+ ]
+}

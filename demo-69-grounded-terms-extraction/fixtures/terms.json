@@ -1,0 +1,71 @@
+{
+ "_label": "SYNTHETIC TEACHING FIXTURE. Both vendors, their terms and the extractions are invented; they describe no real company, product or agreement.",
+ "documents": [
+  {
+   "id": "vendor-alpha",
+   "source": "Alpha Assist Education Plan. The Education Plan is available to accredited institutions. Customer content is not used to train Alpha models. The price is \u00a34.50 per user per month, billed annually. Alpha will give 90 days' notice before discontinuing the Education Plan. On termination, customers may export their data for 30 days, after which it is deleted.",
+   "gold": {
+    "tier": "Education Plan",
+    "data_use": "not used to train",
+    "price": "\u00a34.50 per user per month",
+    "continuity": "90 days' notice",
+    "exit": "export for 30 days"
+   },
+   "extraction": {
+    "tier": {
+     "value": "Education Plan",
+     "quote": "The Education Plan is available to accredited institutions."
+    },
+    "data_use": {
+     "value": "not used to train",
+     "quote": "Customer content is not used to train Alpha models."
+    },
+    "price": {
+     "value": "\u00a34.50 per user per month",
+     "quote": "The price is \u00a34.50 per user per month, billed annually."
+    },
+    "continuity": {
+     "value": "90 days' notice",
+     "quote": "Alpha will give 90 days' notice before discontinuing the Education Plan."
+    },
+    "exit": {
+     "value": "export for 30 days",
+     "quote": "customers may export their data for 30 days"
+    }
+   }
+  },
+  {
+   "id": "vendor-beta",
+   "source": "Beta Campus tier. Prompts may be retained for 30 days for abuse monitoring. Pricing is negotiated per institution. Beta may withdraw features at any time. Data export is available on request.",
+   "gold": {
+    "tier": "Campus tier",
+    "data_use": "retained for 30 days for abuse monitoring",
+    "price": "negotiated per institution",
+    "continuity": "may withdraw features at any time",
+    "exit": "export on request"
+   },
+   "extraction": {
+    "tier": {
+     "value": "Campus tier",
+     "quote": "Beta Campus tier."
+    },
+    "data_use": {
+     "value": "never retained",
+     "quote": "Prompts are never retained."
+    },
+    "price": {
+     "value": "\u00a32 per user per month",
+     "quote": "Pricing is negotiated per institution."
+    },
+    "continuity": {
+     "value": "12 months' notice",
+     "quote": "Beta guarantees 12 months' notice of changes."
+    },
+    "exit": {
+     "value": "export on request",
+     "quote": "Data   export is available on request."
+    }
+   }
+  }
+ ]
+}

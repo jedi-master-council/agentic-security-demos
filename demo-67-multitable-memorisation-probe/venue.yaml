@@ -1,0 +1,24 @@
+demo: 67
+slug: multitable-memorisation-probe
+title: "Does a Language Model Remember a Linked Learner-Records Release? Validating a Multi-Table Memorisation Probe against Remapped Controls"
+option_a:
+  venue: "ACL 2027 through ACL Rolling Review (ARR)"
+  url: "https://2027.aclweb.org/calls/main/"
+  dates: "ARR submission 4 Jan 2027 (11:59 pm AoE); ACL commitment and notification dates to be announced"
+  rules: "long paper through ARR on OpenReview; since October 2026 ARR guarantees review only to submissions with a qualified service contributor (others enter a lottery), and caps first-author submissions at five; page limits UNVERIFIED (re-read the ARR call). ICML 2027 was not used: the collection already lists six ICML 2027 papers and ICML's call limits an author who does not meet its reciprocal-reviewer criteria to two submissions"
+  markdown: |-
+    🟡 [ACL 2027 (ARR)](https://2027.aclweb.org/calls/main/)<br>🟡 [ARR 4 Jan](https://www.aclweb.org/portal/content/acl-2027-first-call-papers)
+option_b:
+  venue: "Transactions on Machine Learning Research (TMLR)"
+  url: "https://jmlr.org/tmlr/"
+  dates: "rolling submission"
+  markdown: |-
+    🔵 [TMLR](https://jmlr.org/tmlr/)
+  constraint: "use only after the ACL 2027 decision (date to be announced). Use only after option A's official notification."
+option_c:
+  venue: "ICLR 2028"
+  url: "https://iclr.cc/"
+  dates: "call not yet published (UNVERIFIED)"
+  markdown: |-
+    🔵 [ICLR 2028 (call unpublished)](https://iclr.cc/)
+  constraint: "use only after TMLR's decision; record the official call before relying on any date. Use only after option B's official notification. Not IJCAI 2027."

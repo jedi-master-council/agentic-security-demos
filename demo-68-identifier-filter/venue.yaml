@@ -1,0 +1,24 @@
+demo: 68
+slug: identifier-filter
+title: "What Gets Past the Filter? Identifier Residue and Re-identification Risk in Learner Text Sent to Hosted Language Models"
+option_a:
+  venue: "Proceedings on Privacy Enhancing Technologies (PoPETs) 2027, Issue 4"
+  url: "https://www.petsymposium.org/cfp27.php"
+  dates: "submission 28 Feb 2027 (firm, AoE); rebuttal 10 to 16 Apr 2027; notification 1 May 2027; revision deadline 1 Jun 2027"
+  rules: "at most four submissions per author per issue; rejected papers must skip a full issue; page limit not read (UNVERIFIED). Issue 3 (30 Nov 2026) is nearer but leaves eleven days and no data, so it is not used"
+  markdown: |-
+    🟡 [PoPETs 2027 Issue 4](https://www.petsymposium.org/cfp27.php)<br>🟡 [papers 28 Feb](https://www.petsymposium.org/cfp27.php)
+option_b:
+  venue: "ACM Transactions on Privacy and Security (TOPS)"
+  url: "https://dl.acm.org/journal/tops"
+  dates: "rolling submission"
+  markdown: |-
+    🔵 [ACM TOPS](https://dl.acm.org/journal/tops)
+  constraint: "use only after PoPETs' notification on 1 May 2027. Use only after option A's official notification."
+option_c:
+  venue: "IEEE Transactions on Information Forensics and Security (TIFS)"
+  url: "https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security"
+  dates: "rolling submission"
+  markdown: |-
+    🔵 [IEEE TIFS](https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security)
+  constraint: "use only after ACM TOPS' decision; page limit and fees UNVERIFIED. Use only after option B's official notification. Not IJCAI 2027."

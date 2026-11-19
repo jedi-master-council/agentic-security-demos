@@ -1,0 +1,24 @@
+demo: 66
+slug: qpu-budget-arms
+title: "Accepted Hardware Results per QPU-Second: Default, Rule-Based and Agent-Planned Hybrid Quantum Workflows under a Fixed Budget"
+option_a:
+  venue: "ISC High Performance 2027, Research Papers"
+  url: "https://isc-hpc.com/submissions/research-paper/"
+  dates: "abstract 14 Dec 2026; full paper 21 Dec 2026 (no extension); rebuttal 1 Mar 2027; notification 15 Mar 2027"
+  rules: "up to 10 pages excluding references, IEEE conference template, unlimited appendices that reviewers need not read; double-anonymous; AI-generated content must be described; one author must present in person (all read on the official page, 19 Nov 2026)"
+  markdown: |-
+    🟠 [ISC 2027](https://isc-hpc.com/submissions/research-paper/)<br>🟠 [abs 14 Dec · papers 21 Dec](https://isc-hpc.com/submissions/research-paper/)
+option_b:
+  venue: "IEEE Quantum Week (QCE) 2027, Technical Papers"
+  url: "https://qce.quantum.ieee.org/"
+  dates: "call not yet published (UNVERIFIED); QCE26's technical-paper deadline was 27 Apr 2026 and its notification 6 Jul 2026; QCE 2027 is announced for 10 to 15 Oct 2027 in Raleigh, NC"
+  markdown: |-
+    🔵 [IEEE QCE 2027 (call unpublished)](https://qce.quantum.ieee.org/)
+  constraint: "use only after ISC 2027's notification on 15 Mar 2027; record the official call before relying on any date. Use only after option A's official notification."
+option_c:
+  venue: "ACM Transactions on Quantum Computing (TQC)"
+  url: "https://dl.acm.org/journal/tqc"
+  dates: "rolling submission"
+  markdown: |-
+    🔵 [ACM TQC](https://dl.acm.org/journal/tqc)
+  constraint: "use only after QCE 2027's notification; page limit and fees UNVERIFIED. Use only after option B's official notification. Not IJCAI 2027."

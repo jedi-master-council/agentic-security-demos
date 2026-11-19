@@ -1,0 +1,1350 @@
+{
+ "_label": "SYNTHETIC TEACHING FIXTURE. Two invented linked tables shaped like a learner-records release; no real learner, module or presentation is represented.",
+ "tables": {
+  "students": [
+   {
+    "student_id": "S100000",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100001",
+    "region": "R5",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100002",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100003",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100004",
+    "region": "R2",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100005",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100006",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100007",
+    "region": "R2",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100008",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100009",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100010",
+    "region": "R5",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100011",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100012",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100013",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100014",
+    "region": "R2",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100015",
+    "region": "R3",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100016",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100017",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100018",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100019",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100020",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100021",
+    "region": "R5",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100022",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100023",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100024",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100025",
+    "region": "R3",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100026",
+    "region": "R5",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100027",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100028",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100029",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100030",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100031",
+    "region": "R4",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100032",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100033",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100034",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100035",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100036",
+    "region": "R5",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100037",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100038",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100039",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100040",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100041",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100042",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100043",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100044",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100045",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100046",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100047",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100048",
+    "region": "R3",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100049",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100050",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100051",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100052",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100053",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100054",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100055",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100056",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100057",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100058",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100059",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100060",
+    "region": "R5",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100061",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100062",
+    "region": "R2",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100063",
+    "region": "R5",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100064",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100065",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100066",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100067",
+    "region": "R5",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100068",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100069",
+    "region": "R2",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100070",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100071",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100072",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100073",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100074",
+    "region": "R3",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100075",
+    "region": "R4",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100076",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100077",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100078",
+    "region": "R2",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100079",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100080",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100081",
+    "region": "R3",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100082",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100083",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100084",
+    "region": "R1",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100085",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100086",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100087",
+    "region": "R2",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100088",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100089",
+    "region": "R5",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100090",
+    "region": "R3",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100091",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100092",
+    "region": "R2",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100093",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100094",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100095",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100096",
+    "region": "R3",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100097",
+    "region": "R3",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100098",
+    "region": "R3",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100099",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100100",
+    "region": "R2",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100101",
+    "region": "R5",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100102",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100103",
+    "region": "R5",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100104",
+    "region": "R3",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100105",
+    "region": "R1",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100106",
+    "region": "R1",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100107",
+    "region": "R4",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100108",
+    "region": "R4",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100109",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100110",
+    "region": "R4",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100111",
+    "region": "R4",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100112",
+    "region": "R5",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100113",
+    "region": "R3",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100114",
+    "region": "R2",
+    "imd_band": "B3"
+   },
+   {
+    "student_id": "S100115",
+    "region": "R1",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100116",
+    "region": "R5",
+    "imd_band": "B0"
+   },
+   {
+    "student_id": "S100117",
+    "region": "R2",
+    "imd_band": "B1"
+   },
+   {
+    "student_id": "S100118",
+    "region": "R5",
+    "imd_band": "B2"
+   },
+   {
+    "student_id": "S100119",
+    "region": "R4",
+    "imd_band": "B1"
+   }
+  ],
+  "registrations": [
+   {
+    "student_id": "S100000",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100001",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100002",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100003",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100004",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100005",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100006",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100007",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100008",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100009",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100010",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100011",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100012",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100013",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100014",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100015",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100016",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100017",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100018",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100019",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100020",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100021",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100022",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100023",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100024",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100025",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100026",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100027",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100028",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100029",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100030",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100031",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100032",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100033",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100034",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100035",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100036",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100037",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100038",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100039",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100040",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100041",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100042",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100043",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100044",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100045",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100046",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100047",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100048",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100049",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100050",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100051",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100052",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100053",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100054",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100055",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100056",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100057",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100058",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100059",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100060",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100061",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100062",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100063",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100064",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100065",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100066",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100067",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100068",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100069",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100070",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100071",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100072",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100073",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100074",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100075",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100076",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100077",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100078",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100079",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100080",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100081",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100082",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100083",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100084",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100085",
+    "module": "MBB",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100086",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100087",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100088",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100089",
+    "module": "MCC",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100090",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100091",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100092",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100093",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100094",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100095",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100096",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100097",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100098",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100099",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100100",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100101",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100102",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100103",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100104",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Distinction"
+   },
+   {
+    "student_id": "S100105",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100106",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100107",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100108",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100109",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100110",
+    "module": "MAA",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100111",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100112",
+    "module": "MDD",
+    "presentation": "P13J",
+    "final_result": "Pass"
+   },
+   {
+    "student_id": "S100113",
+    "module": "MDD",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100114",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100115",
+    "module": "MBB",
+    "presentation": "P13J",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100116",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   },
+   {
+    "student_id": "S100117",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100118",
+    "module": "MAA",
+    "presentation": "P13B",
+    "final_result": "Fail"
+   },
+   {
+    "student_id": "S100119",
+    "module": "MCC",
+    "presentation": "P13B",
+    "final_result": "Withdrawn"
+   }
+  ]
+ },
+ "settings": {
+  "fpr": 0.05,
+  "n_remaps": 40,
+  "seed": 67
+ },
+ "tests": [
+  {
+   "name": "row-completion final_result",
+   "kind": "row",
+   "table": "registrations",
+   "target": "final_result"
+  },
+  {
+   "name": "linked completion student->module",
+   "kind": "linked",
+   "left": "students",
+   "right": "registrations",
+   "key": "student_id",
+   "target": "module"
+  }
+ ]
+}
