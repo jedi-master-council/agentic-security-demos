@@ -1,6 +1,6 @@
 # Demos Overview
 
-The catalogue now covers **48 demos**: 12 course-format modules (01–12, with full labs) and 36 short-format teaching toys (13–48, ~30 min each). The path diagram below shows the core progression through the 12 course modules; see the Quick Comparison table for all 48.
+The catalogue now covers **60 demos**: 12 course-format modules (01–12, with full labs) and 48 short-format teaching toys (13–60, ~30 min each). The path diagram below shows the core progression through the 12 course modules; see the Quick Comparison table for all 60.
 
 ## Learning Path (core modules 01–12)
 
@@ -61,7 +61,6 @@ graph TD
 | **29** | Provenance Graphs | Orphans cannot be attributed | 30 min |
 | **30** | Insecure Defaults | Three-clause rule finds 6/10 insecure | 30 min |
 | **31** | Declaration Gap | Declared versus exercised authority in MCP registry integrations | 30 min |
-| **48** | OAuth Over-privilege | Scope creep: requested versus used OAuth scopes | 30 min |
 | **32** | Reproducibility Audit | Reproducing implies sharing artefacts | 30 min |
 | **33** | Protocol Coverage | Known attack without stated mitigation | 30 min |
 | **34** | Visual Injection | Region defense is perfect but not free | 30 min |
@@ -79,6 +78,18 @@ graph TD
 | **46** | Embedding Drift | Orthogonal swap dwarfs the frozen mean | 30 min |
 | **47** | Pre-Reveal Seal | A later edit is not a new answer | 30 min |
 | **48** | OAuth Over-privilege | Scope creep: requested versus used OAuth scopes | 30 min |
+| **49** | Tier Fallback | The tier is part of the security state | 30 min |
+| **50** | Budget Delegation | Denials preserve the budget invariants | 30 min |
+| **51** | Guardrail Equity | Same protection, 7x the false-positive burden | 30 min |
+| **52** | Simulation V&V | A memoriser cannot answer a renamed question | 30 min |
+| **53** | Human Validation | Planted errors turn review into measurement | 30 min |
+| **54** | Stress Transfer | Perfect in-distribution, blind under shift | 30 min |
+| **55** | Scaffolding Retention | An underpowered null is not decay | 30 min |
+| **56** | Learning Meta-analysis | Pooling computes; it cannot repair | 30 min |
+| **57** | Governance Corpus | Kappa discounts chance agreement | 30 min |
+| **58** | Work Exposure | Tasks, not occupations, carry the exposure | 30 min |
+| **59** | Foresight Delphi | The IQR rule decides, not the facilitator | 30 min |
+| **60** | EngBio Battery | References frozen before the agent runs | 30 min |
 
 ## Common Themes
 
@@ -87,15 +98,15 @@ graph TD
 | **Provenance Tracking** | 04, 06, 07, 08, 09, 10, 12, 19, 29, 44 | Data source determines authority |
 | **Fail-Closed Defaults** | 02, 04, 08, 09, 10, 12, 14, 25 | Default deny, explicit allow |
 | **Blind Evaluation** | 01, 03, 11, 13, 15, 45, 47 | No peeking at test conditions; seals and exact nulls |
-| **Scope Enforcement** | 02, 04, 06, 08, 10, 12, 24, 26, 31, 48 | Explicit allowlists only |
+| **Scope Enforcement** | 02, 04, 06, 08, 10, 12, 24, 26, 31, 48, 49, 50 | Explicit allowlists only |
 | **Taint Tracking** | 09, 10, 44 | Track data source through pipeline |
-| **Oracle Separation** | 01, 11, 12, 17 | Labels never drive attempts; claims checked against logs |
+| **Oracle Separation** | 01, 11, 12, 17, 59 | Labels never drive attempts; claims checked against logs |
 | **Cryptographic Evidence** | 05, 29, 47 | Hash chains, Merkle trees, pre-reveal seals |
 | **Supply Chain Safety** | 02, 21, 25, 27, 30, 31, 40, 42, 46 | Registries, attestations, pins, defaults |
-| **Agent Memory** | 22, 28 | Leakage (privacy) is not poisoning (integrity) |
-| **Documentation & Accountability** | 36, 38, 39, 43 | Cards, claims, incidents and terms under audit |
-| **Evaluation Methodology** | 03, 11, 14, 32, 33, 35, 37, 41 | Valid measurements need baselines, nulls and costs |
-| **Detection Limits** | 13, 15, 18, 22, 23, 24, 26, 28, 34, 37, 39 | Toys demonstrate mechanisms; refuse overclaims |
+| **Agent Memory** | 22, 28 |\n| **Human & Societal Measurement** | 51, 53, 56, 57, 58, 59 | Measured claims need samples, codebooks and predeclared rules | Leakage (privacy) is not poisoning (integrity) |
+| **Documentation & Accountability** | 36, 38, 39, 43, 57, 58 | Cards, claims, incidents and terms under audit |
+| **Evaluation Methodology** | 03, 11, 14, 32, 33, 35, 37, 41, 52, 53, 54, 55, 56, 60 | Valid measurements need baselines, nulls and costs |
+| **Detection Limits** | 13, 15, 18, 22, 23, 24, 26, 28, 34, 37, 39, 51, 54 | Toys demonstrate mechanisms; refuse overclaims |
 
 ## Prerequisites by Demo
 
@@ -149,6 +160,18 @@ graph TD
 | 45 | Combinatorics | Hypergeometric null, significance |
 | 46 | Cosine similarity | Embedding drift |
 | 47 | Hashing, chaining | Commitment seals |
+| 49 | State machines | Tier-dependent authority, re-validation |
+| 50 | Trees, arithmetic | Budget invariants, fan-out caps |
+| 51 | Rates, ratios | Guardrail fairness, accessibility equity |
+| 52 | Errors, probing | Simulator V&V, contamination probes |
+| 53 | Sampling | Planted-error validation |
+| 54 | Confusion matrices | Distribution shift, recall collapse |
+| 55 | Power arithmetic | Two-arm trials, effect retention |
+| 56 | Inverse-variance weights | Fixed-effect meta-analysis, Q |
+| 57 | Agreement tables | Codebooks, Cohen's kappa |
+| 58 | Weighted means | Task-level exposure, agentic share |
+| 59 | Quartiles | Delphi consensus, briefing hashes |
+| 60 | Reference checks | Predeclared grading, engbio safety |
 
 ## Recommended Order
 
@@ -170,11 +193,12 @@ graph TD
 11. **11** Degenerate Reporting — Audit any evaluation, including your own
 12. **12** ProvenanceBound — Provenance-aware authorization for untrusted content
 
-### Short-Format Toys (13–48)
+### Short-Format Toys (13–60)
 Each is one teaching toy (~30 min, standard library only): run the tests, run the script, read the table.
 1. **13–17, 19–21** — Pipeline and intelligence toys: agreement gates, conformal gating, probes, spread, claims-vs-logs, lineage, censuses
 2. **22–34, 36–44** — Capability, memory, supply-chain and documentation toys: injection channels, leakage, faults, delegation, attestations, sandboxes, defaults, coding exercises, lifecycle
 3. **45–48** — Measurement toys: exact nulls, embedding shifts, pre-reveal seals, OAuth over-privilege (pairs with 01)
+4. **49–60** — Agentic-operations and measurement toys: tier fallback, budget delegation, guardrail equity, simulator V&V, human validation, stress transfer, analytic power, meta-analysis, governance coding, work exposure, Delphi foresight, engbio battery
 
 ## Cross-Demo Exercises
 
@@ -218,7 +242,6 @@ See [examples/](../examples/) for cross-demo integration exercises:
 | 29 | Why is a5 unattributable? | Add a witness record for a5 |
 | 30 | Which three clauses flag a stack? | Add a publicly bound stack without auth |
 | 31 | How do you detect a declaration gap? | Compare declared versus exercised authority in registry listings |
-| 48 | How do you remove scope creep? | Add an integration requesting 5 unused scopes |
 | 32 | What does a reproducibility audit check? | Add a paper that shares code but not data |
 | 33 | What makes a protocol gap? | Add an element with attack and no mitigation |
 | 34 | What does the region defense cost? | Add a benign untrusted image that is safe |
@@ -235,6 +258,19 @@ See [examples/](../examples/) for cross-demo integration exercises:
 | 45 | What decides if a count is significant? | Shrink the pool and recompute p |
 | 46 | What does cosine shift measure? | Swap in a half-rotated vector |
 | 47 | Why is an edit after sealing invalid? | Re-seal before revealing |
+| 48 | How do you remove scope creep? | Add an integration requesting 5 unused scopes |
+| 49 | Why is a model-tier change a security event? | Add a fallback path with no monitor decision |
+| 50 | Which invariant bounds the whole delegation tree? | Add a plan that delegates more than the parent holds |
+| 51 | What does a 7x false-positive ratio mean? | Add a variant with the same FPR as standard |
+| 52 | Why can a memoriser pass an in-distribution check? | Rename a question and re-run the simulator |
+| 53 | What turns review into measurement? | Plant a second error and compute capture |
+| 54 | Why does in-distribution perfection fail under shift? | Add a shifted item with a new surface form |
+| 55 | Why is an underpowered null not evidence of decay? | Increase the sample size and recompute power |
+| 56 | What can pooling not repair? | Add a biased study and recompute the pooled mean |
+| 57 | What does kappa discount? | Code a ninth excerpt and recompute agreement |
+| 58 | Why tasks rather than occupations? | Split one occupation into two task rows |
+| 59 | Who decides consensus in a Delphi round? | Move one rating across the IQR boundary |
+| 60 | Why freeze references before the agent runs? | Add a task with a predeclared reference |
 
 ## Assessment Rubric
 
