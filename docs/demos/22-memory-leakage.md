@@ -38,4 +38,4 @@ python3 -m pytest tests/ -v          # 6 tests, <1 min
 python3 student/run_memory.py        # writes results/memory_leak.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-22-memory-leakage/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-22-memory-leakage/INSTRUCTIONS.md).

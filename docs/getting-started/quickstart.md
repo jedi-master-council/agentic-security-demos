@@ -10,7 +10,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/agentic-security-demos/agentic-security-demos.git
+git clone https://github.com/jedi-master-council/agentic-security-demos.git
 cd agentic-security-demos
 
 # One-time setup (installs dependencies, generates fixtures)
@@ -20,7 +20,7 @@ make setup
 ## Running Tests
 
 ```bash
-# All demos (688 tests)
+# All demos (760 tests)
 make test
 
 # Specific demo
@@ -68,5 +68,5 @@ Each demo produces:
 ## Next Steps
 
 - Read [Safety First](safety.md) — **Required before running demos**
-- Browse [Demos Overview](demos/overview.md)
+- Browse [Demos Overview](../demos/overview.md)
 - Try [Beginner Exercises](../tutorials/beginner.md)

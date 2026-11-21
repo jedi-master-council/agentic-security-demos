@@ -28,4 +28,4 @@ python3 -m pytest tests/ -v          # 5 tests, <1 min
 python3 student/run_terms.py         # writes results/terms.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-43-terms-coding/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-43-terms-coding/INSTRUCTIONS.md).

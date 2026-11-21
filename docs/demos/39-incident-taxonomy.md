@@ -42,4 +42,4 @@ python3 -m pytest tests/ -v          # 19 tests, <1 min
 python3 student/run_tax.py           # writes results/taxonomy.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-39-incident-taxonomy/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-39-incident-taxonomy/INSTRUCTIONS.md).

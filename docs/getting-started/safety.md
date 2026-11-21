@@ -4,8 +4,8 @@
 
 **Before running any demo, you MUST read and acknowledge:**
 
-1. [RESPONSIBLE_USE.md](../RESPONSIBLE_USE.md) — Mandatory safety rules
-2. [SECURITY.md](../SECURITY.md) — Vulnerability reporting
+1. [RESPONSIBLE_USE.md](https://github.com/jedi-master-council/agentic-security-demos/blob/main/RESPONSIBLE_USE.md) — Mandatory safety rules
+2. [SECURITY.md](https://github.com/jedi-master-council/agentic-security-demos/blob/main/SECURITY.md) — Vulnerability reporting
 3. Each demo's README Safety Notice section
 
 ## Safety Guarantees

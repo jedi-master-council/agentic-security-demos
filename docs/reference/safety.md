@@ -92,6 +92,6 @@ import httpx
 
 ## Reporting Safety Issues
 
-See [SECURITY.md](../SECURITY.md) for responsible disclosure process.
+See [SECURITY.md](https://github.com/jedi-master-council/agentic-security-demos/blob/main/SECURITY.md) for responsible disclosure process.
 
 **Do NOT open public issues for safety vulnerabilities.**

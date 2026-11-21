@@ -35,4 +35,4 @@ python3 -m pytest tests/ -v          # 4 tests, <1 min
 python3 student/run_seal.py          # writes results/seals.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-47-blind-seal/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-47-blind-seal/INSTRUCTIONS.md).

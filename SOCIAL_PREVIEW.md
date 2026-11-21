@@ -27,7 +27,7 @@
 │    🎓  Undergrad → Grad Level    🛡️  Offline-First      │
 │    🐍  Python 3.11+              🛡️  Zero Network       │
 │                                                         │
-│    github.com/radanliev/agentic-security-demos          │
+│    github.com/jedi-master-council/agentic-security-demos          │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -70,13 +70,13 @@
 <!-- In repository settings → Social preview -->
 <meta property="og:title" content="Agentic Security Demos — 10 Teaching Modules for Agentic AI Security" />
 <meta property="og:description" content="10 hands-on, offline-first teaching modules for agentic AI security. Blind verification, AIBOM drift, evaluation invariants, authority confinement, evidence-backed release, network recon, malware triage, file inclusion, traffic interception, vulnerability scan control. All synthetic, zero network." />
-<meta property="og:image" content="https://raw.githubusercontent.com/radanliev/agentic-security-demos/main/docs/assets/og-banner.png" />
-<meta property="og:url" content="https://github.com/radanliev/agentic-security-demos" />
+<meta property="og:image" content="https://raw.githubusercontent.com/jedi-master-council/agentic-security-demos/main/docs/assets/og-banner.png" />
+<meta property="og:url" content="https://github.com/jedi-master-council/agentic-security-demos" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Agentic Security Demos — 10 Teaching Modules for Agentic AI Security" />
 <meta name="twitter:description" content="10 hands-on, offline-first teaching modules for agentic AI security." />
-<meta name="twitter:image" content="https://raw.githubusercontent.com/radanliev/agentic-security-demos/main/docs/assets/og-banner.png" />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jedi-master-council/agentic-security-demos/main/docs/assets/og-banner.png" />
 ```
 
 ---
@@ -118,7 +118,7 @@ docs/assets/og-banner.png  (add to git)
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/radanliev/agentic-security-demos
+      link: https://github.com/jedi-master-council/agentic-security-demos
   analytics:
     provider: google
     property: G-XXXXXXXXXX

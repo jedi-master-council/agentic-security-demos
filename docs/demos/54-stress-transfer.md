@@ -39,7 +39,7 @@ python3 -m pytest tests/ -v          # 3 tests, <1 min
 python3 student/run_transfer.py      # writes results/transfer.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-54-stress-test-transfer/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-54-stress-test-transfer/INSTRUCTIONS.md).
 
 ## Relationship to Demos 37 and 51
 

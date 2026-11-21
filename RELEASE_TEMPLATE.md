@@ -65,7 +65,7 @@ Thanks to @username1, @username2 for their contributions!
 
 ### 🔗 Links
 - [Full Changelog](CHANGELOG.md)
-- [Documentation](https://radanliev.github.io/agentic-security-demos/)
+- [Documentation](https://jedi-master-council.github.io/agentic-security-demos/)
 - [Security Policy](SECURITY.md)
 
 ---

@@ -45,7 +45,7 @@ python3 -m pytest tests/ -v          # 21 tests, <1 min
 python3 student/run_scopes.py        # writes results/scopes.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-48-oauth-overprivilege/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-48-oauth-overprivilege/INSTRUCTIONS.md).
 
 ## Relationship to Demo 31
 

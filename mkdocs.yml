@@ -3,13 +3,13 @@
 # Deploy with: gh-pages branch or GitHub Actions
 
 site_name: Agentic Security Demos
-site_url: https://radanliev.github.io/agentic-security-demos/
+site_url: https://jedi-master-council.github.io/agentic-security-demos/
 site_description: Educational modules for teaching agentic AI security concepts
 site_author: Agentic Security Demos Contributors
-copyright: Copyright &copy; 2024 Agentic Security Demos Contributors
+copyright: Copyright &copy; 2024–2026 Agentic Security Demos Contributors
 
-repo_url: https://github.com/radanliev/agentic-security-demos
-repo_name: radanliev/agentic-security-demos
+repo_url: https://github.com/jedi-master-council/agentic-security-demos
+repo_name: jedi-master-council/agentic-security-demos
 edit_uri: edit/main/docs/
 
 theme:
@@ -108,6 +108,37 @@ nav:
     - Work Exposure: demos/58-work-exposure.md
     - Foresight Delphi: demos/59-foresight-delphi.md
     - EngBio Battery: demos/60-engbio-battery.md
+    - QPU Budget Arms: demos/66-qpu-budget-arms.md
+    - Multi-Table Memorisation: demos/67-multitable-memorisation-probe.md
+    - Identifier Filter: demos/68-identifier-filter.md
+    - Grounded Terms Extraction: demos/69-grounded-terms-extraction.md
+    - SoD Conflicts: demos/70-sod-conflicts.md
+    - Feature-Erasure Search: demos/71-feature-erasure-search.md
+    - Control Mapping: demos/72-control-mapping.md
+    - Open-Set NCM: demos/73-openset-ncm.md
+    - Lipschitz Bound: demos/74-lipschitz-bound.md
+    - Advisory Linkage: demos/75-advisory-linkage.md
+    - Patrol Search: demos/76-patrol-search.md
+    - Horn Repair: demos/77-horn-repair.md
+    - Sequential Covering: demos/78-sequential-covering.md
+    - Contrast Sets: demos/79-contrast-sets.md
+  - Venue Map: venues.md
+  - Course:
+    - Course Guide: course/COURSE_GUIDE.md
+    - Lab 00 — Setup: course/lab-00-setup.md
+    - Lab 01 — Blind Verification: course/lab-01-blind-verification.md
+    - Lab 02 — Supply Chain AIBOM: course/lab-02-supply-chain-aibom.md
+    - Lab 03 — Eval Invariants: course/lab-03-eval-invariants.md
+    - Lab 04 — Authority Bound: course/lab-04-authoritybound.md
+    - Lab 05 — Evidence Assurance: course/lab-05-eviassure.md
+    - Lab 06 — ReconScope: course/lab-06-reconscope.md
+    - Lab 07 — TriageTrap: course/lab-07-triagetrap.md
+    - Lab 08 — InclusionTrap: course/lab-08-inclusiontrap.md
+    - Lab 09 — InterceptBound: course/lab-09-interceptbound.md
+    - Lab 10 — ScanBound: course/lab-10-scanbound.md
+    - Lab 11 — Degenerate Reporting: course/lab-11-degenerate-reporting.md
+    - Lab 12 — ProvenanceBound: course/lab-12-provenancebound.md
+    - Final Assessment: course/lab-11-final-assessment.md
   - Tutorials:
     - Beginner Exercises: tutorials/beginner.md
     - Standard Exercises: tutorials/standard.md
@@ -183,27 +214,12 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/agentic-security-demos/agentic-security-demos
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/agenticsecurity
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/agentic-security
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+      link: https://github.com/jedi-master-council/agentic-security-demos
 
-copyright: Copyright &copy; 2024 Agentic Security Demos Contributors
+copyright: Copyright &copy; 2024–2026 Agentic Security Demos Contributors
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - javascripts/newtab.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:

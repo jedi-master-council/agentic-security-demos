@@ -41,4 +41,4 @@ python3 -m pytest tests/ -v          # 7 tests, <1 min
 python3 student/run_tiers.py         # writes results/tier_invariance.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-49-tier-fallback-authority-invariance/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-49-tier-fallback-authority-invariance/INSTRUCTIONS.md).

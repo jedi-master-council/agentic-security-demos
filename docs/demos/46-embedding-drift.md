@@ -34,4 +34,4 @@ python3 -m pytest tests/ -v          # 4 tests, <1 min
 python3 student/run_drift.py         # writes results/drift.json
 ```
 
-Full step-by-step: [Execution Instructions](https://github.com/radanliev/agentic-security-demos/blob/main/demo-46-embedding-drift/INSTRUCTIONS.md).
+Full step-by-step: [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-46-embedding-drift/INSTRUCTIONS.md).

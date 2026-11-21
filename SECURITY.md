@@ -87,7 +87,7 @@ Given this is a **security education** repository, we pay special attention to:
 
 Security researchers who report valid vulnerabilities will be:
 - Credited in the release notes (unless anonymity requested)
-- Added to our [Security Hall of Fame](https://github.com/radanliev/agentic-security-demos/security/advisories) (GitHub Security Advisories)
+- Added to our [Security Hall of Fame](https://github.com/jedi-master-council/agentic-security-demos/security/advisories) (GitHub Security Advisories)
 - Offered a maintainer role for significant contributions
 
 ---
@@ -97,7 +97,7 @@ Security researchers who report valid vulnerabilities will be:
 - [RESPONSIBLE_USE.md](RESPONSIBLE_USE.md) — Mandatory usage rules
 - [CONTRIBUTING.md](CONTRIBUTING.md#safety-requirements) — Safety requirements for contributors
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community standards
-- [GitHub Security Advisories](https://github.com/radanliev/agentic-security-demos/security/advisories) — Published advisories
+- [GitHub Security Advisories](https://github.com/jedi-master-council/agentic-security-demos/security/advisories) — Published advisories
 
 ---
 

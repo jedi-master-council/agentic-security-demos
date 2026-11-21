@@ -87,6 +87,6 @@ The CI pipeline will **fail** if:
 
 ## Questions?
 
-- Check [SECURITY.md](../SECURITY.md) for vulnerability reporting
+- Check [SECURITY.md](https://github.com/jedi-master-council/agentic-security-demos/blob/main/SECURITY.md) for vulnerability reporting
 - Open a [Discussion](https://github.com/agentic-security-demos/agentic-security-demos/discussions) for clarification
 - Tag `@security-owner` in PR for safety review

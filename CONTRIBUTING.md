@@ -36,7 +36,7 @@ This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By particip
 
 ```bash
 # Clone & enter
-git clone https://github.com/radanliev/agentic-security-demos.git
+git clone https://github.com/jedi-master-council/agentic-security-demos.git
 cd agentic-security-demos
 
 # Create environment
@@ -166,9 +166,9 @@ fix(agentic-security-demos): resolve eBPF map collision in capture_admission
 
 ## 🙋 Getting Help
 
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/radanliev/agentic-security-demos/discussions)
-- 🐛 **Issues**: [Bug Reports](https://github.com/radanliev/agentic-security-demos/issues/new?template=bug_report.md)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/jedi-master-council/agentic-security-demos/discussions)
+- 🐛 **Issues**: [Bug Reports](https://github.com/jedi-master-council/agentic-security-demos/issues/new?template=bug_report.md)
 - 📧 **Security**: security@radanliev.com (for responsible disclosure)
-- 📚 **Docs**: [Documentation](https://radanliev.github.io/agentic-security-demos/)
+- 📚 **Docs**: [Documentation](https://jedi-master-council.github.io/agentic-security-demos/)
 
 Thank you for advancing agentic AI security science! 🔬🛡️
