@@ -114,6 +114,16 @@
 | 77 | **Horn Repair** | Smallest clause-deletion set that stops forward chaining from deriving false | 🔵 <a href="https://aij.ijcai.org/about-the-artificial-intelligence-journal/" target="_blank" rel="noopener noreferrer">Artificial Intelligence</a> |
 | 78 | **Sequential Covering** | Greedy sequential covering that learns an ordered list of single-feature rules | 🔵 <a href="https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/" target="_blank" rel="noopener noreferrer">AAAI</a> |
 | 79 | **Contrast Sets** | Item support in two windows and the growth rate that marks an emerging contrast set | 🟡 <a href="https://kdd2027.kdd.org/research-track-call-for-papers/" target="_blank" rel="noopener noreferrer">KDD</a> |
+| 80 | **SoK: Injection Defences** | A systematised review of indirect prompt-injection defences with a double-coded extraction protocol over the defence literature | 🟡 <a href="https://dl.acm.org/journal/csur" target="_blank" rel="noopener noreferrer">CSUR</a> |
+| 81 | **The Agent-Security Benchmark** | Frozen gates, pinned corpora and registered falsification packaged as a re-runnable agent-security benchmark with baselines | 🟡 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS D&B</a> |
+| 82 | **Guardrail Score Transfer** | Whether guardrail-model benchmark scores predict behaviour on recorded tool-attack trajectories; the score-to-replay cross-tabulation | 🟡 <a href="https://2027.emnlp.org/" target="_blank" rel="noopener noreferrer">EMNLP</a> |
+| 83 | **MCP Registry Census** | Description-injection and authorisation-gap surface across MCP server manifests at registry scale, at two dated snapshots | 🟡 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P</a> |
+| 84 | **Longitudinal Security Drift** | A ten-framework, multi-release census of agentic frameworks' security-relevant surface: the drift graph per transition | 🟡 <a href="https://ieeecss.org/committee/ieee-transactions-information-forensics-and-security" target="_blank" rel="noopener noreferrer">TIFS</a> |
+| 85 | **The Enforcement Matrix** | Whether provenance labels are enforced at the sink per framework, per sink class and per mediation mode — or merely documented | 🟡 <a href="https://eurosp2027.ieee-security.org/cfp.html" target="_blank" rel="noopener noreferrer">EuroS&P</a> |
+| 86 | **Personal-Data Exposure Census** | Personal-data shapes in recorded agent trajectories' tool arguments, per tool class and per sink, against a registered shape lexicon | 🟡 <a href="https://petsymposium.org/" target="_blank" rel="noopener noreferrer">PoPETs</a> |
+| 87 | **The Skill-Plugin Supply Chain** | Declared tool access versus statically extractable capability per skill in the agent marketplaces, in both overstatement directions | 🟡 <a href="https://www.sciencedirect.com/journal/computers-and-security" target="_blank" rel="noopener noreferrer">C&S</a> |
+| 88 | **Detection Benchmark: Injected Actions** | A labelled injected-action detection benchmark with baseline detectors and per-stratum metrics | 🟡 <a href="https://raid-symposium.org/" target="_blank" rel="noopener noreferrer">RAID</a> |
+| 89 | **Tool-Schema Interpretation Divergence** | Where agentic frameworks interpret the same tool schema differently, measured per schema-framework pair | 🟡 <a href="https://conf.researchr.org/track/icse-2027/icse-2027-research-papers" target="_blank" rel="noopener noreferrer">FSE/ICSE</a> |
 
 Each demo is a **self-contained, reproducible research artifact** with:
 - 📦 Frozen dependencies & environment specifications
@@ -138,7 +148,7 @@ pip install -e ".[dev]"
 # Run every demo's test suite
 make test
 
-# Run one demo's suite (folders demo-01 … demo-79; 61 to 65 are listed but kept in separate repositories)
+# Run one demo's suite (folders demo-01 … demo-89; 61 to 65 are listed but kept in separate repositories)
 make test DEMO=01
 ```
 
@@ -150,7 +160,7 @@ All demos run offline from the repository root — no API keys, no network.
 Each demo folder also has step-by-step `INSTRUCTIONS.md` with expected outputs.
 
 ```bash
-# Run a teaching demo (folders demo-01 … demo-79; 61 to 65 are listed but kept in separate repositories)
+# Run a teaching demo (folders demo-01 … demo-89; 61 to 65 are listed but kept in separate repositories)
 make demo DEMO=01   # Blind Verification
 make demo DEMO=04   # Prompt Injection Authority
 make demo DEMO=07   # Malware Triage
@@ -301,6 +311,16 @@ All demos follow the **Agentic Security Reproducibility Standard**:
 | 77 | 🔵 <a href="https://aij.ijcai.org/call-for-papers/" target="_blank" rel="noopener noreferrer">AIJ</a><br>🔵 <a href="https://aij.ijcai.org/for-authors/" target="_blank" rel="noopener noreferrer">rolling</a> | 🔵 <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">TMLR</a> | 🔵 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS 2027 (call unpublished)</a> |
 | 78 | 🔵 <a href="https://aaai.org/conference/aaai/" target="_blank" rel="noopener noreferrer">AAAI 2028 (call unpublished)</a><br>🔵 <a href="https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/" target="_blank" rel="noopener noreferrer">AAAI-27 papers closed 28 Jul 2026</a> | 🔵 <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">TMLR</a> | 🔵 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML 2028 (call unpublished)</a> |
 | 79 | 🟡 <a href="https://kdd2027.kdd.org/research-track-call-for-papers/" target="_blank" rel="noopener noreferrer">KDD 2027 C2</a><br>🟡 <a href="https://kdd2027.kdd.org/research-track-call-for-papers/" target="_blank" rel="noopener noreferrer">Feb 2027 (exact date UNVERIFIED)</a> | 🔵 <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">TMLR</a> | 🔵 <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer">ICLR 2028 (call unpublished)</a> |
+| 80 | 🟡 <a href="https://dl.acm.org/journal/csur" target="_blank" rel="noopener noreferrer">CSUR (call to be re-read)</a> | — | — |
+| 81 | 🟡 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS D&B (call to be re-read)</a> | — | — |
+| 82 | 🟡 <a href="https://2027.emnlp.org/" target="_blank" rel="noopener noreferrer">EMNLP (call to be re-read)</a> | — | — |
+| 83 | 🟡 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P (call to be re-read)</a> | — | — |
+| 84 | 🟡 <a href="https://ieeecss.org/committee/ieee-transactions-information-forensics-and-security" target="_blank" rel="noopener noreferrer">TIFS (call to be re-read)</a> | — | — |
+| 85 | 🟡 <a href="https://eurosp2027.ieee-security.org/cfp.html" target="_blank" rel="noopener noreferrer">EuroS&P (call to be re-read)</a> | — | — |
+| 86 | 🟡 <a href="https://petsymposium.org/" target="_blank" rel="noopener noreferrer">PoPETs (call to be re-read)</a> | — | — |
+| 87 | 🟡 <a href="https://www.sciencedirect.com/journal/computers-and-security" target="_blank" rel="noopener noreferrer">C&S (call to be re-read)</a> | — | — |
+| 88 | 🟡 <a href="https://raid-symposium.org/" target="_blank" rel="noopener noreferrer">RAID (call to be re-read)</a> | — | — |
+| 89 | 🟡 <a href="https://conf.researchr.org/track/icse-2027/icse-2027-research-papers" target="_blank" rel="noopener noreferrer">FSE/ICSE (call to be re-read)</a> | — | — |
 
 ---
 
