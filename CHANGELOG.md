@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (demo 21 submitted to DSN 2027, 22 November 2026)
+- Root `README` and `docs/venues.md`, demo 21 (MCP Ecosystem Census): Option A is now IEEE/IFIP DSN 2027 (Research Track, regular paper), submitted on 20 November 2026. The WWW 2027 submission was desk-rejected on 19 November 2026 because the wrong PDF was uploaded; the paper was never reviewed there and is no longer at WWW. Options B (IMC) and C (AsiaCCS) are unchanged.
+
 ### Changed (demo 02 submitted to IEEE TSE, 22 November 2026)
 - Root `README` and `docs/venues.md`, demo 02 (Supply Chain AIBOM Drift): Option A is now IEEE Transactions on Software Engineering, submitted on 22 November 2026. Option B is the Journal of Systems and Software and Option C is Information and Software Technology; both are rolling journals and activate only after the previous option's decision. The earlier plan (EMSE, then IEEE TSE, then MSR) is superseded: EMSE has decided and MSR 2027's dates have passed.
 - Root `README`, demo table: the status of demo 02 now links to IEEE TSE.
