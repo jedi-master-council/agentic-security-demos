@@ -43,9 +43,9 @@ LLM simulations of learners are increasingly calibrated against public learning-
 
 | Option | Venue | Dates and rules |
 |---|---|---|
-| A | [ACL 2027 through ACL Rolling Review (ARR)](https://2027.aclweb.org/calls/main/) | ARR submission 4 Jan 2027 (11:59 pm AoE); ACL commitment and notification dates to be announced. long paper through ARR on OpenReview; since October 2026 ARR guarantees review only to submissions with a qualified service contributor (others enter a lottery), and caps first-author submissions at five; page limits UNVERIFIED (re-read the ARR call). ICML 2027 was not used: the collection already lists six ICML 2027 papers and ICML's call limits an author who does not meet its reciprocal-reviewer criteria to two submissions |
-| B | [Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/) | rolling submission. use only after the ACL 2027 decision (date to be announced) |
-| C | [ICLR 2028](https://iclr.cc/) | call not yet published (UNVERIFIED). use only after TMLR's decision; record the official call before relying on any date |
+| A | <a href="https://2027.aclweb.org/calls/main/" target="_blank" rel="noopener noreferrer">ACL 2027 through ACL Rolling Review (ARR)</a> | ARR submission 4 Jan 2027 (11:59 pm AoE); ACL commitment and notification dates to be announced. long paper through ARR on OpenReview; since October 2026 ARR guarantees review only to submissions with a qualified service contributor (others enter a lottery), and caps first-author submissions at five; page limits UNVERIFIED (re-read the ARR call). ICML 2027 was not used: the collection already lists six ICML 2027 papers and ICML's call limits an author who does not meet its reciprocal-reviewer criteria to two submissions |
+| B | <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">Transactions on Machine Learning Research (TMLR)</a> | rolling submission. use only after the ACL 2027 decision (date to be announced) |
+| C | <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer">ICLR 2028</a> | call not yet published (UNVERIFIED). use only after TMLR's decision; record the official call before relying on any date |
 
 B and C are sequential fallbacks: each is used only after the previous option's official notification, so the same work is never under review in two places. Paste-ready fields are in `submission/option-A/`, `option-B/` and `option-C/` (`REGISTRATION.md`).
 

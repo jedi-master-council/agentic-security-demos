@@ -43,9 +43,9 @@ Registers of the terms on which institutions obtain AI services are increasingly
 
 | Option | Venue | Dates and rules |
 |---|---|---|
-| A | [USENIX Security '27, Cycle 2](https://www.usenix.org/conference/usenixsecurity27/call-for-papers) | mandatory registration 19 Jan 2027; papers 26 Jan 2027; early reject 9 Mar 2027; rebuttal 8 to 15 Apr 2027; notification 6 May 2027 (all AoE). up to 13 pages of body text plus unlimited appendices and references; Open Science appendix required; ethics appendix recommended; at most seven papers per author per cycle; ML-focused work must be relevant to the systems security and privacy community (official CFP read 19 Nov 2026). The README already allocates six Cycle 2 papers, so this one fills the cap |
-| B | [ACM Transactions on Privacy and Security (TOPS)](https://dl.acm.org/journal/tops) | rolling submission. use only after USENIX Security's notification on 6 May 2027 |
-| C | [PoPETs 2028](https://petsymposium.org/) | call not yet published (UNVERIFIED). use only after ACM TOPS' decision; record the official call before relying on any date |
+| A | <a href="https://www.usenix.org/conference/usenixsecurity27/call-for-papers" target="_blank" rel="noopener noreferrer">USENIX Security '27, Cycle 2</a> | mandatory registration 19 Jan 2027; papers 26 Jan 2027; early reject 9 Mar 2027; rebuttal 8 to 15 Apr 2027; notification 6 May 2027 (all AoE). up to 13 pages of body text plus unlimited appendices and references; Open Science appendix required; ethics appendix recommended; at most seven papers per author per cycle; ML-focused work must be relevant to the systems security and privacy community (official CFP read 19 Nov 2026). The README already allocates six Cycle 2 papers, so this one fills the cap |
+| B | <a href="https://dl.acm.org/journal/tops" target="_blank" rel="noopener noreferrer">ACM Transactions on Privacy and Security (TOPS)</a> | rolling submission. use only after USENIX Security's notification on 6 May 2027 |
+| C | <a href="https://petsymposium.org/" target="_blank" rel="noopener noreferrer">PoPETs 2028</a> | call not yet published (UNVERIFIED). use only after ACM TOPS' decision; record the official call before relying on any date |
 
 B and C are sequential fallbacks: each is used only after the previous option's official notification, so the same work is never under review in two places. Paste-ready fields are in `submission/option-A/`, `option-B/` and `option-C/` (`REGISTRATION.md`).
 

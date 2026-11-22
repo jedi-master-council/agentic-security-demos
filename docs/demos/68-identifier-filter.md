@@ -43,9 +43,9 @@ Study assistants built on hosted models send what learners type to a third party
 
 | Option | Venue | Dates and rules |
 |---|---|---|
-| A | [Proceedings on Privacy Enhancing Technologies (PoPETs) 2027, Issue 4](https://www.petsymposium.org/cfp27.php) | submission 28 Feb 2027 (firm, AoE); rebuttal 10 to 16 Apr 2027; notification 1 May 2027; revision deadline 1 Jun 2027. at most four submissions per author per issue; rejected papers must skip a full issue; page limit not read (UNVERIFIED). Issue 3 (30 Nov 2026) is nearer but leaves eleven days and no data, so it is not used |
-| B | [ACM Transactions on Privacy and Security (TOPS)](https://dl.acm.org/journal/tops) | rolling submission. use only after PoPETs' notification on 1 May 2027 |
-| C | [IEEE Transactions on Information Forensics and Security (TIFS)](https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security) | rolling submission. use only after ACM TOPS' decision; page limit and fees UNVERIFIED |
+| A | <a href="https://www.petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">Proceedings on Privacy Enhancing Technologies (PoPETs) 2027, Issue 4</a> | submission 28 Feb 2027 (firm, AoE); rebuttal 10 to 16 Apr 2027; notification 1 May 2027; revision deadline 1 Jun 2027. at most four submissions per author per issue; rejected papers must skip a full issue; page limit not read (UNVERIFIED). Issue 3 (30 Nov 2026) is nearer but leaves eleven days and no data, so it is not used |
+| B | <a href="https://dl.acm.org/journal/tops" target="_blank" rel="noopener noreferrer">ACM Transactions on Privacy and Security (TOPS)</a> | rolling submission. use only after PoPETs' notification on 1 May 2027 |
+| C | <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security" target="_blank" rel="noopener noreferrer">IEEE Transactions on Information Forensics and Security (TIFS)</a> | rolling submission. use only after ACM TOPS' decision; page limit and fees UNVERIFIED |
 
 B and C are sequential fallbacks: each is used only after the previous option's official notification, so the same work is never under review in two places. Paste-ready fields are in `submission/option-A/`, `option-B/` and `option-C/` (`REGISTRATION.md`).
 
