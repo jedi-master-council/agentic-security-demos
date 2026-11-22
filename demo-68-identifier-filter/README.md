@@ -32,7 +32,7 @@ Study assistants built on hosted models send what learners type to a third party
 
 `student/idfilter.py` implements the measurement on `fixtures/messages.json`; `student/run_idfilter.py` prints one line per case and writes `results/idfilter.json`. Every number it prints belongs to the toy fixture and is not evidence about any real system, dataset or population.
 
-## Learning objectives
+## Learning Objectives
 
 - State the measurement question and the registered primary outcome
 - Run the offline procedure on the labelled synthetic fixture
@@ -52,7 +52,7 @@ B and C are sequential fallbacks: each is used only after the previous option's 
 **Risks for the venue plan**
 - None recorded beyond the UNVERIFIED items above.
 
-## Safety notice
+## Safety Notice
 
 ⚠️ **This is a teaching demonstration using synthetic fixtures only.**
 - No real people, credentials, production systems or provider accounts

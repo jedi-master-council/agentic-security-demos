@@ -67,7 +67,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 This project is maintained by volunteers for educational purposes.
 For commercial support or custom training materials, contact:
-maintainers@agentic-security-demos.example (placeholder)
+[GitHub Discussions](https://github.com/jedi-master-council/agentic-security-demos/discussions)
 
 ## FAQ
 

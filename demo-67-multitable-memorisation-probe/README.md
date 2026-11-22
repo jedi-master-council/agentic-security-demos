@@ -32,7 +32,7 @@ LLM simulations of learners are increasingly calibrated against public learning-
 
 `student/memprobe.py` implements the measurement on `fixtures/linked_tables.json`; `student/run_memprobe.py` prints one line per case and writes `results/memprobe.json`. Every number it prints belongs to the toy fixture and is not evidence about any real system, dataset or population.
 
-## Learning objectives
+## Learning Objectives
 
 - State the measurement question and the registered primary outcome
 - Run the offline procedure on the labelled synthetic fixture
@@ -52,7 +52,7 @@ B and C are sequential fallbacks: each is used only after the previous option's 
 **Risks for the venue plan**
 - ARR's sustainable-reviewing policy (from October 2026) guarantees review only when a submission names a qualified service contributor; without one, the paper enters a review lottery.
 
-## Safety notice
+## Safety Notice
 
 ⚠️ **This is a teaching demonstration using synthetic fixtures only.**
 - No real people, credentials, production systems or provider accounts

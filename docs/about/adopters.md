@@ -26,13 +26,13 @@
 
 If you're using these materials in your course or organization, we'd love to hear from you!
 
-1. Open a [GitHub Issue](https://github.com/agentic-security-demos/agentic-security-demos/issues/new?template=feature_request.yml) with:
+1. Open a [GitHub Issue](https://github.com/jedi-master-council/agentic-security-demos/issues/new?template=feature_request.yml) with:
    - Institution name
    - Course name and level
    - How you're using the materials
    - Permission to list publicly
 
-2. Or email: maintainers@agentic-security-demos.example (placeholder)
+2. Or open a [Discussion](https://github.com/jedi-master-council/agentic-security-demos/discussions)
 
 ## Benefits of Being Listed
 

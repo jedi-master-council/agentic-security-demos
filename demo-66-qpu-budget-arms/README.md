@@ -32,7 +32,7 @@ Free and allocated cloud quantum access is measured in minutes, and a job that f
 
 `student/qpu_budget.py` implements the measurement on `fixtures/battery.json`; `student/run_qpu_budget.py` prints one line per case and writes `results/qpu_budget.json`. Every number it prints belongs to the toy fixture and is not evidence about any real system, dataset or population.
 
-## Learning objectives
+## Learning Objectives
 
 - State the measurement question and the registered primary outcome
 - Run the offline procedure on the labelled synthetic fixture
@@ -52,7 +52,7 @@ B and C are sequential fallbacks: each is used only after the previous option's 
 **Risks for the venue plan**
 - The ISC 2027 deadline of 21 Dec 2026 leaves about four weeks after the simulation pilot; if the pilot is not finished by mid-December, option A should be skipped rather than submitted with placeholders.
 
-## Safety notice
+## Safety Notice
 
 ⚠️ **This is a teaching demonstration using synthetic fixtures only.**
 - No real people, credentials, production systems or provider accounts

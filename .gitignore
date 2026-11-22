@@ -46,10 +46,11 @@ demo-*/results/
 # Logs
 *.log
 
-# Coverage
+# Coverage and documentation build
 .coverage
 htmlcov/
 .pytest_cache/
+site/
 
 # Local development
 .env

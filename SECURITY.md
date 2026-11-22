@@ -6,7 +6,7 @@
 
 If you discover a security issue in these teaching materials or the underlying patterns they teach:
 
-1. **Email privately**: `security@agentic-security-demos.example` (replace with actual contact)
+1. **Open a private advisory**: https://github.com/jedi-master-council/agentic-security-demos/security/advisories/new
 2. **Include**: Steps to reproduce, potential impact, affected demos/modules
 3. **Allow time**: Allow 7 days for assessment before any coordinated disclosure
 

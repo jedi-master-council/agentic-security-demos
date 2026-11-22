@@ -1,6 +1,6 @@
 # Demos Overview
 
-The catalogue now covers **60 demos**: 12 course-format modules (01–12, with full labs) and 48 short-format teaching toys (13–60, ~30 min each). The path diagram below shows the core progression through the 12 course modules; see the Quick Comparison table for all 60.
+The catalogue covers **79 demos**: 74 in this repository — 12 course-format modules (01–12, with full labs) and 62 short-format teaching toys (13–60 and 66–79, ~30 min each) — plus five listed external repositories (61–65). The path diagram below shows the core progression through the 12 course modules; the Quick Comparison table covers every in-repository demo.
 
 ## Learning Path (core modules 01–12)
 
@@ -90,6 +90,22 @@ graph TD
 | **58** | Work Exposure | Tasks, not occupations, carry the exposure | 30 min |
 | **59** | Foresight Delphi | The IQR rule decides, not the facilitator | 30 min |
 | **60** | EngBio Battery | References frozen before the agent runs | 30 min |
+| **66** | QPU Budget Arms | Accepted results per simulated QPU-second | 30 min |
+| **67** | Multi-Table Memorisation | Cross-table joins expose what row probes miss | 30 min |
+| **68** | Identifier Filter | Residue survives rule-based redaction | 30 min |
+| **69** | Grounded Terms Extraction | Every extracted clause needs a source quote | 30 min |
+| **70** | SoD Conflicts | Mutually exclusive permission pairs in effective RBAC | 30 min |
+| **71** | Feature-Erasure Search | Cheapest erasure that flips a linear score | 30 min |
+| **72** | Control Mapping | Set alignment of techniques to controls | 30 min |
+| **73** | Open-Set NCM | A distance threshold can reject unknowns | 30 min |
+| **74** | Lipschitz Bound | Spectral norms bound two-layer sensitivity | 30 min |
+| **75** | Advisory Linkage | Exact identifiers link advisories; severity strings disagree | 30 min |
+| **76** | Patrol Search | Greedy patrol sets may leave paths uncovered | 30 min |
+| **77** | Horn Repair | Smallest clause deletion restores consistency | 30 min |
+| **78** | Sequential Covering | Ordered single-feature rules learn a decision list | 30 min |
+| **79** | Contrast Sets | Growth rates mark emerging contrasts | 30 min |
+
+Demos 61–65 are listed in the root README but kept in separate repositories; they have no folder here.
 
 ## Common Themes
 
@@ -103,7 +119,8 @@ graph TD
 | **Oracle Separation** | 01, 11, 12, 17, 59 | Labels never drive attempts; claims checked against logs |
 | **Cryptographic Evidence** | 05, 29, 47 | Hash chains, Merkle trees, pre-reveal seals |
 | **Supply Chain Safety** | 02, 21, 25, 27, 30, 31, 40, 42, 46 | Registries, attestations, pins, defaults |
-| **Agent Memory** | 22, 28 |\n| **Human & Societal Measurement** | 51, 53, 56, 57, 58, 59 | Measured claims need samples, codebooks and predeclared rules | Leakage (privacy) is not poisoning (integrity) |
+| **Agent Memory** | 22, 28 | Leakage (privacy) is not poisoning (integrity) |
+| **Human & Societal Measurement** | 51, 53, 56, 57, 58, 59 | Measured claims need samples, codebooks and predeclared rules |
 | **Documentation & Accountability** | 36, 38, 39, 43, 57, 58 | Cards, claims, incidents and terms under audit |
 | **Evaluation Methodology** | 03, 11, 14, 32, 33, 35, 37, 41, 52, 53, 54, 55, 56, 60 | Valid measurements need baselines, nulls and costs |
 | **Detection Limits** | 13, 15, 18, 22, 23, 24, 26, 28, 34, 37, 39, 51, 54 | Toys demonstrate mechanisms; refuse overclaims |
@@ -143,7 +160,6 @@ graph TD
 | 29 | Graphs, hashing | Forensics, tamper evidence |
 | 30 | Parsing, sets | Insecure defaults, pinning |
 | 31 | Set operations | Declared versus exercised authority, MCP registry |
-| 48 | Set operations | Requested versus used OAuth scopes, least privilege |
 | 32 | JSON, tables | Reproducibility, artefact audits |
 | 33 | Dictionaries | Protocol elements, mitigation gaps |
 | 34 | Regions, flags | Visual prompt injection |
@@ -160,6 +176,7 @@ graph TD
 | 45 | Combinatorics | Hypergeometric null, significance |
 | 46 | Cosine similarity | Embedding drift |
 | 47 | Hashing, chaining | Commitment seals |
+| 48 | Set operations | Requested versus used OAuth scopes, least privilege |
 | 49 | State machines | Tier-dependent authority, re-validation |
 | 50 | Trees, arithmetic | Budget invariants, fan-out caps |
 | 51 | Rates, ratios | Guardrail fairness, accessibility equity |
@@ -172,6 +189,20 @@ graph TD
 | 58 | Weighted means | Task-level exposure, agentic share |
 | 59 | Quartiles | Delphi consensus, briefing hashes |
 | 60 | Reference checks | Predeclared grading, engbio safety |
+| 66 | Simulation, arithmetic | Budgeted workflow arms, QPU noise |
+| 67 | Sets, joins | Memorisation probes, false-positive control |
+| 68 | Regex, recall | De-identification, re-identification risk |
+| 69 | Extraction, string matching | Grounding, value consistency |
+| 70 | Sets, tuples | Separation of duty, RBAC |
+| 71 | Linear algebra, search | Minimum-cost evasion, linear classifiers |
+| 72 | Sets, mappings | Technique/control catalogues, coverage |
+| 73 | Distances, thresholds | Open-set recognition, rejection |
+| 74 | Matrices, norms | Lipschitz bounds, sensitivity |
+| 75 | Joins, agreement | Advisory linkage, severity disagreement |
+| 76 | Graphs, greedy search | Patrol coverage, approximation |
+| 77 | Logic, search | Horn clauses, consistency repair |
+| 78 | Rules, ordering | Sequential covering, decision lists |
+| 79 | Ratios, windows | Contrast sets, emerging patterns |
 
 ## Recommended Order
 
@@ -193,19 +224,22 @@ graph TD
 11. **11** Degenerate Reporting — Audit any evaluation, including your own
 12. **12** ProvenanceBound — Provenance-aware authorization for untrusted content
 
-### Short-Format Toys (13–60)
+### Short-Format Toys (13–60 and 66–79)
 Each is one teaching toy (~30 min, standard library only): run the tests, run the script, read the table.
 1. **13–17, 19–21** — Pipeline and intelligence toys: agreement gates, conformal gating, probes, spread, claims-vs-logs, lineage, censuses
 2. **22–34, 36–44** — Capability, memory, supply-chain and documentation toys: injection channels, leakage, faults, delegation, attestations, sandboxes, defaults, coding exercises, lifecycle
 3. **45–48** — Measurement toys: exact nulls, embedding shifts, pre-reveal seals, OAuth over-privilege (pairs with 01)
 4. **49–60** — Agentic-operations and measurement toys: tier fallback, budget delegation, guardrail equity, simulator V&V, human validation, stress transfer, analytic power, meta-analysis, governance coding, work exposure, Delphi foresight, engbio battery
+5. **66–69** — Education-and-quantum measurement toys: QPU budget arms, multi-table memorisation, identifier residue, grounded terms extraction
+6. **70–79** — Journal-track method toys: separation of duty, feature-erasure search, control mapping, open-set rejection, Lipschitz bounds, advisory linkage, patrol search, Horn repair, sequential covering, contrast sets
 
 ## Cross-Demo Exercises
 
-See [examples/](../examples/) for cross-demo integration exercises:
-- Blind verification + Evidence assurance pipeline
-- ReconScope + ScanBound coordinated scanning
-- Authority Bound + InclusionTrap provenance chains
+Suggested cross-demo integration exercises:
+- Blind verification + Evidence assurance pipeline (01 + 05)
+- ReconScope + ScanBound coordinated scanning (06 + 10)
+- Authority Bound + InclusionTrap provenance chains (04 + 08)
+- Pre-reveal seal + exact nulls for localisation (47 + 45)
 
 ## Assessment Ideas
 
@@ -271,6 +305,20 @@ See [examples/](../examples/) for cross-demo integration exercises:
 | 58 | Why tasks rather than occupations? | Split one occupation into two task rows |
 | 59 | Who decides consensus in a Delphi round? | Move one rating across the IQR boundary |
 | 60 | Why freeze references before the agent runs? | Add a task with a predeclared reference |
+| 66 | Why measure per QPU-second? | Add a fourth workflow arm |
+| 67 | Why remap the tables? | Add a join-key-only probe |
+| 68 | What survives redaction? | Add a name with a title |
+| 69 | When is a quote grounded? | Add a paraphrased value |
+| 70 | What makes a permission pair conflicting? | Add a role with inherited permissions |
+| 71 | Is the cheapest flip unique? | Add a tied-cost feature |
+| 72 | What counts as alignment? | Add an unmapped technique |
+| 73 | When does rejection fail? | Move the distance threshold |
+| 74 | Why use the spectral norm? | Add a third linear layer |
+| 75 | Where do severities disagree? | Add a third advisory source |
+| 76 | Is greedy always optimal? | Add a path that defeats it |
+| 77 | Is the deletion set unique? | Add a second minimal repair |
+| 78 | Why order the rules? | Add a conflicting rule |
+| 79 | What marks emergence? | Move a window boundary |
 
 ## Assessment Rubric
 

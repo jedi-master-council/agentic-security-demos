@@ -1,8 +1,8 @@
 # Agentic Security Demos
 
-[![CI](https://github.com/radanliev/agentic-security-demos/workflows/CI/badge.svg)](https://github.com/radanliev/agentic-security-demos/actions/workflows/ci.yml)
-[![Docs](https://github.com/radanliev/agentic-security-demos/workflows/Deploy%20Documentation/badge.svg)](https://radanliev.github.io/agentic-security-demos/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/jedi-master-council/agentic-security-demos/workflows/CI/badge.svg)](https://github.com/jedi-master-council/agentic-security-demos/actions/workflows/ci.yml)
+[![Docs](https://github.com/jedi-master-council/agentic-security-demos/workflows/Deploy%20Documentation/badge.svg)](https://jedi-master-council.github.io/agentic-security-demos/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/jedi-master-council/agentic-security-demos/blob/main/LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
 **Educational modules for teaching agentic AI security concepts**
@@ -15,22 +15,24 @@ All demonstrations use **local synthetic fixtures only** — no live network acc
 
 ```bash
 # Clone and enter
-git clone https://github.com/radanliev/agentic-security-demos.git
+git clone https://github.com/jedi-master-council/agentic-security-demos.git
 cd agentic-security-demos
 
 # One-time setup
 make setup
 
-# Run all tests (688 tests, safe, offline, deterministic)
+# Run all tests (760 tests, safe, offline, deterministic)
 make test
 
-# Run a specific demo (01-60)
+# Run a specific demo (folders 01–79; 61–65 live in separate repositories)
 make demo DEMO=01
 ```
 
 ---
 
-## 📚 Demos Overview
+## 📚 Course Modules (01–12)
+
+The twelve course-format modules below have full labs. The complete catalogue — 74 demos in this repository plus five listed external repositories — is in the [Demos Overview](demos/overview.md); the venue plan is in the [Venue Map](venues.md).
 
 | # | Demo | Topic | Key Concepts | Difficulty |
 |---|------|-------|--------------|------------|
@@ -73,10 +75,10 @@ make demo DEMO=01
 
 ## 🤝 Community
 
-- 💬 [Discussions](https://github.com/radanliev/agentic-security-demos/discussions) - Questions, ideas, show-and-tell
-- 🐛 [Issues](https://github.com/radanliev/agentic-security-demos/issues) - Bugs, features, docs
+- 💬 [Discussions](https://github.com/jedi-master-council/agentic-security-demos/discussions) - Questions, ideas, show-and-tell
+- 🐛 [Issues](https://github.com/jedi-master-council/agentic-security-demos/issues) - Bugs, features, docs
 - 🤝 [Contributing](contributing/guidelines.md) - How to contribute
-- 🛡️ [Safety](RESPONSIBLE_USE.md) - Mandatory safety rules
+- 🛡️ [Safety](https://github.com/jedi-master-council/agentic-security-demos/blob/main/RESPONSIBLE_USE.md) - Mandatory safety rules
 
 ---
 

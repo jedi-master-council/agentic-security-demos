@@ -10,7 +10,7 @@
 
 ## Contributors
 
-*Contributors are recognized in GitHub's [Contributors graph](https://github.com/agentic-security-demos/agentic-security-demos/graphs/contributors).*
+*Contributors are recognized in GitHub's [Contributors graph](https://github.com/jedi-master-council/agentic-security-demos/graphs/contributors).*
 
 ## Advisory Board
 
@@ -33,6 +33,6 @@ We're always looking for contributors! See [Contributing Guidelines](../contribu
 
 ## Contact
 
-- **General**: maintainers@agentic-security-demos.example (placeholder)
-- **Security**: security@agentic-security-demos.example (placeholder)
-- **Education**: education@agentic-security-demos.example (placeholder)
+- **General**: open a [Discussion](https://github.com/jedi-master-council/agentic-security-demos/discussions)
+- **Security**: open a [private advisory](https://github.com/jedi-master-council/agentic-security-demos/security/advisories/new)
+- **Education**: open an [issue](https://github.com/jedi-master-council/agentic-security-demos/issues/new) with the `education` label

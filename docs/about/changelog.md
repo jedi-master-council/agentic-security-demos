@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (teaching map synchronised, 22 November 2026)
+- Counts corrected to 79 demos (74 in the repository plus 61–65 external) and 760 tests throughout the documentation.
+- Demo pages 66–79, four tutorial pages, the course labs and a new Venue Map page added to the site navigation.
+- Venue links open in a new tab on the documentation site; the root README carries `target="_blank"` links for renderers that honour it.
+- Fixed all broken navigation and asset references so `mkdocs build --strict` succeeds; removed the dead `polyfill.io` script and placeholder analytics, contact and DOI values.
+
 ### Added
 - Professional repository structure with issue templates, PR template, dependabot
 - CODEOWNERS for automatic review assignment

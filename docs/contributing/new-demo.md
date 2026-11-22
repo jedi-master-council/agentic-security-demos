@@ -278,7 +278,7 @@ Add test job:
 
 Add to demo table:
 
-| XX | [Name](demos/XX-name.md) | Description | Key Concepts | Difficulty |
+| XX | `Name` (`docs/demos/XX-name.md`) | Description | Key Concepts | Difficulty |
 
 ## Step 7: Verify
 

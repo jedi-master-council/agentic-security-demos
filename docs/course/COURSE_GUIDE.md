@@ -130,7 +130,7 @@ Week 6 ──┬── Module 11: Degenerate Reporting (Extension)    (1 hour)
 
 ## 🛡️ Safety Contract (Must Sign Before Module 1)
 
-Before starting, students must read and acknowledge [RESPONSIBLE_USE.md](../../RESPONSIBLE_USE.md):
+Before starting, students must read and acknowledge [RESPONSIBLE_USE.md](https://github.com/jedi-master-council/agentic-security-demos/blob/main/RESPONSIBLE_USE.md):
 
 > I understand that:
 > - All demos run **100% offline** against synthetic fixtures
@@ -179,7 +179,7 @@ Students must submit per module:
 
 ```bash
 # 1. Clone and verify
-git clone https://github.com/radanliev/agentic-security-demos.git
+git clone https://github.com/jedi-master-council/agentic-security-demos.git
 cd agentic-security-demos
 make setup && make test   # Must end with "=== All tests passed ===" (382 passed, 1 xfailed)
 
@@ -218,4 +218,4 @@ make verify-safety
 
 ---
 
-*Course version 1.1 | Aligned with repository v0.1.0 | 688 tests, seed=42, fully offline*
+*Course version 1.2 | Aligned with repository v0.1.0 | 760 tests, seed=42, fully offline*

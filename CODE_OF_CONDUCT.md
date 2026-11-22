@@ -37,7 +37,7 @@ Decisions are made by maintainers and are final.
 
 Report violations to the maintainers via:
 - Private GitHub message to maintainers
-- Email: conduct@agentic-security-demos.example (placeholder)
+- Private report: https://github.com/jedi-master-council/agentic-security-demos/security/advisories/new (mark the report "conduct")
 
 All reports are handled confidentially.
 

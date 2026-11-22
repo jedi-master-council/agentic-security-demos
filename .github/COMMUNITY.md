@@ -31,7 +31,7 @@ Use our [Documentation template](.github/ISSUE_TEMPLATE/documentation.yml) - hel
 
 - 💬 **GitHub Discussions** - Questions, ideas, show-and-tell
 - 🐛 **GitHub Issues** - Bugs, features, docs improvements
-- 📧 **Email** - maintainers@agentic-security-demos.example (placeholder)
+- 💬 **Discussions** - https://github.com/jedi-master-council/agentic-security-demos/discussions
 
 ## Recognition
 
@@ -76,4 +76,4 @@ See [RESPONSIBLE_USE.md](RESPONSIBLE_USE.md) and [SECURITY.md](SECURITY.md) for 
 
 ---
 
-**Questions?** Open a [Discussion](https://github.com/agentic-security-demos/agentic-security-demos/discussions) or email maintainers@agentic-security-demos.example
+**Questions?** Open a [Discussion](https://github.com/jedi-master-council/agentic-security-demos/discussions)

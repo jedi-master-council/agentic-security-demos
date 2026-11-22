@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (teaching map synchronised, 22 November 2026)
+- Root `README`: the headline now states 79 demos (74 in this repository plus 61–65 in separate repositories). Demo-table venues for 14, 16 and 23 corrected from AsiaCCS to DSN 2027, matching the venue table; the quick-start venue labels for 14, 21, 28, 44, 45, 46 and 47 refreshed; the 45–48 focus descriptions rewritten as summaries rather than private-repository notes.
+- Venue table: every venue and deadline link now carries `target="_blank" rel="noopener noreferrer"`. GitHub's README sanitiser removes `target`, so the documentation site applies new-tab behaviour with `docs/javascripts/newtab.js`; on github.com, Ctrl/Cmd-click or middle-click keeps the map open.
+- Documentation: test count corrected from 688 to 760 and folder count from 60 to 74 throughout; demo pages 66–79 added; the four tutorial pages and the course labs added to the navigation; new [Venue Map](docs/venues.md) page mirrors the root table.
+- Documentation build: removed the dead `polyfill.io` script, created the missing `extra.css` and new-tab script, fixed every broken relative link reported by `mkdocs build --strict`, and replaced the placeholder analytics ID, contact address and Zenodo DOI.
+- Metadata: canonical GitHub owner `jedi-master-council` used in the docs site, `CITATION.cff` and `pyproject.toml`; placeholder e-mail addresses removed.
+
 ### Changed (IEEE S&P 2027 Cycle 2 slate submitted, 16 November 2026)
 - Root `README`: marked the six IEEE S&P 2027 Cycle 2 demos (04 Prompt Injection & Tool Authority, 09 MITM Interception, 26 Sandbox Probes, 29 Provenance Graphs, 30 Default Configs, 33 Protocol Coverage SoK) as 🟢 S&P (submitted 16 November 2026, ahead of the 17 November AoE deadline). Demos-table status cells and the Option A cells in the venues table updated to 🟢; the caps note records the six as submitted.
 

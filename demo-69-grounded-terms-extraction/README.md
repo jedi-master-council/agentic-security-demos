@@ -32,7 +32,7 @@ Registers of the terms on which institutions obtain AI services are increasingly
 
 `student/grounding.py` implements the measurement on `fixtures/terms.json`; `student/run_grounding.py` prints one line per case and writes `results/grounding.json`. Every number it prints belongs to the toy fixture and is not evidence about any real system, dataset or population.
 
-## Learning objectives
+## Learning Objectives
 
 - State the measurement question and the registered primary outcome
 - Run the offline procedure on the labelled synthetic fixture
@@ -52,7 +52,7 @@ B and C are sequential fallbacks: each is used only after the previous option's 
 **Risks for the venue plan**
 - Taking USENIX Security '27 Cycle 2 fills the seven-paper cap for that cycle (six already allocated in the README); if another demo needs the slot, option A should move to ACL 2027 through ARR (4 Jan 2027).
 
-## Safety notice
+## Safety Notice
 
 ⚠️ **This is a teaching demonstration using synthetic fixtures only.**
 - No real people, credentials, production systems or provider accounts

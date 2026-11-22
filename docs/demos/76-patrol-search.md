@@ -1,0 +1,48 @@
+# Demo 76: Anytime Search for Minimum-Uncovered Patrol Allocations
+
+> **▶️ New here? Follow the step-by-step [Execution Instructions](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-76-patrol-search/INSTRUCTIONS.md)** — every command with expected output.
+
+## Learning Objectives
+
+- Explain the measurement question of this teaching demonstration
+- Run the offline procedure on the labelled synthetic fixture
+- Distinguish the teaching output from a confirmatory research result
+- Name the target venue and why the topic is scoped to that venue
+
+## Conceptual Explanation
+
+Exhaustive and greedy search for a k-node patrol set that covers attacker paths. The fixture holds 8 labelled synthetic cases.
+Running `student/run_patrol.py` prints one row per case and writes
+`results/patrol.json`. Every number produced here belongs to the
+toy fixture; it is not evidence about a live system or an external corpus.
+
+Target venue (option A): **JAIR**. Options B and C are
+sequential fallbacks and are recorded in `venue.yaml`.
+
+## Safety Notice
+
+⚠️ **This is a teaching demonstration using synthetic fixtures only.**
+- No real vulnerabilities, credentials, or production systems
+- No network access (standard library only)
+- All cases and verdicts are hand-built toys
+- Results demonstrate a mechanism; they are not evidence about real deployments
+
+## Reproducibility Metadata
+
+| Field | Value |
+|-------|-------|
+| Seed | 76 (fixed; no randomness used) |
+| Python | 3.11+ (stdlib only) |
+| OS | Linux/macOS/Windows |
+| Command | `make demo DEMO=76` |
+
+## Research Connection
+
+This demo illustrates the measurement question of a pending study aimed at
+JAIR. That study has collected no confirmatory data; every
+quantity there is `[RESULT PENDING]`. Nothing here describes a publication,
+a venue result, or a measured effect size.
+
+---
+
+Source: [`demo-76-patrol-search`](https://github.com/jedi-master-council/agentic-security-demos/blob/main/demo-76-patrol-search) in the repository.

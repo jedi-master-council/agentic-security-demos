@@ -119,9 +119,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jedi-master-council/agentic-security-demos
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
 ```
 
 ---

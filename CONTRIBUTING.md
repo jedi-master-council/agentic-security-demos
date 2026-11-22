@@ -1,6 +1,6 @@
 # Contributing to agentic-security-demos
 
-Thank you for contributing to agentic-security-demos! This repository targets **Multi-venue (60 demos)** and maintains high standards for reproducibility, scientific rigor, and venue alignment.
+Thank you for contributing to agentic-security-demos! This repository holds **79 teaching demos (74 in this repository and five in separate repositories)** and maintains high standards for reproducibility, scientific rigor, and venue alignment.
 
 ## 📋 Table of Contents
 - [Code of Conduct](#code-of-conduct)
@@ -64,7 +64,7 @@ All research contributions **must** include:
      "repo": "agentic-security-demos",
      "commit_sha": "abc123...",
      "evidence_hash": "sha256:...",
-     "zenodo_doi": "10.5281/zenodo.XXXXXXX",
+     "zenodo_doi": "10.5281/zenodo.<record-id>",
      "claims": [...],
      "statistical_analysis": {...}
    }
@@ -134,14 +134,14 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 [optional body with evidence references]
 
-[optional footer: Closes #XXX, Evidence: zenodo.XXXXXXX]
+[optional footer: Closes #XXX, Evidence: zenodo.<record-id>]
 ```
 
 **Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `chore`, `evidence`, `stats`
 
 **Examples:**
 ```
-evidence(agentic-security-demos): add frozen evidence for Multi-venue (60 demos) submission v3
+evidence(agentic-security-demos): add frozen evidence for the multi-venue submission v3
 stats(agentic-security-demos): update power analysis for battery (n=200)
 feat(agentic-security-demos): add new detection rule for injection variant
 fix(agentic-security-demos): resolve eBPF map collision in capture_admission
@@ -168,7 +168,7 @@ fix(agentic-security-demos): resolve eBPF map collision in capture_admission
 
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/jedi-master-council/agentic-security-demos/discussions)
 - 🐛 **Issues**: [Bug Reports](https://github.com/jedi-master-council/agentic-security-demos/issues/new?template=bug_report.md)
-- 📧 **Security**: security@radanliev.com (for responsible disclosure)
+- 🔒 **Security**: [open a private advisory](https://github.com/jedi-master-council/agentic-security-demos/security/advisories/new) (responsible disclosure)
 - 📚 **Docs**: [Documentation](https://jedi-master-council.github.io/agentic-security-demos/)
 
 Thank you for advancing agentic AI security science! 🔬🛡️

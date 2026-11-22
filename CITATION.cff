@@ -4,14 +4,13 @@ authors:
   - name: "Agentic Security Demos Contributors"
 title: "Agentic Security Demos: Teaching Modules for Agentic AI Security"
 version: 0.1.0
-doi: "10.5281/zenodo.XXXXXX"
 date-released: "2024-08-23"
 url: "https://github.com/jedi-master-council/agentic-security-demos"
 repository-code: "https://github.com/jedi-master-council/agentic-security-demos"
-repository-artifact: "https://doi.org/10.5281/zenodo.XXXXXX"
 repository-notes: "Educational materials for teaching agentic AI security concepts"
 description: |
-  A collection of 60 educational modules for teaching security concepts in agentic AI systems.
+  A collection of 79 teaching demonstrations for security concepts in agentic AI systems,
+  74 of them in this repository and five listed in separate repositories.
   All demonstrations use local synthetic fixtures only — no live network access,
   real credentials, malware, or private data.
 keywords:
@@ -41,7 +40,6 @@ license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 contact:
   - name: "Agentic Security Demos Maintainers"
-    email: "maintainers@agentic-security-demos.example"
     role: "maintainer"
 preferred-citation:
   type: software
@@ -50,5 +48,4 @@ preferred-citation:
   title: "Agentic Security Demos: Teaching Modules for Agentic AI Security"
   year: 2024
   version: 0.1.0
-  doi: "10.5281/zenodo.XXXXXX"
   url: "https://github.com/jedi-master-council/agentic-security-demos"

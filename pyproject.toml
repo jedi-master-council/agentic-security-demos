@@ -9,10 +9,10 @@ description = "Educational modules for teaching agentic AI security concepts"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Agentic Security Demos Contributors", email = "maintainers@agentic-security-demos.example"}
+    {name = "Agentic Security Demos Contributors"}
 ]
 maintainers = [
-    {name = "Agentic Security Demos Maintainers", email = "maintainers@agentic-security-demos.example"}
+    {name = "Agentic Security Demos Maintainers"}
 ]
 keywords = [
     "agentic-ai",
@@ -57,7 +57,7 @@ dependencies = [
     "pyyaml>=6.0",
     "cryptography>=41.0.0"
 ]
-urls = {Homepage = "https://github.com/jedi-master-council/agentic-security-demos", Repository = "https://github.com/jedi-master-council/agentic-security-demos", Issues = "https://github.com/jedi-master-council/agentic-security-demos/issues", Documentation = "https://gitlab.com/radanliev/agentic-security-demos", Changelog = "https://github.com/jedi-master-council/agentic-security-demos/blob/main/docs/about/changelog.md"}
+urls = {Homepage = "https://github.com/jedi-master-council/agentic-security-demos", Repository = "https://github.com/jedi-master-council/agentic-security-demos", Issues = "https://github.com/jedi-master-council/agentic-security-demos/issues", Documentation = "https://jedi-master-council.github.io/agentic-security-demos/", Changelog = "https://github.com/jedi-master-council/agentic-security-demos/blob/main/docs/about/changelog.md"}
 
 [project.optional-dependencies]
 dev = [
