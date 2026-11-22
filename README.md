@@ -36,7 +36,7 @@
 | # | Demo | Focus | Status |
 |---|------|-------|--------|
 | 01 | **Blind Verification** | Cryptographic verification of agent outputs without trusted execution environments | 🟢 <a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener noreferrer">ACM TOSEM</a> |
-| 02 | **Supply Chain AIBOM Drift** | AI Bill of Materials tracking & drift detection across model updates | 🟢 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a> |
+| 02 | **Supply Chain AIBOM Drift** | AI Bill of Materials tracking & drift detection across model updates | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> |
 | 03 | **Eval Design Invariants** | Statistically rigorous evaluation frameworks with invariant guarantees | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a> |
 | 04 | **Prompt Injection & Tool Authority** | Capability-based authority mediation for tool-using agents | 🟢 <a href="https://sp2027.ieee-security.org/cfpapers.html" target="_blank" rel="noopener noreferrer">S&P</a> |
 | 05 | **Evidence Release Assurance** | Cryptographic evidence chains for agent accountability | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858" target="_blank" rel="noopener noreferrer">TDSC</a> |
@@ -223,7 +223,7 @@ All demos follow the **Agentic Security Reproducibility Standard**:
 | Demo | Option A | Option B | Option C |
 |:---:|---|---|---|
 | 01 | 🟢 <a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener noreferrer">ACM TOSEM</a> | 🔵 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a> | 🔵 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858" target="_blank" rel="noopener noreferrer">IEEE TDSC</a> |
-| 02 | 🟢 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a> | 🔵 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> | 🔵 <a href="https://www.msrconf.org/" target="_blank" rel="noopener noreferrer">MSR</a> |
+| 02 | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> | 🔵 <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software" target="_blank" rel="noopener noreferrer">JSS</a> | 🔵 <a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank" rel="noopener noreferrer">IST</a> |
 | 03 | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a><br>🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">abs 14 Jan · papers 22 Jan</a> | 🔵 <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">TMLR</a> | 🔵 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS 2027 (call unpublished)</a> |
 | 04 | 🟢 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P C2</a> | 🔵 <a href="https://dl.acm.org/journal/tops" target="_blank" rel="noopener noreferrer">ACM TOPS</a> | 🔵 <a href="https://www.sigsac.org/ccs/CCS2027/cfp.html" target="_blank" rel="noopener noreferrer">CCS 2027 (dates TBD)</a> |
 | 05 | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858" target="_blank" rel="noopener noreferrer">IEEE TDSC</a> | — | — |

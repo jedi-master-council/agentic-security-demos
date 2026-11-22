@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (demo 02 submitted to IEEE TSE, 22 November 2026)
+- Root `README` and `docs/venues.md`, demo 02 (Supply Chain AIBOM Drift): Option A is now IEEE Transactions on Software Engineering, submitted on 22 November 2026. Option B is the Journal of Systems and Software and Option C is Information and Software Technology; both are rolling journals and activate only after the previous option's decision. The earlier plan (EMSE, then IEEE TSE, then MSR) is superseded: EMSE has decided and MSR 2027's dates have passed.
+- Root `README`, demo table: the status of demo 02 now links to IEEE TSE.
+
 ### Changed (teaching map synchronised, 22 November 2026)
 - Root `README`: the headline now states 79 demos (74 in this repository plus 61–65 in separate repositories). Demo-table venues for 14, 16 and 23 corrected from AsiaCCS to DSN 2027, matching the venue table; the quick-start venue labels for 14, 21, 28, 44, 45, 46 and 47 refreshed; the 45–48 focus descriptions rewritten as summaries rather than private-repository notes.
 - Venue table: every venue and deadline link now carries `target="_blank" rel="noopener noreferrer"`. GitHub's README sanitiser removes `target`, so the documentation site applies new-tab behaviour with `docs/javascripts/newtab.js`; on github.com, Ctrl/Cmd-click or middle-click keeps the map open.
