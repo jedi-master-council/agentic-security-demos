@@ -1,0 +1,8 @@
+demo: 81
+slug: frozen-gate
+title: "The Frozen Gate Benchmark"
+option_a:
+  venue: "NeurIPS Datasets & Benchmarks"
+option_b:
+  markdown: "Backup: NeurIPS Datasets & Benchmarks"
+  constraint: "Use only after option A's official notification."

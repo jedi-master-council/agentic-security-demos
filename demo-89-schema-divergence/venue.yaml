@@ -1,0 +1,8 @@
+demo: 89
+slug: schema-divergence
+title: "Tool-Schema Interpretation Divergence"
+option_a:
+  venue: "FSE/ICSE"
+option_b:
+  markdown: "Backup: FSE/ICSE"
+  constraint: "Use only after option A's official notification."

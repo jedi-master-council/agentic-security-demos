@@ -1,0 +1,21 @@
+"""Demo 88 student exercise: Compute a confusion matrix and per-class rates from a detection run.
+
+Fill the marked TODOs; the tests in tests/ encode the expected behaviour."""
+import json
+import os
+
+FIXTURES = os.path.join(os.path.dirname(__file__), "..", "fixtures", "fixtures.json")
+
+
+def load():
+    with open(FIXTURES, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def main():
+    data = load()
+    # TODO: implement the mechanism per INSTRUCTIONS.md
+    raise NotImplementedError("demo-88: implement student/confusion.py per INSTRUCTIONS.md")
+
+if __name__ == "__main__":
+    main()

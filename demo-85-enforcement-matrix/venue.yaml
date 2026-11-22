@@ -1,0 +1,8 @@
+demo: 85
+slug: enforcement-matrix
+title: "The Enforcement Matrix"
+option_a:
+  venue: "EuroS&P"
+option_b:
+  markdown: "Backup: EuroS&P"
+  constraint: "Use only after option A's official notification."

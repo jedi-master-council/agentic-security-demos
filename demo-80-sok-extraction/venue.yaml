@@ -1,0 +1,8 @@
+demo: 80
+slug: sok-extraction
+title: "SoK Extraction Protocol"
+option_a:
+  venue: "ACM Computing Surveys"
+option_b:
+  markdown: "Backup: ACM Computing Surveys"
+  constraint: "Use only after option A's official notification."

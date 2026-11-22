@@ -1,0 +1,62 @@
+{
+ "skills": [
+  {
+   "id": "s1",
+   "declared": [
+    "read_file"
+   ],
+   "extracted": [
+    "read_file"
+   ]
+  },
+  {
+   "id": "s2",
+   "declared": [
+    "read_file"
+   ],
+   "extracted": [
+    "read_file",
+    "run_shell"
+   ]
+  },
+  {
+   "id": "s3",
+   "declared": [
+    "web_search",
+    "read_file"
+   ],
+   "extracted": [
+    "web_search",
+    "read_file"
+   ]
+  },
+  {
+   "id": "s4",
+   "declared": [],
+   "extracted": [
+    "network_post"
+   ]
+  },
+  {
+   "id": "s5",
+   "declared": [
+    "run_shell"
+   ],
+   "extracted": [
+    "run_shell"
+   ]
+  },
+  {
+   "id": "s6",
+   "declared": [
+    "read_file",
+    "write_file"
+   ],
+   "extracted": [
+    "read_file",
+    "write_file",
+    "run_shell"
+   ]
+  }
+ ]
+}
