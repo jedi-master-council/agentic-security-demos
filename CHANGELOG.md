@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (IEEE EuroS&P 2027 slate submitted, 23 November 2026)
+- Root `README`: marked the seven IEEE EuroS&P 2027 demos (07 Malware Triage, 10 Vulnerability Assessment, 11 Degenerate Reporting, 12 Provenance-Bound Authorization, 13 Typed Commitments & Coverage Cues, 17 Report Fidelity, 44 Toolflow Taint) as 🟢 EuroS&P, submitted on 23 November 2026 ahead of the 25 November registration and 2 December paper deadlines. Demos-table status cells and the Option A cells in the venues table updated to 🟢; the caps note records the seven as submitted.
+
 ### Changed (demo 21 submitted to DSN 2027, 22 November 2026)
 - Root `README` and `docs/venues.md`, demo 21 (MCP Ecosystem Census): Option A is now IEEE/IFIP DSN 2027 (Research Track, regular paper), submitted on 20 November 2026. The WWW 2027 submission was desk-rejected on 19 November 2026 because the wrong PDF was uploaded; the paper was never reviewed there and is no longer at WWW. Options B (IMC) and C (AsiaCCS) are unchanged.
 
