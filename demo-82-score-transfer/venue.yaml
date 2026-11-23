@@ -1,0 +1,8 @@
+demo: 82
+slug: score-transfer
+title: "Guardrail Score Transfer"
+option_a:
+  venue: "EMNLP"
+option_b:
+  markdown: "Backup: EMNLP"
+  constraint: "Use only after option A's official notification."

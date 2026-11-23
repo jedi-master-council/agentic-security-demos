@@ -1,0 +1,136 @@
+{
+ "papers": [
+  {
+   "id": "p1",
+   "defence_class": "input-filter",
+   "corpus": "yes",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p2",
+   "defence_class": "input-filter",
+   "corpus": "yes",
+   "threat_model": "no"
+  },
+  {
+   "id": "p3",
+   "defence_class": "output-filter",
+   "corpus": "yes",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p4",
+   "defence_class": "output-filter",
+   "corpus": "no",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p5",
+   "defence_class": "policy",
+   "corpus": "yes",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p6",
+   "defence_class": "policy",
+   "corpus": "yes",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p7",
+   "defence_class": "policy",
+   "corpus": "yes",
+   "threat_model": "yes"
+  },
+  {
+   "id": "p8",
+   "defence_class": "architecture",
+   "corpus": "yes",
+   "threat_model": "no"
+  }
+ ],
+ "coder_a": {
+  "p1": [
+   "input-filter",
+   "yes",
+   "yes"
+  ],
+  "p2": [
+   "input-filter",
+   "yes",
+   "no"
+  ],
+  "p3": [
+   "output-filter",
+   "yes",
+   "yes"
+  ],
+  "p4": [
+   "output-filter",
+   "no",
+   "yes"
+  ],
+  "p5": [
+   "policy",
+   "yes",
+   "yes"
+  ],
+  "p6": [
+   "policy",
+   "yes",
+   "yes"
+  ],
+  "p7": [
+   "policy",
+   "yes",
+   "yes"
+  ],
+  "p8": [
+   "architecture",
+   "yes",
+   "no"
+  ]
+ },
+ "coder_b": {
+  "p1": [
+   "input-filter",
+   "yes",
+   "yes"
+  ],
+  "p2": [
+   "input-filter",
+   "yes",
+   "no"
+  ],
+  "p3": [
+   "output-filter",
+   "yes",
+   "yes"
+  ],
+  "p4": [
+   "output-filter",
+   "no",
+   "yes"
+  ],
+  "p5": [
+   "policy",
+   "yes",
+   "yes"
+  ],
+  "p6": [
+   "policy",
+   "yes",
+   "yes"
+  ],
+  "p7": [
+   "policy",
+   "no",
+   "yes"
+  ],
+  "p8": [
+   "architecture",
+   "yes",
+   "no"
+  ]
+ }
+}

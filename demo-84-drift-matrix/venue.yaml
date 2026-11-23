@@ -1,0 +1,8 @@
+demo: 84
+slug: drift-matrix
+title: "Longitudinal Drift Matrix"
+option_a:
+  venue: "IEEE TIFS"
+option_b:
+  markdown: "Backup: IEEE TIFS"
+  constraint: "Use only after option A's official notification."

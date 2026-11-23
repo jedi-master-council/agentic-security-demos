@@ -1,0 +1,65 @@
+{
+ "trajectories": [
+  {
+   "id": "t1",
+   "calls": 4,
+   "injected": true,
+   "verdicts": [
+    "deny",
+    "allow",
+    "deny",
+    "allow"
+   ]
+  },
+  {
+   "id": "t2",
+   "calls": 2,
+   "injected": false,
+   "verdicts": [
+    "allow",
+    "allow"
+   ]
+  },
+  {
+   "id": "t3",
+   "calls": 3,
+   "injected": true,
+   "verdicts": [
+    "allow",
+    "deny",
+    "deny"
+   ]
+  },
+  {
+   "id": "t4",
+   "calls": 2,
+   "injected": false,
+   "verdicts": [
+    "allow",
+    "deny"
+   ]
+  },
+  {
+   "id": "t5",
+   "calls": 5,
+   "injected": true,
+   "verdicts": [
+    "deny",
+    "deny",
+    "allow",
+    "deny",
+    "allow"
+   ]
+  },
+  {
+   "id": "t6",
+   "calls": 3,
+   "injected": false,
+   "verdicts": [
+    "allow",
+    "allow",
+    "deny"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+demo: 88
+slug: detection-confusion
+title: "The Detection Confusion Matrix"
+option_a:
+  venue: "RAID"
+option_b:
+  markdown: "Backup: RAID"
+  constraint: "Use only after option A's official notification."

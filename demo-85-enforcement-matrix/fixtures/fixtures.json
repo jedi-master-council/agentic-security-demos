@@ -1,0 +1,22 @@
+{
+ "cells": [
+  {
+   "framework": "fw-a",
+   "sink": "file",
+   "mode": "strict",
+   "enforced": true
+  },
+  {
+   "framework": "fw-a",
+   "sink": "network",
+   "mode": "strict",
+   "enforced": false
+  },
+  {
+   "framework": "fw-b",
+   "sink": "file",
+   "mode": "strict",
+   "enforced": true
+  }
+ ]
+}

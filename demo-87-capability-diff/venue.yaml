@@ -1,0 +1,8 @@
+demo: 87
+slug: capability-diff
+title: "Declared versus Actual Capability"
+option_a:
+  venue: "Computers & Security"
+option_b:
+  markdown: "Backup: Computers & Security"
+  constraint: "Use only after option A's official notification."

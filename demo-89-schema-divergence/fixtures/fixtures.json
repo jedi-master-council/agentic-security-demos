@@ -1,0 +1,31 @@
+{
+ "schemas": [
+  {
+   "id": "sc1",
+   "field": "count",
+   "type": "integer",
+   "frameworks": {
+    "fw-a": "accepts any integer",
+    "fw-b": "rejects negatives"
+   }
+  },
+  {
+   "id": "sc2",
+   "field": "path",
+   "type": "string",
+   "frameworks": {
+    "fw-a": "resolves relative to cwd",
+    "fw-b": "resolves relative to home"
+   }
+  },
+  {
+   "id": "sc3",
+   "field": "timeout",
+   "type": "integer",
+   "frameworks": {
+    "fw-a": "seconds",
+    "fw-b": "milliseconds"
+   }
+  }
+ ]
+}

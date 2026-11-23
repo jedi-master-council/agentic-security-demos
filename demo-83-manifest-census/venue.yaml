@@ -1,0 +1,8 @@
+demo: 83
+slug: manifest-census
+title: "Manifest Census at Registry Scale"
+option_a:
+  venue: "IEEE S&P"
+option_b:
+  markdown: "Backup: IEEE S&P"
+  constraint: "Use only after option A's official notification."

@@ -1,0 +1,8 @@
+demo: 86
+slug: pii-census
+title: "Personal-Data Exposure Census"
+option_a:
+  venue: "PoPETs"
+option_b:
+  markdown: "Backup: PoPETs"
+  constraint: "Use only after option A's official notification."

@@ -1,0 +1,81 @@
+{
+ "arguments": [
+  {
+   "id": "a1",
+   "tool": "send_email",
+   "args": {
+    "to": "user@example.com",
+    "body": "hi"
+   }
+  },
+  {
+   "id": "a2",
+   "tool": "schedule",
+   "args": {
+    "iban": "GB29 NWBK 6016 1331 9268 19"
+   }
+  },
+  {
+   "id": "a3",
+   "tool": "search",
+   "args": {
+    "q": "weather"
+   }
+  },
+  {
+   "id": "a4",
+   "tool": "contact",
+   "args": {
+    "phone": "+44 20 7946 0958"
+   }
+  },
+  {
+   "id": "a5",
+   "tool": "notes",
+   "args": {
+    "text": "meeting notes"
+   }
+  },
+  {
+   "id": "a6",
+   "tool": "send_email",
+   "args": {
+    "to": "alice@corp.example",
+    "body": "the report"
+   }
+  },
+  {
+   "id": "a7",
+   "tool": "profile",
+   "args": {
+    "email": "bob@example.org"
+   }
+  },
+  {
+   "id": "a8",
+   "tool": "transfer",
+   "args": {
+    "iban": "DE89 3704 0044 0532 0130 00"
+   }
+  },
+  {
+   "id": "a9",
+   "tool": "reminder",
+   "args": {
+    "text": "call the bank"
+   }
+  },
+  {
+   "id": "a10",
+   "tool": "contact",
+   "args": {
+    "phone": "+1 212 555 0199"
+   }
+  }
+ ],
+ "shapes": {
+  "email": "@",
+  "iban": "two letters + 2 digits + 30-ish chars",
+  "phone": "+NN NNN"
+ }
+}

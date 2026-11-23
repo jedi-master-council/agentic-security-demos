@@ -1,0 +1,24 @@
+{
+ "models": [
+  {
+   "id": "m1",
+   "benchmark_score": 0.92,
+   "replay_outcome": 0.85
+  },
+  {
+   "id": "m2",
+   "benchmark_score": 0.78,
+   "replay_outcome": 0.66
+  },
+  {
+   "id": "m3",
+   "benchmark_score": 0.64,
+   "replay_outcome": 0.71
+  },
+  {
+   "id": "m4",
+   "benchmark_score": 0.55,
+   "replay_outcome": 0.58
+  }
+ ]
+}
