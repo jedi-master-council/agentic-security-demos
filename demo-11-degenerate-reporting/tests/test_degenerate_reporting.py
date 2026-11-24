@@ -205,3 +205,97 @@ class TestSafetyAndAnonymity:
         with redirect_stdout(buf2):
             main()
         assert buf1.getvalue() == buf2.getvalue()
+
+
+class TestAdversarialRegressions:
+    """Regression tests for R1 bypasses, degenerate metrics, and fail-closed inputs."""
+
+    @staticmethod
+    def _valid_paper(**overrides):
+        base = {
+            "id": "P-SYN",
+            "title": "Synthetic control",
+            "defence": "allowlist",
+            "n_trials": 200,
+            "asr_before": 0.70,
+            "asr_after": 0.02,
+            "baselines_reported": ["always-allow", "random"],
+            "base_rate_reported": True,
+            "raw_counts": True,
+            "metric": "attack_success_rate",
+        }
+        base.update(overrides)
+        return base
+
+    def test_always_allow_alone_fails_r1_as_lopsided(self, auditor):
+        # Renaming 'no-defence' to 'always-allow' must not bypass R1.
+        paper = self._valid_paper(baselines_reported=["always-allow"])
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R1-baseline" in r and "lopsided" in r for r in verdict.reasons())
+
+    def test_flattering_pair_without_unflattering_fails_r1(self, auditor):
+        paper = self._valid_paper(baselines_reported=["always-allow", "no-defence"])
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R1-baseline" in r and "lopsided" in r for r in verdict.reasons())
+
+    def test_decorative_baseline_scores_missing_or_null_fails_r1(self, auditor):
+        paper = self._valid_paper(
+            baselines_reported=["always-allow", "random"],
+            baseline_scores={"always-allow": 0.70, "random": None},
+        )
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R1-baseline" in r and "decorative" in r for r in verdict.reasons())
+
+    def test_numeric_unflattering_baseline_score_passes_r1(self, auditor):
+        paper = self._valid_paper(
+            baselines_reported=["always-allow", "random"],
+            baseline_scores={"always-allow": 0.70, "random": 0.49},
+        )
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "PASS"
+
+    def test_missing_asr_after_fails_decorative_for_any_unflattering_baseline(self, auditor):
+        paper = self._valid_paper(
+            baselines_reported=["random"],
+            asr_after=None,
+        )
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R1-baseline" in r and "decorative" in r for r in verdict.reasons())
+
+    @pytest.mark.parametrize("bad_metric", [None, "", "   ", 123, "recall_only", "tpr_only", "flag_rate"])
+    def test_missing_or_degenerate_metrics_fail_closed(self, auditor, bad_metric):
+        paper = self._valid_paper(metric=bad_metric)
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R4-metric" in r for r in verdict.reasons())
+
+    @pytest.mark.parametrize("bad_record", [None, "not-a-dict", 42, []])
+    def test_malformed_paper_record_fails_closed(self, auditor, naive, bad_record):
+        verdict = auditor.audit(bad_record)
+        assert verdict.verdict == "FAIL"
+        assert naive.review(bad_record) is False
+
+    @pytest.mark.parametrize("bad_baselines", [None, "random", 123])
+    def test_malformed_baselines_reported_fails_closed(self, auditor, bad_baselines):
+        paper = self._valid_paper(baselines_reported=bad_baselines)
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R1-baseline" in r for r in verdict.reasons())
+
+    @pytest.mark.parametrize("bad_n", [None, "200", True, -10, 0])
+    def test_invalid_n_trials_does_not_crash_and_fails_power(self, auditor, bad_n):
+        paper = self._valid_paper(n_trials=bad_n)
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "INCONCLUSIVE"
+        assert any("R3b-power" in r for r in verdict.reasons())
+
+    def test_truthy_non_bool_strings_do_not_pass_r2_or_r3a(self, auditor):
+        paper = self._valid_paper(base_rate_reported="false", raw_counts="false")
+        verdict = auditor.audit(paper)
+        assert verdict.verdict == "FAIL"
+        assert any("R2-baserate" in r for r in verdict.reasons())
+        assert any("R3a-counts" in r for r in verdict.reasons())

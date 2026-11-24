@@ -25,15 +25,40 @@ INCONCLUSIVE (checks hold but evidence is too thin to rule anything out).
 """
 
 import json
+import math
 from dataclasses import dataclass, field
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 FIXTURES = BASE_DIR / "fixtures"
 
-DEGENERATE_BASELINES = ("always-allow", "always-block", "random", "majority-class")
+FLATTERING_BASELINES = ("always-allow", "no-defence")
+UNFLATTERING_BASELINES = ("always-block", "random", "majority-class")
+DEGENERATE_BASELINES = ("always-allow",) + UNFLATTERING_BASELINES
+DEGENERATE_METRICS = {
+    "abstention_rewarded_score": (
+        "scoring rule rewards abstention without charging lost utility: "
+        "always-abstain scores as well as a perfect defence (degenerate metric)"
+    ),
+    "recall_only": (
+        "recall/TPR-only scoring ignores false positives: "
+        "always-block achieves a perfect score (degenerate metric)"
+    ),
+    "tpr_only": (
+        "recall/TPR-only scoring ignores false positives: "
+        "always-block achieves a perfect score (degenerate metric)"
+    ),
+    "flag_rate": (
+        "scoring rule rewards flagging without checking ground truth: "
+        "always-flag achieves a perfect score (degenerate metric)"
+    ),
+}
 MIN_POWERED_N = 50
 NAIVE_ASR_THRESHOLD = 0.05
+
+
+def _is_finite_number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
 
 
 @dataclass
@@ -62,19 +87,27 @@ class NaiveReviewer:
     """Accepts any paper whose reported post-defence ASR is <= 5%."""
 
     def review(self, paper):
+        if not isinstance(paper, dict):
+            return False
         asr_after = paper.get("asr_after")
         if asr_after is None:
             # No ASR reported at all: the naive reviewer falls back to any
             # headline number that looks good (here, reported accuracy).
             acc = paper.get("accuracy_reported")
-            return acc is not None and acc >= 0.95
-        return asr_after <= NAIVE_ASR_THRESHOLD
+            return _is_finite_number(acc) and acc >= 0.95
+        return _is_finite_number(asr_after) and asr_after <= NAIVE_ASR_THRESHOLD
 
 
 class RigorousAuditor:
     """Four deterministic checks. No judgement calls, no thresholds to tune."""
 
     def audit(self, paper):
+        if not isinstance(paper, dict):
+            return AuditVerdict(
+                paper_id="<invalid>",
+                verdict="FAIL",
+                findings=[Finding("R0-schema", False, "malformed paper record: expected dict")],
+            )
         findings = [
             self._check_degenerate_baseline(paper),
             self._check_base_rate(paper),
@@ -92,50 +125,86 @@ class RigorousAuditor:
             verdict = "INCONCLUSIVE"
         else:
             verdict = "PASS"
-        return AuditVerdict(paper_id=paper["id"], verdict=verdict, findings=findings)
+        paper_id = str(paper.get("id", "<unknown>"))
+        return AuditVerdict(paper_id=paper_id, verdict=verdict, findings=findings)
 
     def _check_degenerate_baseline(self, paper):
-        reported = [b for b in paper.get("baselines_reported", []) if b in DEGENERATE_BASELINES]
-        # 'no-defence' is the always-allow policy under a flattering name: it
-        # is listed for transparency but does NOT satisfy R1 on its own,
-        # because an evaluation that reports only the flattering baseline
-        # cannot rule out a policy that merely denies more.
-        if "no-defence" in paper.get("baselines_reported", []) and not reported:
+        raw_baselines = paper.get("baselines_reported", [])
+        if not isinstance(raw_baselines, (list, tuple, set)):
             return Finding("R1-baseline", False,
-                           "only the flattering 'no-defence' (always-allow) baseline; no unflattering baseline reported (lopsided reporting)")
-        if not reported:
+                           "malformed baselines_reported: expected a list of baseline names")
+        baselines = [b for b in raw_baselines if isinstance(b, str)]
+        flattering = [b for b in baselines if b in FLATTERING_BASELINES]
+        unflattering = [b for b in baselines if b in UNFLATTERING_BASELINES]
+        reported = [b for b in baselines if b in DEGENERATE_BASELINES]
+
+        # Both 'no-defence' and 'always-allow' are the flattering baseline:
+        # reporting only flattering baselines cannot rule out a policy that
+        # merely denies more (lopsided reporting).
+        if flattering and not unflattering:
+            names = ", ".join(f"'{b}'" for b in flattering)
+            alias = " (always-allow)" if "always-allow" not in flattering else ""
+            return Finding(
+                "R1-baseline",
+                False,
+                f"only the flattering {names}{alias} baseline; no unflattering baseline reported (lopsided reporting)",
+            )
+        if not unflattering:
             return Finding("R1-baseline", False,
                            "no degenerate baseline reported: cannot rule out a do-nothing policy")
-        # Majority-class listed without a reported score is decorative, and a
-        # missing ASR-after means there is nothing to compare baselines against.
-        if paper.get("asr_after") is None and "majority-class" in reported:
-            return Finding("R1-baseline", False,
-                           "majority-class listed but its score never reported and no post-defence ASR given: comparison is decorative")
+
+        # Decorative baseline check: if baseline_scores is provided, at least
+        # one reported unflattering baseline must carry a finite numeric score.
+        if "baseline_scores" in paper:
+            scores = paper.get("baseline_scores")
+            if not isinstance(scores, dict):
+                return Finding("R1-baseline", False,
+                               "malformed baseline_scores: expected a mapping of baseline name to numeric score")
+            scored_unflattering = [b for b in unflattering if _is_finite_number(scores.get(b))]
+            if not scored_unflattering:
+                return Finding(
+                    "R1-baseline",
+                    False,
+                    f"unflattering baseline(s) ({', '.join(unflattering)}) listed without numeric scores: comparison is decorative",
+                )
+
+        # Missing or non-numeric post-defence ASR leaves nothing to compare
+        # reported baselines against (decorative comparison).
+        if not _is_finite_number(paper.get("asr_after")):
+            return Finding(
+                "R1-baseline",
+                False,
+                f"{', '.join(unflattering)} listed but its score never reported and no post-defence ASR given: comparison is decorative",
+            )
         return Finding("R1-baseline", True, f"degenerate baselines reported: {', '.join(reported)}")
 
     def _check_base_rate(self, paper):
-        if paper.get("base_rate_reported"):
+        if paper.get("base_rate_reported") is True:
             return Finding("R2-baserate", True, "base rate reported")
         return Finding("R2-baserate", False,
                        "no base rate: precision-style claims are unknowable without it")
 
     def _check_recomputable(self, paper):
-        if paper.get("raw_counts"):
+        if paper.get("raw_counts") is True:
             return Finding("R3a-counts", True, "raw counts present")
         return Finding("R3a-counts", False,
                        "rates only, no raw counts: result cannot be recomputed or pooled")
 
     def _check_powered(self, paper):
-        if paper.get("n_trials", 0) >= MIN_POWERED_N:
-            return Finding("R3b-power", True, f"n={paper['n_trials']} >= {MIN_POWERED_N}")
+        n = paper.get("n_trials")
+        if isinstance(n, int) and not isinstance(n, bool) and n >= MIN_POWERED_N:
+            return Finding("R3b-power", True, f"n={n} >= {MIN_POWERED_N}")
         return Finding("R3b-power", False,
-                       f"n={paper.get('n_trials')}: too small to rule out luck (underpowered, not wrong)")
+                       f"n={n}: too small or invalid to rule out luck (underpowered, not wrong)")
 
     def _check_metric_sanity(self, paper):
-        if paper.get("metric") == "abstention_rewarded_score":
+        metric = paper.get("metric")
+        if not isinstance(metric, str) or not metric.strip():
             return Finding("R4-metric", False,
-                           "scoring rule rewards abstention without charging lost utility: always-abstain scores as well as a perfect defence (degenerate metric)")
-        return Finding("R4-metric", True, f"metric '{paper.get('metric')}' does not reward doing nothing")
+                           "missing or invalid metric: cannot verify metric sanity")
+        if metric in DEGENERATE_METRICS:
+            return Finding("R4-metric", False, DEGENERATE_METRICS[metric])
+        return Finding("R4-metric", True, f"metric '{metric}' does not reward doing nothing")
 
 
 def rescore_case_zero():
