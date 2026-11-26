@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (Computers & Security removed for agent-security demos, 26 November 2026)
+- Computers & Security does not consider submissions with AI or ML as a significant component, or on the security of AI/ML systems themselves (moratorium since early 2024), so it is no venue for these demos. Replaced in the Venues & Publications table, the demo table and `docs/venues.md`: demo 87 Option A becomes ACM CCS 2027 Cycle 1, with ASE 2027 as Option B and NDSS 2028 fall as Option C (`demo-87-capability-diff/venue.yaml` updated to match); demo 06 Option B becomes IEEE TDSC; demo 25 Option B becomes ACM TOSEM; demo 86 Option C becomes ACM TOPS. Demo 70 (role-based access control, no AI component) keeps Computers & Security.
+
 ### Changed (venue map, October–November 2026)
 - The Venues & Publications table and the status links in the demo table were refreshed several times.
 

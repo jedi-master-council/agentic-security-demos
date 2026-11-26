@@ -2,7 +2,10 @@ demo: 87
 slug: capability-diff
 title: "Declared versus Actual Capability"
 option_a:
-  venue: "Computers & Security"
+  venue: "ACM CCS 2027, Cycle 1"
 option_b:
-  markdown: "Backup: Computers & Security"
+  markdown: "Backup: ASE 2027 (call unpublished)"
   constraint: "Use only after option A's official notification."
+option_c:
+  markdown: "Backup: NDSS 2028 fall cycle (call unpublished)"
+  constraint: "Use only after option B's official notification. Not Computers & Security (AI/ML moratorium since early 2024)."
