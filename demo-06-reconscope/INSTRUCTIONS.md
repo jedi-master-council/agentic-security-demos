@@ -238,6 +238,46 @@ From the **repository root**: `make demo DEMO=06`
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=06
+python3 tools/figures/build.py 06
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/label_vs_oracle.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+model  text-label rate  rank   execution-oracle rate  rank
+m1                0.83     1                   0.17     3
+m2                0.33     3                   0.50     1
+m3                0.67     2                   0.33     2
+m4                0.17     4                   0.17     4
+Kendall tau between the two rankings = +0.00
+lesson: a lenient text label is not a monotone proxy for what reached the socket; rank by the oracle.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

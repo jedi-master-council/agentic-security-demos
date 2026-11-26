@@ -13,7 +13,36 @@
 - Explain what a derived coverage cue is (a static-analysis pointer, triage ranking, or owners file telling an assessor where to look)
 - Show how a shared wrong input makes two assessors fail *together*, so their agreement stays high while both are wrong
 - Implement a miniature agreement gate and read its pass/fail table sceptically
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 13 as numbered stages"></p>
+
+**Figure 1.** When every assessor reads the same wrong cue, agreement rises while localisation falls. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Workspace** (`planted defect d`). One synthetic codebase. In this demo: `fixtures/`.
+2. **Coverage cue** (`note ∈ {none, true, false}`). Upstream metadata every assessor reads. In this demo: `fixtures/`.
+3. **Assessors** (`a₁ … aₖ`). Each localises the defect. In this demo: `student/cue_follower.py`.
+4. **Agreement gate** (`accept ⇔ all agree`). Agreement cannot see a shared wrong cue. In this demo: `student/agreement_gate.py`.
+5. **Localisation hit** (`hit(cue) − hit(none)`). And whether agreement rose. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 13 on the synthetic fixture"></p>
+
+**Figure 2.** A wrong cue drives the cue-following assessor to the decoy; agreement is no evidence that the localisation is right. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A sufficient condition proved for agreement rising while localisation falls
+- A sealed, preregistered factorial of runs
+- Holm-adjusted tests on confirmatory planted-defect instances
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

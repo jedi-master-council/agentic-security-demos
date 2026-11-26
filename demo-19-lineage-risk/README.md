@@ -7,7 +7,35 @@
 - Explain inherited supply-chain risk (a clean child of a flagged parent is still risky)
 - Classify 8 synthetic models by own flags vs inherited risk
 - Show 6/8 risky: 1 origin, 2 introduced, 3 inherited
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 19 as numbered stages"></p>
+
+**Figure 1.** What a client fetches by default is decided by file-precedence rules, so exposure is read from file listings along lineage edges. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Model hub** (`base b, children`). Declared lineage edges. In this demo: `fixtures/`.
+2. **Default path** (`pickle ∧ ¬safetensors`). What a default loader would deserialise. In this demo: `student/lineage.py`.
+3. **Remote code** (`auto_map ≠ ∅`). Runs only after an opt-in. In this demo: `student/lineage.py`.
+4. **Inherit** (`parent → child`). Exposure along each edge. In this demo: `student/run_lineage.py`.
+5. **Exposure census** (`exposed edges / edges`). Depth one below each base. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 19 on the synthetic fixture"></p>
+
+**Figure 2.** 6 of 8 models carry risk, most of it inherited from a parent rather than introduced. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A depth-one census of declared edges below foundational base models
+- Parent states recorded at retrieval
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

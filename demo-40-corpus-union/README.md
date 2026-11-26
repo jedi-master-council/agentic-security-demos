@@ -9,6 +9,35 @@
 - Apply a licence gate (permissive + by-sa only) releasing 7/9 records
 - Distinguish corpus INFRASTRUCTURE (this toy) from any measurement claim
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 40 as numbered stages"></p>
+
+**Figure 1.** A shared corpus answers two questions before release: what is duplicated, and what may be redistributed. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Source packs** (`files + licences`). Many public benchmarks. In this demo: `fixtures/`.
+2. **Licence screen** (`redistributable?`). Excluded sources listed with reasons. In this demo: `student/corpus.py`.
+3. **Map to schema** (`one record format`). With a provenance manifest. In this demo: `student/corpus.py`.
+4. **Deduplicate** (`SHA-256`). Cross-source duplicates. In this demo: `student/run_corpus.py`.
+5. **Compilation** (`records · manifest`). Every file traced to its source. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 40 on the synthetic fixture"></p>
+
+**Figure 2.** Deduplication removes three cross-source copies and the licence screen withholds two more. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Many source packs screened against upstream licences
+- A provenance manifest per source file
+- A data descriptor format
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Sharing a security corpus means answering two questions: what is duplicated,

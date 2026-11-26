@@ -1,60 +1,132 @@
 {
- "drift": [
-  {
-   "framework": "fw-a",
-   "versions": [
-    "v1",
-    "v2",
-    "v3"
-   ],
-   "checks": {
-    "v1": [
-     "allow-list",
-     "approval"
-    ],
-    "v2": [
-     "allow-list"
-    ],
-    "v3": [
-     "allow-list",
-     "role-check"
-    ]
+ "note": "Three synthetic frameworks, four releases each: privileged sink call sites and lines of code.",
+ "review_rule": "flag a transition that adds any shell or eval call site",
+ "frameworks": {
+  "fw-a": [
+   {
+    "release": "1.0",
+    "loc": 10000,
+    "sinks": {
+     "shell": 2,
+     "eval": 0,
+     "network": 5,
+     "file_write": 4
+    }
+   },
+   {
+    "release": "1.1",
+    "loc": 12000,
+    "sinks": {
+     "shell": 2,
+     "eval": 0,
+     "network": 6,
+     "file_write": 4
+    }
+   },
+   {
+    "release": "1.2",
+    "loc": 15000,
+    "sinks": {
+     "shell": 3,
+     "eval": 1,
+     "network": 6,
+     "file_write": 5
+    }
+   },
+   {
+    "release": "2.0",
+    "loc": 21000,
+    "sinks": {
+     "shell": 3,
+     "eval": 1,
+     "network": 8,
+     "file_write": 6
+    }
    }
-  },
-  {
-   "framework": "fw-b",
-   "versions": [
-    "v1",
-    "v2",
-    "v3"
-   ],
-   "checks": {
-    "v1": [
-     "approval"
-    ],
-    "v2": [
-     "approval"
-    ],
-    "v3": [
-     "approval",
-     "role-check"
-    ]
+  ],
+  "fw-b": [
+   {
+    "release": "0.4",
+    "loc": 5000,
+    "sinks": {
+     "shell": 0,
+     "eval": 0,
+     "network": 2,
+     "file_write": 1
+    }
+   },
+   {
+    "release": "0.5",
+    "loc": 6000,
+    "sinks": {
+     "shell": 1,
+     "eval": 0,
+     "network": 2,
+     "file_write": 1
+    }
+   },
+   {
+    "release": "0.6",
+    "loc": 6500,
+    "sinks": {
+     "shell": 1,
+     "eval": 0,
+     "network": 3,
+     "file_write": 1
+    }
+   },
+   {
+    "release": "0.7",
+    "loc": 8000,
+    "sinks": {
+     "shell": 1,
+     "eval": 0,
+     "network": 3,
+     "file_write": 2
+    }
    }
-  },
-  {
-   "framework": "fw-c",
-   "versions": [
-    "v1",
-    "v2",
-    "v3"
-   ],
-   "checks": {
-    "v1": [],
-    "v2": [
-     "allow-list"
-    ],
-    "v3": []
+  ],
+  "fw-c": [
+   {
+    "release": "3.0",
+    "loc": 30000,
+    "sinks": {
+     "shell": 6,
+     "eval": 2,
+     "network": 9,
+     "file_write": 7
+    }
+   },
+   {
+    "release": "3.1",
+    "loc": 31000,
+    "sinks": {
+     "shell": 5,
+     "eval": 2,
+     "network": 9,
+     "file_write": 7
+    }
+   },
+   {
+    "release": "3.2",
+    "loc": 33000,
+    "sinks": {
+     "shell": 5,
+     "eval": 3,
+     "network": 10,
+     "file_write": 7
+    }
+   },
+   {
+    "release": "3.3",
+    "loc": 36000,
+    "sinks": {
+     "shell": 5,
+     "eval": 3,
+     "network": 10,
+     "file_write": 8
+    }
    }
-  }
- ]
+  ]
+ }
 }

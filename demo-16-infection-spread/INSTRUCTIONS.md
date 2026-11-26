@@ -63,6 +63,47 @@ Remove one edge from `chain_blocked_edges` in `fixtures/graphs.json` (keep 3 of
 4) and re-run both commands. Record: how many nodes does the chain infect now?
 Why does a single unblocked bridge undo containment on a chain?
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=16
+python3 tools/figures/build.py 16
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/relay_control.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+model arm        instructed  control  instruction effect
+m1    none            7/10     6/10        +0.10
+m2    none            5/10     5/10        +0.00
+m3    none            8/10     4/10        +0.40
+m1    boundary        2/10     5/10        -0.30
+m2    boundary        1/10     4/10        -0.30
+m3    boundary        3/10     4/10        -0.10
+lesson: compare with an uninstructed code in the same position; most of the 'spread' is ordinary copying, and a boundary mechanism can push the instructed reach below it.
+```
+
+<!-- END generated: figures-step -->
+
 ## Reproducibility Table
 
 | Field | Your run |

@@ -1,0 +1,107 @@
+{
+ "note": "Twelve synthetic tool schemas from a catalogue. The study groups four vendor categories as state-altering.",
+ "state_altering": [
+  "payments",
+  "messaging",
+  "file-write",
+  "account"
+ ],
+ "keywords": [
+  "confirm",
+  "approve",
+  "consent"
+ ],
+ "tools": [
+  {
+   "tool": "send_payment",
+   "category": "payments",
+   "input_params": [
+    "amount",
+    "to",
+    "confirm"
+   ]
+  },
+  {
+   "tool": "refund",
+   "category": "payments",
+   "input_params": [
+    "order_id"
+   ]
+  },
+  {
+   "tool": "send_message",
+   "category": "messaging",
+   "input_params": [
+    "channel",
+    "text"
+   ]
+  },
+  {
+   "tool": "post_tweet",
+   "category": "messaging",
+   "input_params": [
+    "text",
+    "require_approval"
+   ]
+  },
+  {
+   "tool": "write_file",
+   "category": "file-write",
+   "input_params": [
+    "path",
+    "content"
+   ]
+  },
+  {
+   "tool": "delete_file",
+   "category": "file-write",
+   "input_params": [
+    "path",
+    "user_consent"
+   ]
+  },
+  {
+   "tool": "change_password",
+   "category": "account",
+   "input_params": [
+    "new_password"
+   ]
+  },
+  {
+   "tool": "close_account",
+   "category": "account",
+   "input_params": [
+    "account_id",
+    "confirm"
+   ]
+  },
+  {
+   "tool": "search",
+   "category": "read-only",
+   "input_params": [
+    "q"
+   ]
+  },
+  {
+   "tool": "get_weather",
+   "category": "read-only",
+   "input_params": [
+    "city"
+   ]
+  },
+  {
+   "tool": "list_files",
+   "category": "read-only",
+   "input_params": [
+    "path"
+   ]
+  },
+  {
+   "tool": "read_calendar",
+   "category": "read-only",
+   "input_params": [
+    "day"
+   ]
+  }
+ ]
+}

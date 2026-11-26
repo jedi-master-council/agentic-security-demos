@@ -1,0 +1,121 @@
+{
+ "note": "Ten synthetic repositories' CI configurations. 'actions' lists each third-party action reference; a 40-hex suffix is a pinned commit.",
+ "rules": {
+  "R1": "every third-party action pinned to a full commit hash",
+  "R2": "workflow permissions declared and not write-all",
+  "R3": "no pull_request_target job that checks out the contributor's head"
+ },
+ "waivers": [
+  {
+   "repo": "a04",
+   "rule": "R2",
+   "approved_by": "release-manager",
+   "expires": "2027-01-31"
+  }
+ ],
+ "repos": [
+  {
+   "id": "a01",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@v4",
+    "actions/setup-python@v5"
+   ],
+   "permissions": "unset",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "a02",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": true
+  },
+  {
+   "id": "a03",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@v4"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "a04",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+   ],
+   "permissions": "write-all",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "a05",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@v3",
+    "docker/build-push-action@v5"
+   ],
+   "permissions": "write-all",
+   "pull_request_target_checks_out_head": true,
+   "blocking_scanner": false
+  },
+  {
+   "id": "a06",
+   "agent_topic": true,
+   "actions": [
+    "actions/checkout@cccccccccccccccccccccccccccccccccccccccc",
+    "actions/cache@dddddddddddddddddddddddddddddddddddddddd"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "b01",
+   "agent_topic": false,
+   "actions": [
+    "actions/checkout@v4"
+   ],
+   "permissions": "unset",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "b02",
+   "agent_topic": false,
+   "actions": [
+    "actions/checkout@eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": true
+  },
+  {
+   "id": "b03",
+   "agent_topic": false,
+   "actions": [
+    "actions/checkout@v4"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  },
+  {
+   "id": "b04",
+   "agent_topic": false,
+   "actions": [
+    "actions/checkout@ffffffffffffffffffffffffffffffffffffffff"
+   ],
+   "permissions": "read",
+   "pull_request_target_checks_out_head": false,
+   "blocking_scanner": false
+  }
+ ]
+}

@@ -9,6 +9,34 @@
 - Distinguish the teaching output from a confirmatory research result
 - Name the target venue and why the topic is scoped to that venue
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 75 as numbered stages"></p>
+
+**Figure 1.** Advisories are linked on exact identifiers before their severities are compared. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Advisory sources** (`A, B, C`). Public feeds. In this demo: `fixtures/`.
+2. **Link** (`exact identifier`). Same vulnerability. In this demo: `student/linkage.py`.
+3. **Compare severity** (`strings per source`). Normalised. In this demo: `student/linkage.py`.
+4. **Disagreement** (`linked ∧ different`). Per pair. In this demo: `student/run_linkage.py`.
+5. **Linkage** (`linked · disagreeing`). Per source pair. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 75 on the synthetic fixture"></p>
+
+**Figure 2.** Even exactly linked advisories disagree on severity in two of seven cases. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Full public advisory feeds
+- Fuzzy linkage evaluated against exact links
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Exact-identifier linkage of public advisories and measurement of severity-string disagreement. The fixture holds 8 labelled synthetic cases.

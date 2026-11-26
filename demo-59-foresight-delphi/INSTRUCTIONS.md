@@ -44,6 +44,25 @@ Demo 59: Delphi summaries on synthetic panel ratings
   P2  median 3.0  IQR 3.0  consensus=False  briefing abc111
 ```
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=59
+python3 tools/figures/build.py 59
+```
+
+<!-- END generated: figures-step -->
+
 ## What to look for
 
 - Both rows carry the same briefing hash, so they can be compared under one brief.

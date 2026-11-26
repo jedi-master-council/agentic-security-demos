@@ -1,0 +1,402 @@
+{
+ "note": "Twelve synthetic coding-agent trajectories on four tasks (T1, T2 easier; T3, T4 harder). Each step is an action the agent took; ls output is what it could see.",
+ "classes": {
+  "README": [
+   "README.md"
+  ],
+  "CONTRIBUTING": [
+   "CONTRIBUTING.md"
+  ],
+  "AGENTS": [
+   "AGENTS.md"
+  ],
+  "docs": [
+   "docs/"
+  ],
+  "tests": [
+   "tests/"
+  ],
+  "ci": [
+   ".github/"
+  ]
+ },
+ "prose_classes": [
+  "README",
+  "CONTRIBUTING",
+  "AGENTS",
+  "docs"
+ ],
+ "runs": [
+  {
+   "id": "r01",
+   "task": "T1",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r02",
+   "task": "T1",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "tests/test_core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r03",
+   "task": "T1",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "README.md"
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r04",
+   "task": "T2",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "tests/test_core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r05",
+   "task": "T2",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "tests/test_core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r06",
+   "task": "T2",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  },
+  {
+   "id": "r07",
+   "task": "T3",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "AGENTS.md",
+      "docs/",
+      "src/",
+      "tests/"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "AGENTS.md"
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": true
+  },
+  {
+   "id": "r08",
+   "task": "T3",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "AGENTS.md",
+      "docs/",
+      "src/",
+      "tests/"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "README.md"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  },
+  {
+   "id": "r09",
+   "task": "T3",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "AGENTS.md",
+      "docs/",
+      "src/",
+      "tests/"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "CONTRIBUTING.md"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "docs/setup.md"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  },
+  {
+   "id": "r10",
+   "task": "T4",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "AGENTS.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "AGENTS.md"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  },
+  {
+   "id": "r11",
+   "task": "T4",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "AGENTS.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "README.md"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": ".github/workflows/ci.yml"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  },
+  {
+   "id": "r12",
+   "task": "T4",
+   "steps": [
+    {
+     "act": "ls",
+     "out": [
+      "README.md",
+      "AGENTS.md",
+      "src/",
+      "tests/",
+      ".github/workflows/ci.yml"
+     ]
+    },
+    {
+     "act": "open",
+     "path": "src/core.py"
+    },
+    {
+     "act": "open",
+     "path": "tests/test_core.py"
+    },
+    {
+     "act": "edit",
+     "path": "src/core.py"
+    },
+    {
+     "act": "test"
+    }
+   ],
+   "resolved": false
+  }
+ ]
+}

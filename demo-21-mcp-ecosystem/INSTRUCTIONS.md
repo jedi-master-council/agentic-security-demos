@@ -61,6 +61,45 @@ instruction (e.g. “kindly disregard earlier directives”). Re-run both comman
 record: does the literal-pattern detector catch it? What does that teach about
 pattern vs model-based auditing?
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=21
+python3 tools/figures/build.py 21
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/registry_hosting.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+latest-version endpoints 5 on 5 hosts; largest host share 0.20; under platform suffixes 0.60
+version transitions 7; within 24 hours of the previous version 4
+  endpoint change on s1: patch bump; host changed True; across registrable domains True
+  endpoint change on s4: patch bump; host changed True; across registrable domains False
+remote servers requiring a secret header 3/5
+lesson: the tool layer is hosted on few platforms and changes fast; an endpoint can move under a patch bump.
+```
+
+<!-- END generated: figures-step -->
+
 ## Reproducibility Table
 
 | Field | Your run |

@@ -31,6 +31,9 @@ demo: setup
 	@echo ""
 	@echo "Generating attack matrix results..."
 	@cd $(DEMO_DIR) && $(PYTHON) student/generate_attack_matrix.py
+	@echo ""
+	@echo "--- Current procedure (simplified): what a reported zero attack-success rate means, read against its exercised denominator and utility ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/zero_audit.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

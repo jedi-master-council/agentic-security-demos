@@ -16,6 +16,39 @@
 - Identify false positives, false negatives, and leakage in verification systems
 - Distinguish teaching demonstrations from validated research benchmarks
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 01 as numbered stages"></p>
+
+**Figure 1.** Blind verification commits the assessor's answer before the key is opened, so the output format is the only thing that differs between arms. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Clean export** (`tree T, card c`). Synthetic service and a symptom card; defect hidden. In this demo: `fixtures/`.
+2. **Assess** (`format f ∈ {free, typed}`). The assessor answers in free text or a typed schema. In this demo: `student/verified_agent.py`.
+3. **Seal** (`h = SHA-256(C)`). At most k files committed before the reveal. In this demo: `student/format_effect.py`.
+4. **Reveal and score** (`hit = [g ∈ C]`). Answer key opened only after sealing. In this demo: `student/oracle_evaluator.py`.
+5. **Compare formats** (`Δ = hit_typed − hit_free`). Paired per configuration; exact sign-flip test. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 01 on the synthetic fixture"></p>
+
+**Figure 2.** In the toy, the typed schema lowers the hit rate in every configuration, yet with three configurations the exact sign-flip p-value cannot fall below its floor of 0.25. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/format_effect.py` (free-text versus typed-schema commitments, sealed before reveal; exact sign-flip floor). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- Many planted-defect instances and several exact-versioned model configurations
+- A registered prediction and a decomposition of the format effect, registered before new cells were run
+- Configuration-level bootstrap intervals in place of the toy's single paired difference
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 **Blind verification** addresses a fundamental problem in agentic AI evaluation: an agent that sees the test condition can tailor its behavior to pass, rather than demonstrating genuine capability. In a blind commitment workflow:

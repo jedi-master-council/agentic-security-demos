@@ -7,7 +7,36 @@
 - Explain what a white-box hijack probe is (flag an episode when its probe score meets a fixed threshold)
 - Apply a fixed threshold (0.55) to 8 synthetic episodes and read the outcome table
 - Show the probe catches 3/4 hijacked episodes with 0/4 false positives, missing borderline h4
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 15 as numbered stages"></p>
+
+**Figure 1.** A linear read-out of hidden states can flag a hijack at the layer where the model's plan changes. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Open-weight agent** (`hidden states hₗ`). Read at each layer. In this demo: `fixtures/`.
+2. **Linear probe** (`s = wᵀhₗ`). Trained on clean against hijacked episodes. In this demo: `student/probe.py`.
+3. **Threshold** (`flag ⇔ s ≥ τ`). A fixed operating point. In this demo: `student/run_probe.py`.
+4. **Evaluate** (`catches, false alarms`). Per episode. In this demo: `student/run_probe.py`.
+5. **Where it changes its mind** (`layer of first separation`). Design stage. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 15 on the synthetic fixture"></p>
+
+**Figure 2.** The probe catches 3 of 4 hijacked episodes with 0 false alarms at this operating point. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Probes across layers of several open-weight tool-using models
+- Held-out attack families
+- Every number bound to committed analysis output (design stage)
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

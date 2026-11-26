@@ -59,6 +59,25 @@ Change `vuln08`'s `adopt_lag_days` from 180 to 40 in `fixtures/vulns.json`
 and re-run both commands. Record: how far does the median move? Why is the
 median (not the mean) the lifecycle statistic worth reporting here?
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=42
+python3 tools/figures/build.py 42
+```
+
+<!-- END generated: figures-step -->
+
 ## Reproducibility Table
 
 | Field | Your run |

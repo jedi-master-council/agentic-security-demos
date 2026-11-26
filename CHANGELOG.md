@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (teaching demos aligned with the current research procedures; figures added, 26 November 2026)
+- Every demo (01–90) now opens its README with **How it works**: a numbered procedure figure (`figures/fig1_procedure.svg`), a step-by-step list mapping each stage to a file in the demo, a worked-example figure drawn from the demo's own output (`figures/fig2_worked_example.svg`), and a short list of what the research version adds, which stays withheld while it is under peer review. `INSTRUCTIONS.md` gains a step for reading and rebuilding the figures. The generator lives in `tools/figures/` (see its README).
+- Demos whose research procedure had moved on gained a current-procedure step with fixture and tests (`tests/test_current_procedure.py`), run by `make demo`: 01 (`format_effect.py`, free-text against typed-schema commitments), 02 (`enforcement_cost.py`, what a fail-closed CI gate would block), 03 (`leakage_rules.py`, leakage rules validated against planted items as the reference grows), 04 (`zero_audit.py`, reading a zero against its exercised denominator and utility), 06 (`label_vs_oracle.py`, text labels against an execution oracle), 10 (`blocked_vs_contained.py`), 16 (`relay_control.py`, instructed markers against uninstructed controls), 20 (`soft404_gate.py`), 21 (`registry_hosting.py`) and 43 (`confirmation_gap.py`).
+- Demos 80–89 were exercise stubs that raised `NotImplementedError`; each now has a working reference mechanism, a refreshed fixture, tests, a full README and step-by-step instructions with expected output.
+- New teaching demos: 61–65 (previously listed as kept in separate repositories; no teaching version existed) and 90 (The Unread Manual). The headline count is now 90, all in this repository.
+- Removed `PROMPTS_50_ALL.zip` and the `PROMPTS_50.md` files of demos 80–89: they set out the full research execution plans of studies under review, which a teaching repository should not publish. The research repositories keep their own copies.
+- Status lines in demos 13–28 and 49–51 no longer say that no data have been collected; they say the study is in progress or under peer review.
+- Fixed `make demo` for demo 31 (it called a script that does not exist) and the root `Makefile` demo list, which omitted 61–65 and 80–90.
+
+### Changed (demo 50 venue, 26 November 2026)
+- Demo 50 (Budget Delegation) Option A returns from CSF 2027 Winter to ACM AsiaCCS 2027 Round 2 (papers 11 December 2026), by author decision: the paper is an applied middleware measurement with no formal model or proof, and its AsiaCCS package was already rebuilt. The AsiaCCS 2027 call (read 26 November 2026) sets no per-author limit; the self-imposed slate is now 8 (06, 08, 25, 32, 42, 46, 50, 60). CSF Winter keeps 24 and 49.
+
 ### Changed (IEEE EuroS&P 2027 slate submitted, 23 November 2026)
 - Root `README`: marked the seven IEEE EuroS&P 2027 demos (07 Malware Triage, 10 Vulnerability Assessment, 11 Degenerate Reporting, 12 Provenance-Bound Authorization, 13 Typed Commitments & Coverage Cues, 17 Report Fidelity, 44 Toolflow Taint) as 🟢 EuroS&P, submitted on 23 November 2026 ahead of the 25 November registration and 2 December paper deadlines. Demos-table status cells and the Option A cells in the venues table updated to 🟢; the caps note records the seven as submitted.
 

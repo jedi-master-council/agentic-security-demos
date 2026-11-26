@@ -39,6 +39,34 @@ LLM simulations of learners are increasingly calibrated against public learning-
 - Explain which control or baseline makes the outcome interpretable
 - Distinguish the teaching output from a confirmatory research result
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 67 as numbered stages"></p>
+
+**Figure 1.** A memorisation probe is validated by how it scores on remapped tables the model cannot have seen. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Public release** (`linked tables`). Learner records. In this demo: `fixtures/`.
+2. **Model** (`completes rows`). Row and cross-table prompts. In this demo: `student/memprobe.py`.
+3. **Remapped control** (`same schema, new values`). The model cannot have seen it. In this demo: `fixtures/`.
+4. **Score** (`real vs remapped`). At a fixed false-positive rate. In this demo: `student/run_memprobe.py`.
+5. **Memorisation** (`excess over the remapped null`). Validated probe. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 67 on the synthetic fixture"></p>
+
+**Figure 2.** Only models exposed to the release score above the remapped null; a frequency guesser never does. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A public multi-table learner dataset
+- Design stage
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Venues
 
 | Option | Venue | Dates and rules |

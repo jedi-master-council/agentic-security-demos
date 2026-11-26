@@ -39,6 +39,34 @@ Registers of the terms on which institutions obtain AI services are increasingly
 - Explain which control or baseline makes the outcome interpretable
 - Distinguish the teaching output from a confirmatory research result
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 69 as numbered stages"></p>
+
+**Figure 1.** Every extracted clause must be found verbatim in the source before its value is trusted. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Provider terms** (`published text`). Tiers, data use, price. In this demo: `fixtures/`.
+2. **Extractor** (`clause + quote`). Model-assisted. In this demo: `fixtures/`.
+3. **Grounding** (`quote ∈ source?`). Verbatim check. In this demo: `student/grounding.py`.
+4. **Consistency** (`value matches quote?`). Price, continuity, exit. In this demo: `student/run_grounding.py`.
+5. **Extraction** (`grounded share`). Per term type. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 69 on the synthetic fixture"></p>
+
+**Figure 2.** A keyword baseline can quote the source verbatim and still extract the wrong value; grounding is necessary, not sufficient. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Providers' published terms
+- Design stage
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Venues
 
 | Option | Venue | Dates and rules |

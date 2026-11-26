@@ -7,7 +7,7 @@ DEMO_DIR := $(CURDIR)
 .PHONY: help setup test demo clean
 
 help:
-	@echo "Demo 31: Integration Scope Creep"
+	@echo "Demo 31: Declaration Gap"
 	@echo ""
 	@echo "  make setup    # Install deps (stdlib only, verifies Python)"
 	@echo "  make test     # Run all tests"
@@ -25,11 +25,11 @@ test:
 	@cd $(DEMO_DIR) && $(PYTHON) -m pytest tests/ -v --tb=short
 
 demo: setup
-	@echo "=== Demo 31: Integration Scope Creep ==="
+	@echo "=== Demo 31: Declaration Gap ==="
 	@echo ""
-	@cd $(DEMO_DIR) && $(PYTHON) student/run_scopes.py
+	@cd $(DEMO_DIR) && $(PYTHON) student/run_declarations.py
 	@echo ""
-	@echo "Wrote results/scopes.json"
+	@echo "Wrote results/declarations.json"
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

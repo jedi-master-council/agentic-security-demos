@@ -1,0 +1,157 @@
+{
+ "note": "Six planted-defect instances, three model configurations, two output formats. Each cell is the list of files the configuration committed to (at most three) before the answer key was opened.",
+ "budget": 3,
+ "gold": {
+  "i1": "auth.py",
+  "i2": "crypto.py",
+  "i3": "session.py",
+  "i4": "upload.py",
+  "i5": "config.py",
+  "i6": "router.py"
+ },
+ "commitments": {
+  "cfg-A": {
+   "free": {
+    "i1": [
+     "auth.py",
+     "views.py"
+    ],
+    "i2": [
+     "crypto.py"
+    ],
+    "i3": [
+     "login.py",
+     "session.py"
+    ],
+    "i4": [
+     "upload.py"
+    ],
+    "i5": [
+     "settings.py",
+     "config.py"
+    ],
+    "i6": [
+     "router.py",
+     "app.py"
+    ]
+   },
+   "typed": {
+    "i1": [
+     "auth.py"
+    ],
+    "i2": [
+     "keys.py",
+     "crypto.py"
+    ],
+    "i3": [
+     "login.py",
+     "models.py"
+    ],
+    "i4": [
+     "storage.py",
+     "forms.py"
+    ],
+    "i5": [
+     "config.py"
+    ],
+    "i6": [
+     "app.py",
+     "views.py"
+    ]
+   }
+  },
+  "cfg-B": {
+   "free": {
+    "i1": [
+     "auth.py"
+    ],
+    "i2": [
+     "hash.py",
+     "crypto.py"
+    ],
+    "i3": [
+     "session.py"
+    ],
+    "i4": [
+     "views.py",
+     "upload.py"
+    ],
+    "i5": [
+     "env.py"
+    ],
+    "i6": [
+     "router.py"
+    ]
+   },
+   "typed": {
+    "i1": [
+     "auth.py",
+     "models.py"
+    ],
+    "i2": [
+     "hash.py"
+    ],
+    "i3": [
+     "session.py"
+    ],
+    "i4": [
+     "views.py",
+     "forms.py"
+    ],
+    "i5": [
+     "env.py",
+     "settings.py"
+    ],
+    "i6": [
+     "router.py"
+    ]
+   }
+  },
+  "cfg-C": {
+   "free": {
+    "i1": [
+     "views.py",
+     "auth.py"
+    ],
+    "i2": [
+     "crypto.py"
+    ],
+    "i3": [
+     "session.py",
+     "cookies.py"
+    ],
+    "i4": [
+     "upload.py"
+    ],
+    "i5": [
+     "config.py"
+    ],
+    "i6": [
+     "middleware.py"
+    ]
+   },
+   "typed": {
+    "i1": [
+     "views.py",
+     "auth.py"
+    ],
+    "i2": [
+     "crypto.py",
+     "keys.py"
+    ],
+    "i3": [
+     "cookies.py"
+    ],
+    "i4": [
+     "upload.py"
+    ],
+    "i5": [
+     "settings.py"
+    ],
+    "i6": [
+     "middleware.py"
+    ]
+   }
+  }
+ }
+}

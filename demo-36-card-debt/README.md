@@ -9,6 +9,35 @@
 - Show the popularity gap: top-4 miss 1/4 while bottom-8 miss 6/8
 - Distinguish card disclosure from lineage risk (Demo 19)
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 36 as numbered stages"></p>
+
+**Figure 1.** Whether popular models disclose more is decided on the registered estimator; a different weighting can say otherwise. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Registry** (`model cards, downloads`). And derivation edges. In this demo: `fixtures/`.
+2. **Code disclosure** (`safety section?`). Per card. In this demo: `student/cards.py`.
+3. **Weight** (`binned tiers | per card`). Registered estimator against descriptive. In this demo: `student/cards.py`.
+4. **Registered test** (`gap ≥ +15 pp?`). Falsified below +10 pp. In this demo: `student/run_cards.py`.
+5. **Verdict** (`confirmed | falsified`). On the registered estimator. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 36 on the synthetic fixture"></p>
+
+**Figure 2.** Missing safety sections cluster in the long tail; whether that makes the download-weighted rate higher depends on the estimator. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A census of model cards and derivation edges
+- A fixed-weight blend of download-tier rates
+- The descriptive per-card estimate reported beside it
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Model cards should disclose safety-relevant facts, but the long tail often

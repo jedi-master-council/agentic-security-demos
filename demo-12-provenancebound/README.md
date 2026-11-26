@@ -16,6 +16,35 @@
 - Enforce a provenance-aware deny-by-default policy that blocks high-risk untrusted attempts even when the detector misses
 - Separate oracle labels (what is malicious) from observed attempts (what the agent tried) so headline block rates are measurements, not restated deny rules
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 12 as numbered stages"></p>
+
+**Figure 1.** Provenance-based authorisation needs the untrusted party to be identifiable at the boundary; forwarding and quoting break that precondition. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Message or invite** (`envelope, body`). May forward or quote external content. In this demo: `fixtures/`.
+2. **Sender verdict** (`domain authenticated?`). Authenticates the domain, not the intent. In this demo: `student/provenancebound.py`.
+3. **Originator** (`identifiable at boundary?`). Who wrote the instruction-bearing span? In this demo: `student/provenancebound.py`.
+4. **Taint fallback** (`value-level labels`). When the originator is not identifiable. In this demo: `student/provenancebound.py`.
+5. **Authorisation** (`ALLOW | DENY`). Decided by provenance. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 12 on the synthetic fixture"></p>
+
+**Figure 2.** Only content whose originator is identifiable and trusted may trigger an action; everything else is blocked or never acts. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Historical corporate mail and recent phishing measured under pre-sealed protocols
+- Agent mail tools checked for whether they can pass the sender verdict on
+- A lexical upper bound on value-level taint in coding-agent sessions
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 An agent that acts on calendar invites faces two coupled risks:

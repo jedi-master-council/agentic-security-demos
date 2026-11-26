@@ -9,6 +9,35 @@
 - List the four covered elements and why each escapes the gap rule
 - Distinguish a survey mapping exercise from formal analysis (Demo 24)
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 33 as numbered stages"></p>
+
+**Figure 1.** Per-hop guarantees stated by each protocol do not compose into an end-to-end guarantee. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Specifications** (`pinned revisions`). Normative statements. In this demo: `fixtures/`.
+2. **Elements** (`discovery … streaming`). Six protocol elements. In this demo: `student/coverage.py`.
+3. **Map** (`attack × mitigation`). Stated normatively or left open. In this demo: `student/coverage.py`.
+4. **Composition** (`per hop ⇏ end to end`). Delegation across protocols. In this demo: `student/run_coverage.py`.
+5. **Coverage gap** (`known attack ∧ no mitigation`). Per element. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 33 on the synthetic fixture"></p>
+
+**Figure 2.** Discovery and streaming carry known attacks that neither specification mitigates normatively. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Pinned specification revisions and their OAuth foundations
+- Normative text coded per element
+- The compositional reading challenged
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Agent protocols name similar elements (discovery, identity, streaming) with

@@ -16,6 +16,35 @@
 - Build guarded agents that enforce scope
 - Test path traversal, inclusion, and uninstructed actions
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 08 as numbered stages"></p>
+
+**Figure 1.** File content returned by an exploit enters the agent's context, so the exploit can carry instructions back to the exploiter. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Isolated range** (`PHP include() target`). Lab-only, no external network. In this demo: `fixtures/`.
+2. **Exploiting agent** (`payload family p`). Benign and instruction-carrying variants paired. In this demo: `student/inclusiontrap.py`.
+3. **Tool-call log** (`calls C, scope S`). Every call recorded against the engagement scope. In this demo: `student/inclusiontrap.py`.
+4. **Classifier** (`hijack ∨ over-reach`). Included content as instruction; acting outside scope. In this demo: `student/generate_inclusion_results.py`.
+5. **Verdict per trial** (`HIJACK | OVER-REACH | CLEAN`). Pre-registered exclusion rule. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 08 on the synthetic fixture"></p>
+
+**Figure 2.** The guarded agent never executes or sends what an included file asks for; its remaining calls are in-scope reads. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Sealed live trials over several pinned model generations
+- A replication on a genuine include() substrate, cell by cell
+- Payload families compared, remote inclusion against local
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 **File inclusion vulnerabilities** occur when an agent treats included file content as instructions. Example: An agent reads a config file that contains "delete_all_data()" and executes it. The fix: **content ≠ authority**. Included content is data; only explicit, provenance-verified instructions should drive actions.

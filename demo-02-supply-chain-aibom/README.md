@@ -16,6 +16,39 @@
 - Design waiver mechanisms with expiration and justification
 - Create GitHub Actions-compatible validation scripts
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 02 as numbered stages"></p>
+
+**Figure 1.** A fail-closed gate turns each supply-chain rule into a release decision; counting what it would block is the cost of enforcing it. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **CI census** (`repos R, workflows W`). Pinning, permissions and triggers read from configuration. In this demo: `fixtures/ci_census.json`.
+2. **Rules** (`R1 pin · R2 perms · R3 trigger`). Each rule is a violation test on one workflow. In this demo: `student/enforcement_cost.py`.
+3. **Waivers** (`w approved ∧ in force`). Approved, scoped, time-bounded exceptions. In this demo: `fixtures/aibom.json`.
+4. **Fail-closed gate** (`BLOCK ⇔ V ∖ W ≠ ∅`). A release waits until every violation is fixed or waived. In this demo: `student/policy_gate.py`.
+5. **Cost of obedience** (`share blocked, per rule`). Agent repositories against a comparison sample. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 02 on the synthetic fixture"></p>
+
+**Figure 2.** The gate would block 3 of 6 agent repositories and 2 of 4 comparison repositories; an approved waiver turns a04's block into an allow, and the violation is still reported. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/enforcement_cost.py` (what a fail-closed gate would block across a census of CI configurations). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- A census of real continuous-integration configurations with a comparison sample
+- Independent scanners run in blocking mode beside the gate
+- One registered hold-out test
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 An **AIBOM (AI Bill of Materials)** declares what components, models, tools, and permissions an agentic system uses. **Drift** occurs when the running system exceeds or deviates from this declaration — e.g., an agent gains access to a new tool, a dependency is updated without review, or a privilege is escalated.

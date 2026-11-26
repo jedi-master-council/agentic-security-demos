@@ -32,6 +32,9 @@ demo: setup
 	@echo ""
 	@echo "Generating summary table..."
 	@cd $(DEMO_DIR) && $(PYTHON) student/generate_summary.py
+	@echo ""
+	@echo "--- Current procedure (simplified): two leakage rules checked against planted items as the reference corpus grows ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/leakage_rules.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

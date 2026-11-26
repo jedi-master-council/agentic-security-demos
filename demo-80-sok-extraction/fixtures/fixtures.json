@@ -1,136 +1,133 @@
 {
- "papers": [
-  {
-   "id": "p1",
-   "defence_class": "input-filter",
-   "corpus": "yes",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p2",
-   "defence_class": "input-filter",
-   "corpus": "yes",
-   "threat_model": "no"
-  },
-  {
-   "id": "p3",
-   "defence_class": "output-filter",
-   "corpus": "yes",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p4",
-   "defence_class": "output-filter",
-   "corpus": "no",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p5",
-   "defence_class": "policy",
-   "corpus": "yes",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p6",
-   "defence_class": "policy",
-   "corpus": "yes",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p7",
-   "defence_class": "policy",
-   "corpus": "yes",
-   "threat_model": "yes"
-  },
-  {
-   "id": "p8",
-   "defence_class": "architecture",
-   "corpus": "yes",
-   "threat_model": "no"
-  }
+ "fields": [
+  "layer",
+  "formal_guarantee",
+  "adaptive_attack"
  ],
+ "note": "Twelve synthetic defence papers, double-coded on three fields by two independent coders.",
+ "kappa_floor": 0.6,
  "coder_a": {
-  "p1": [
+  "p01": [
    "input-filter",
-   "yes",
-   "yes"
-  ],
-  "p2": [
-   "input-filter",
-   "yes",
+   "no",
    "no"
   ],
-  "p3": [
-   "output-filter",
-   "yes",
-   "yes"
-  ],
-  "p4": [
-   "output-filter",
+  "p02": [
+   "input-filter",
    "no",
    "yes"
   ],
-  "p5": [
+  "p03": [
+   "output-filter",
+   "no",
+   "no"
+  ],
+  "p04": [
+   "policy",
+   "yes",
+   "no"
+  ],
+  "p05": [
    "policy",
    "yes",
    "yes"
   ],
-  "p6": [
-   "policy",
-   "yes",
-   "yes"
-  ],
-  "p7": [
-   "policy",
-   "yes",
-   "yes"
-  ],
-  "p8": [
+  "p06": [
    "architecture",
    "yes",
+   "yes"
+  ],
+  "p07": [
+   "architecture",
+   "no",
+   "no"
+  ],
+  "p08": [
+   "training",
+   "no",
+   "yes"
+  ],
+  "p09": [
+   "policy",
+   "no",
+   "no"
+  ],
+  "p10": [
+   "input-filter",
+   "no",
+   "no"
+  ],
+  "p11": [
+   "architecture",
+   "yes",
+   "no"
+  ],
+  "p12": [
+   "training",
+   "no",
    "no"
   ]
  },
  "coder_b": {
-  "p1": [
+  "p01": [
    "input-filter",
-   "yes",
-   "yes"
+   "no",
+   "no"
   ],
-  "p2": [
+  "p02": [
    "input-filter",
+   "no",
+   "no"
+  ],
+  "p03": [
+   "input-filter",
+   "no",
+   "no"
+  ],
+  "p04": [
+   "policy",
    "yes",
    "no"
   ],
-  "p3": [
-   "output-filter",
+  "p05": [
+   "policy",
    "yes",
    "yes"
   ],
-  "p4": [
-   "output-filter",
+  "p06": [
+   "architecture",
+   "yes",
+   "yes"
+  ],
+  "p07": [
+   "architecture",
    "no",
    "yes"
   ],
-  "p5": [
-   "policy",
-   "yes",
-   "yes"
-  ],
-  "p6": [
-   "policy",
-   "yes",
-   "yes"
-  ],
-  "p7": [
-   "policy",
+  "p08": [
+   "training",
    "no",
    "yes"
   ],
-  "p8": [
+  "p09": [
+   "policy",
+   "yes",
+   "no"
+  ],
+  "p10": [
+   "input-filter",
+   "no",
+   "no"
+  ],
+  "p11": [
    "architecture",
    "yes",
    "no"
+  ],
+  "p12": [
+   "training",
+   "no",
+   "yes"
   ]
  }
 }

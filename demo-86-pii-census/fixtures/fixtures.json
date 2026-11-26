@@ -1,81 +1,95 @@
 {
- "arguments": [
+ "note": "Twelve synthetic tool-call arguments across five tool classes. All values are invented.",
+ "calls": [
   {
-   "id": "a1",
-   "tool": "send_email",
-   "args": {
-    "to": "user@example.com",
-    "body": "hi"
-   }
+   "id": "c01",
+   "tool_class": "email",
+   "args": "to=alice@example.org subject=report"
   },
   {
-   "id": "a2",
-   "tool": "schedule",
-   "args": {
-    "iban": "GB29 NWBK 6016 1331 9268 19"
-   }
+   "id": "c02",
+   "tool_class": "shell",
+   "args": "ls /home/jdoe/projects"
   },
   {
-   "id": "a3",
-   "tool": "search",
-   "args": {
-    "q": "weather"
-   }
+   "id": "c03",
+   "tool_class": "shell",
+   "args": "pip install pkg==1.2.3.4"
   },
   {
-   "id": "a4",
-   "tool": "contact",
-   "args": {
-    "phone": "+44 20 7946 0958"
-   }
+   "id": "c04",
+   "tool_class": "http",
+   "args": "Authorization: Bearer key-test-AAAAAAAAAAAAAAAAAAAA"
   },
   {
-   "id": "a5",
-   "tool": "notes",
-   "args": {
-    "text": "meeting notes"
-   }
+   "id": "c05",
+   "tool_class": "http",
+   "args": "GET http://10.0.0.12:8080/health"
   },
   {
-   "id": "a6",
-   "tool": "send_email",
-   "args": {
-    "to": "alice@corp.example",
-    "body": "the report"
-   }
+   "id": "c06",
+   "tool_class": "message",
+   "args": "call me on +44 20 7946 0958"
   },
   {
-   "id": "a7",
-   "tool": "profile",
-   "args": {
-    "email": "bob@example.org"
-   }
+   "id": "c07",
+   "tool_class": "file",
+   "args": "open('/Users/asmith/Desktop/notes.txt')"
   },
   {
-   "id": "a8",
-   "tool": "transfer",
-   "args": {
-    "iban": "DE89 3704 0044 0532 0130 00"
-   }
+   "id": "c08",
+   "tool_class": "file",
+   "args": "open('./README.md')"
   },
   {
-   "id": "a9",
-   "tool": "reminder",
-   "args": {
-    "text": "call the bank"
-   }
+   "id": "c09",
+   "tool_class": "message",
+   "args": "the meeting is at 10:30"
   },
   {
-   "id": "a10",
-   "tool": "contact",
-   "args": {
-    "phone": "+1 212 555 0199"
-   }
+   "id": "c10",
+   "tool_class": "shell",
+   "args": "git push https://tok_BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB@git.example"
+  },
+  {
+   "id": "c11",
+   "tool_class": "email",
+   "args": "to=team@example.com cc=bob@example.net"
+  },
+  {
+   "id": "c12",
+   "tool_class": "http",
+   "args": "POST https://api.example/v1 body={'order': 2024}"
   }
  ],
- "shapes": {
-  "email": "@",
-  "iban": "two letters + 2 digits + 30-ish chars",
-  "phone": "+NN NNN"
+ "truth": {
+  "c01": [
+   "email"
+  ],
+  "c02": [
+   "path_username"
+  ],
+  "c03": [],
+  "c04": [
+   "api_key"
+  ],
+  "c05": [
+   "ip_address"
+  ],
+  "c06": [
+   "phone"
+  ],
+  "c07": [
+   "path_username"
+  ],
+  "c08": [],
+  "c09": [],
+  "c10": [
+   "api_key"
+  ],
+  "c11": [
+   "email"
+  ],
+  "c12": []
  }
 }

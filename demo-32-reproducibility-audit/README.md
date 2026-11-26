@@ -9,6 +9,35 @@
 - Verify the invariant that reproducing implies sharing code+data
 - Distinguish auditing the field from making new attack claims
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 32 as numbered stages"></p>
+
+**Figure 1.** A systematisation counts what was published and then what can still be run. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Literature** (`attacks, defences, evals`). Search, screen, include. In this demo: `fixtures/`.
+2. **Classify** (`channel × layer`). Content, tool, memory, multi-agent. In this demo: `student/audit.py`.
+3. **Artefact check** (`code ∧ data?`). Is anything released? In this demo: `student/audit.py`.
+4. **Re-run** (`reproduces?`). Within a tolerance. In this demo: `student/run_audit.py`.
+5. **Reproducibility** (`reproduces / released`). Per channel. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 32 on the synthetic fixture"></p>
+
+**Figure 2.** 6 of 10 papers release code and data; 4 reproduce, none in the multi-agent channel. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A registered search and screening protocol
+- Artefact re-execution under a time budget
+- Design stage
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Surveys of agent security report many defences with few shared artefacts.

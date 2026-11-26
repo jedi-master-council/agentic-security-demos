@@ -16,6 +16,39 @@
 - Design a policy mediator that enforces scope
 - Test against direct/indirect injection and scope escalation
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 04 as numbered stages"></p>
+
+**Figure 1.** A reported zero attack-success rate is read against the cases that could have shown a reduction and the work the agent still does. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Public release** (`per-case outcomes`). Undefended and defended runs of the same cases. In this demo: `fixtures/zero_audit.json`.
+2. **Exercised denominator** (`E = {c : undefended hijacked}`). Only these cases can show a reduction. In this demo: `student/zero_audit.py`.
+3. **Utility** (`U = share of user tasks done`). A defence that stops all work also scores zero. In this demo: `student/zero_audit.py`.
+4. **Authority check** (`untrusted ⇏ authority`). The mechanism: content never grants tool authority. In this demo: `student/authoritybound.py`.
+5. **Reading of a zero** (`worked | nothing to defend | no power | no utility`). Printed beside every reported rate. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 04 on the synthetic fixture"></p>
+
+**Figure 2.** Every release reports a zero, but rel-B exercised no case, rel-D exercised one, and rel-C kept no utility: only rel-A and rel-E support the reading that the defence worked. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/zero_audit.py` (four readings of a zero, separated by the exercised denominator and utility). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- The full set of public releases with per-case outcomes found by a documented census
+- A ledger of inclusion decisions and presented-zero codings
+- Release-level, not model-level, claims
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 A **confused deputy** is a privileged component tricked into misusing its authority. In agentic systems:

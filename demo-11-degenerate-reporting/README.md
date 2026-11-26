@@ -16,6 +16,35 @@
 - Detect metrics that reward doing nothing (e.g. abstention without a utility charge)
 - Rescore published verdicts against sealed labels and watch a ranking invert
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 11 as numbered stages"></p>
+
+**Figure 1.** A defence whose number a do-nothing policy also attains says nothing until the do-nothing baseline is reported. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Reported defences** (`rows (work, metric)`). The openly retrievable record. In this demo: `fixtures/`.
+2. **Degenerate baseline** (`π₀ = read nothing`). Attains the attacker's-goal rate trivially. In this demo: `student/audit_reporting.py`.
+3. **Code each row** (`reports π₀ on own metric?`). Victim-only baseline is not enough. In this demo: `student/audit_reporting.py`.
+4. **Specification grid** (`strict … permissive`). The share under each analysis choice. In this demo: `student/generate_audit_results.py`.
+5. **Audit verdict** (`PASS | DEGENERATE`). Per row and per work. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 11 on the synthetic fixture"></p>
+
+**Figure 2.** A naive reviewer accepts seven of eight papers; the audit fails four that never rule out a do-nothing policy and leaves two inconclusive. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Many coded rows from works and detector model cards
+- Quote-verified positive codes and a frozen string screen
+- A grid of analysis specifications
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 **Degenerate reporting** is an evaluation failure mode: a defence paper reports numbers that a trivial, do-nothing policy could also produce — and never runs the trivial policy, so nobody notices.

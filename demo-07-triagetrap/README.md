@@ -16,6 +16,35 @@
 - Detect prompt-like payloads in metadata
 - Compare baseline vs. provenance-aware triage agents
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 07 as numbered stages"></p>
+
+**Figure 1.** The extractor decides which attacker bytes reach the model; a provenance gate stops artefact text from clearing its own artefact. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Artefact** (`OLE · PE · JS · LNK`). Canary payloads hidden in channels. In this demo: `fixtures/`.
+2. **Extractor** (`survives(channel, mode)`). Decides which attacker bytes reach the prompt. In this demo: `student/triagetrap.py`.
+3. **LLM triage** (`verdict ∈ {benign, malicious}`). Reads extracted content. In this demo: `student/triagetrap.py`.
+4. **Provenance gate** (`untrusted text ⇏ BENIGN`). Quarantine cannot be lifted by artefact text. In this demo: `student/triagetrap.py`.
+5. **Quarantine decision** (`QUARANTINE | RELEASE`). Provenance-gated. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 07 on the synthetic fixture"></p>
+
+**Figure 2.** Where artefact text tries to clear its own artefact, the naive triage follows it and the provenance-gated triage does not. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Canaries embedded in real malware families under several extractors
+- Live studies on constructed and real feature records across model lineages
+- Certification wordings compared with imperative ones
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Agentic malware triage processes artifacts (PCAPs, file metadata, sandbox reports) to make quarantine decisions. **Critical rule**: Never execute unknown code. This demo uses only:

@@ -272,6 +272,53 @@ After any exercise: re-run Step 2 (tests) and Step 3 (gate) and record what chan
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=02
+python3 tools/figures/build.py 02
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/enforcement_cost.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+repo  agent  violations   after waivers  verdict  already runs a blocking scanner
+a01   yes    R1,R2        R1,R2          BLOCK    no
+a02   yes    -            -              ALLOW    yes
+a03   yes    R1           R1             BLOCK    no
+a04   yes    R2           -              ALLOW    no
+a05   yes    R1,R2,R3     R1,R2,R3       BLOCK    no
+a06   yes    -            -              ALLOW    no
+b01   no     R1,R2        R1,R2          BLOCK    no
+b02   no     -            -              ALLOW    yes
+b03   no     R1           R1             BLOCK    no
+b04   no     -            -              ALLOW    no
+agent     : blocked 3/6 (pinning rule alone 1); configured blocking scanner 1/6
+comparison: blocked 2/4 (pinning rule alone 1); configured blocking scanner 1/4
+lesson: a fail-closed gate is cheap to state and expensive to obey; count what it would block before you switch it on.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

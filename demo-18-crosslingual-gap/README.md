@@ -7,7 +7,35 @@
 - Explain the crosslingual injection gap (English-tuned detectors miss non-English payloads)
 - Apply one English-centric rule plus a single marker to 10 synthetic payloads
 - Show recall EN 4/4 vs non-EN 2/6 (total 6/10)
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 18 as numbered stages"></p>
+
+**Figure 1.** A detector tuned on English phrasing misses the same intent in another language unless it is calibrated per language. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Web content** (`payload in language L`). Same intent, different language. In this demo: `fixtures/`.
+2. **Detector** (`s(x)`). Calibrated mostly on English. In this demo: `student/detector.py`.
+3. **Calibrate per L** (`τ_L`). Threshold per language. In this demo: `student/run_lang.py`.
+4. **Bounded agent test** (`acts or not`). Does a missed payload change behaviour? In this demo: `student/run_lang.py`.
+5. **Language gap** (`recall(EN) − recall(L)`). Per language. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 18 on the synthetic fixture"></p>
+
+**Figure 2.** Every English payload is caught; translated payloads are caught inconsistently, three of six in total. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Detector calibration across many languages
+- A bounded agent test on web content
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

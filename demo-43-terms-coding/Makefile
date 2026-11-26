@@ -30,6 +30,9 @@ demo: setup
 	@cd $(DEMO_DIR) && $(PYTHON) student/run_terms.py
 	@echo ""
 	@echo "Wrote results/terms.json"
+	@echo ""
+	@echo "--- Current procedure (simplified): state-altering tool schemas checked for a confirmation step ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/confirmation_gap.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

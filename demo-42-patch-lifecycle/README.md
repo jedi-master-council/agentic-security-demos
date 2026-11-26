@@ -9,6 +9,35 @@
 - Show 2/8 fixes blocked by version pins
 - Distinguish this teaching toy from the pending study it illustrates
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 42 as numbered stages"></p>
+
+**Figure 1.** Patch latency is a distribution with a tail, not a single number. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Advisories** (`OSV records`). Pinned snapshot. In this demo: `fixtures/`.
+2. **Deduplicate** (`package × vulnerability`). Unique pairs. In this demo: `student/lifecycle.py`.
+3. **Latency** (`disclosure → patch`). Survival tail for the unpatched. In this demo: `student/lifecycle.py`.
+4. **Hygiene** (`pinning, CI practice`). Static census. In this demo: `student/run_cycle.py`.
+5. **Lifecycle** (`median lag · tail`). With cluster bootstrap. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 42 on the synthetic fixture"></p>
+
+**Figure 2.** Lags have a long tail; hatched bars are vulnerabilities whose fix a version pin blocked. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Core packages across three ecosystems
+- Survival analysis for unpatched records
+- A hygiene census of agent-framework repositories
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Fixing a library is only half the lifecycle; downstream stacks must adopt

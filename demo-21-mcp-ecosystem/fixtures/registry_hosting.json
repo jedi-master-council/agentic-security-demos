@@ -1,0 +1,122 @@
+{
+ "note": "Synthetic registry walk: version records of six servers, with publication time in hours, remote endpoint URLs and whether a secret header is required.",
+ "platform_suffixes": [
+  ".platform-a.example",
+  ".platform-b.example"
+ ],
+ "records": [
+  {
+   "server": "s1",
+   "version": "1.0.0",
+   "published_h": 0,
+   "remotes": [
+    "https://s1.platform-a.example/mcp"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s1",
+   "version": "1.0.1",
+   "published_h": 5,
+   "remotes": [
+    "https://s1.platform-a.example/mcp"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s1",
+   "version": "1.0.2",
+   "published_h": 30,
+   "remotes": [
+    "https://api.s1-owner.example/mcp"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s2",
+   "version": "0.1.0",
+   "published_h": 0,
+   "remotes": [
+    "https://s2.platform-a.example/mcp"
+   ],
+   "secret_header": false
+  },
+  {
+   "server": "s2",
+   "version": "0.1.1",
+   "published_h": 2,
+   "remotes": [
+    "https://s2.platform-a.example/mcp"
+   ],
+   "secret_header": false
+  },
+  {
+   "server": "s3",
+   "version": "2.0.0",
+   "published_h": 0,
+   "remotes": [
+    "https://mcp.s3.example"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s3",
+   "version": "2.1.0",
+   "published_h": 400,
+   "remotes": [
+    "https://mcp.s3.example"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s4",
+   "version": "1.2.0",
+   "published_h": 0,
+   "remotes": [
+    "https://s4.platform-b.example/sse"
+   ],
+   "secret_header": false
+  },
+  {
+   "server": "s4",
+   "version": "1.2.1",
+   "published_h": 10,
+   "remotes": [
+    "https://s4-new.platform-b.example/sse"
+   ],
+   "secret_header": false
+  },
+  {
+   "server": "s5",
+   "version": "0.0.1",
+   "published_h": 0,
+   "remotes": [
+    "https://s5.platform-a.example/mcp"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s5",
+   "version": "0.0.2",
+   "published_h": 80,
+   "remotes": [
+    "https://s5.platform-a.example/mcp"
+   ],
+   "secret_header": true
+  },
+  {
+   "server": "s6",
+   "version": "3.0.0",
+   "published_h": 0,
+   "remotes": [],
+   "secret_header": false
+  },
+  {
+   "server": "s6",
+   "version": "3.0.1",
+   "published_h": 1,
+   "remotes": [],
+   "secret_header": false
+  }
+ ]
+}

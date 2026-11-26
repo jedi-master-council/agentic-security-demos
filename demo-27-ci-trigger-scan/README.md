@@ -7,7 +7,36 @@
 - Explain the CI trigger-injection wiring: public trigger plus write permission without required review is vulnerable
 - Scan 8 synthetic repos and confirm exactly 3 are vulnerable (`r1`–`r3`)
 - Show how each guard (private trigger, read-only permission, required review) blocks one vector
-- Distinguish this teaching toy from the pending census it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 27 as numbered stages"></p>
+
+**Figure 1.** An agent job is exposed when an outside account can start it, nothing gates the author, and the run can write. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Workflow file** (`trigger, gate, perms`). Stored syntax only. In this demo: `fixtures/`.
+2. **Trigger** (`outsider can start it?`). Issue, comment, pull request. In this demo: `student/scanner.py`.
+3. **Identity gate** (`author check present?`). Who may start the run. In this demo: `student/scanner.py`.
+4. **Permissions** (`write declared?`). Authority of the run. In this demo: `student/run_scan.py`.
+5. **Exposure** (`public ∧ ungated ∧ write`). Per repository, a lower bound. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 27 on the synthetic fixture"></p>
+
+**Figure 2.** Three repositories let an outside account start an agent run that can write. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A stored pilot pack of repositories found by code search
+- Conservative and permissive rules side by side
+- Every count stated as a lower bound for the search space
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

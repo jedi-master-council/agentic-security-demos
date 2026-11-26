@@ -69,6 +69,54 @@ Give site `s06` in `fixtures/sites.json` `"llms_txt": true` and re-run both
 commands. Record: does adoption rise to 5/10? Does exposure change? Why are the
 two tallies independent?
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=20
+python3 tools/figures/build.py 20
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/soft404_gate.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+h01 top      status 200  -> agent-file
+h02 top      status 200  -> soft-404
+h03 top      status 200  -> agent-file
+h04 top      status 404  -> no-200
+h05 top      status 200  -> agent-file
+h06 top      status 200  -> soft-404
+h07 unranked status 200  -> soft-404
+h08 unranked status 200  -> soft-404
+h09 unranked status 200  -> agent-file
+h10 unranked status 200  -> soft-404
+h11 unranked status 301  -> no-200
+h12 unranked status 200  -> soft-404
+top     : naive adoption (200s) 5/6  gated adoption 3/6  soft-404 share of 200s 2/5
+unranked: naive adoption (200s) 5/6  gated adoption 1/6  soft-404 share of 200s 4/5
+lesson: a status code is a claim by the server; read the bytes before counting adoption.
+```
+
+<!-- END generated: figures-step -->
+
 ## Reproducibility Table
 
 | Field | Your run |

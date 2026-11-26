@@ -39,6 +39,34 @@ Free and allocated cloud quantum access is measured in minutes, and a job that f
 - Explain which control or baseline makes the outcome interpretable
 - Distinguish the teaching output from a confirmatory research result
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 66 as numbered stages"></p>
+
+**Figure 1.** Under a fixed hardware budget, the workflow that filters jobs before submission can return more accepted results per second. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Job queue** (`circuits`). Fixed QPU-time budget. In this demo: `fixtures/`.
+2. **Workflow arm** (`default | rule | simulate-first`). How each job is submitted. In this demo: `student/qpu_budget.py`.
+3. **QPU** (`seconds spent`). Simulated hardware. In this demo: `student/qpu_budget.py`.
+4. **Acceptance** (`result passes check?`). Accepted results only. In this demo: `student/run_qpu_budget.py`.
+5. **Efficiency** (`accepted results per QPU-second`). Per arm. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 66 on the synthetic fixture"></p>
+
+**Figure 2.** The arm that simulates first spends hardware seconds only on jobs likely to pass, and returns the most accepted results per second. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Pilot runs on real hardware time
+- Design stage: no pilot data yet
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Venues
 
 | Option | Venue | Dates and rules |

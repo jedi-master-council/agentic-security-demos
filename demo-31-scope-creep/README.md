@@ -16,6 +16,35 @@
 - Distinguish declared authority from capability classes (Demo 21) and delegation properties (Demo 24)
 - Distinguish teaching demonstrations from validated research benchmarks
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 31 as numbered stages"></p>
+
+**Figure 1.** Authority is reviewable only where it is declared; the four places are compared per integration. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Read the listing** (`registry entry`). No field for scopes; names in descriptions. In this demo: `fixtures/`.
+2. **Read credentials** (`what the user supplies`). Tokens and keys requested. In this demo: `fixtures/`.
+3. **Read run-time metadata** (`authorisation hints`). Protocol metadata. In this demo: `fixtures/`.
+4. **Read code and docs** (`scopes exercised`). Published source. In this demo: `student/declarations.py`.
+5. **Declaration gap** (`declared ⊋ exercised`). Where authority is reviewable. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 31 on the synthetic fixture"></p>
+
+**Figure 2.** 5 of 8 integrations declare more authority than they exercise. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Every latest version in the official registry
+- Provider scope catalogues for four identity providers
+- Strict and lenient matching rules
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Agent integrations in the MCP registry declare authority through listings,

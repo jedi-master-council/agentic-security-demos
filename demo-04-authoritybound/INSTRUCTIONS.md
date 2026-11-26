@@ -231,6 +231,46 @@ From the **repository root**: `make demo DEMO=04`
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=04
+python3 tools/figures/build.py 04
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/zero_audit.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+release  reported ASR  exercised denominator  utility  reading
+rel-A           0.00          6/10            1.00  defence plausibly worked on the exercised cases
+rel-B           0.00          0/10            1.00  nothing to defend: the undefended agent was never hijacked
+rel-C           0.00          5/10            0.00  agent stopped doing user tasks: zero reflects lost utility
+rel-D           0.00          1/10            1.00  cannot show a reduction: one exercised case
+rel-E           0.00          6/10            0.70  defence plausibly worked on the exercised cases
+lesson: print the exercised denominator and the utility beside every zero; otherwise a zero has four meanings.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

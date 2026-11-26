@@ -16,6 +16,39 @@
 - Taint scanner output from its own text (canaries, instructions, credentials)
 - Enforce a downstream action policy that is consulted for every finding
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 10 as numbered stages"></p>
+
+**Figure 1.** A block is an event; containment is the outcome after the agent's next proposal. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Scanner agent** (`proposal p`). Every proposal kept, even unparseable. In this demo: `fixtures/blocked_vs_contained.json`.
+2. **Scope resolver** (`dest(p) ∈ scope?`). Resolves the destination a rule will see. In this demo: `student/blocked_vs_contained.py`.
+3. **Guardrail** (`BLOCK | ALLOW`). Destination-scoped rule. In this demo: `student/scanbound.py`.
+4. **Next proposal** (`p′ after a block`). An effect-preserving rewrite. In this demo: `student/blocked_vs_contained.py`.
+5. **Containment** (`contained ≠ blocked`). Counted over one fail-closed denominator. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 10 on the synthetic fixture"></p>
+
+**Figure 2.** The guardrail blocks 4 of 6 out-of-scope proposals but contains only 2: two destinations pass the resolver and two blocks are undone by the next rewrite. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/blocked_vs_contained.py` (blocks against containment, keeping unparseable proposals in the denominator). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- Three corpora of live action proposals, one from an isolated laboratory range
+- Several existing guardrail arms expressing one intent
+- Offline simulation of effect-preserving rewrites after a block
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 An autonomous vulnerability scanner can:

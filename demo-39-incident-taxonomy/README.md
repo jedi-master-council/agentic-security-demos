@@ -17,6 +17,35 @@
 - Reproduce a reference run byte-identically and benchmark a perturbed run against it
 - Distinguish this practitioner guidance toy from any research claim
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 39 as numbered stages"></p>
+
+**Figure 1.** Incident sketches become counts by pattern, and the patterns no technique catalogue covers are the gap. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Incident records** (`frozen, hashed`). Two public databases. In this demo: `fixtures/`.
+2. **Screen** (`inclusion rule`). AI systems acting in real settings. In this demo: `student/taxonomy.py`.
+3. **Double-code** (`pattern ∈ ten`). Two coders, kappa gate. In this demo: `student/taxonomy.py`.
+4. **Map** (`pattern → technique`). Known adversary techniques. In this demo: `student/run_tax.py`.
+5. **Taxonomy** (`prevalence · unmapped gap`). For practitioners. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 39 on the synthetic fixture"></p>
+
+**Figure 2.** Prompt injection is the most frequent pattern in the toy; the research version double-codes every incident. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Hundreds of frozen, hash-verified records
+- Rule-based lexicon coders against a registered gate
+- A second, rules-free mapping
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Practitioners turn incident reports into counts: which pattern recurs, and

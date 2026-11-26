@@ -1,0 +1,83 @@
+{
+ "note": "Twelve synthetic assistant replies to learners who keep asking for the answer. The guard scores each reply's overlap with the answer key; the label says whether the reply in fact gives the answer away.",
+ "thresholds": [
+  0.3,
+  0.5,
+  0.7,
+  0.9
+ ],
+ "replies": [
+  {
+   "id": "t01",
+   "condition": "socratic",
+   "leak_score": 0.1,
+   "leaks_answer": false
+  },
+  {
+   "id": "t02",
+   "condition": "socratic",
+   "leak_score": 0.35,
+   "leaks_answer": false
+  },
+  {
+   "id": "t03",
+   "condition": "socratic",
+   "leak_score": 0.55,
+   "leaks_answer": false
+  },
+  {
+   "id": "t04",
+   "condition": "socratic",
+   "leak_score": 0.62,
+   "leaks_answer": true
+  },
+  {
+   "id": "t05",
+   "condition": "socratic",
+   "leak_score": 0.8,
+   "leaks_answer": true
+  },
+  {
+   "id": "t06",
+   "condition": "socratic",
+   "leak_score": 0.45,
+   "leaks_answer": false
+  },
+  {
+   "id": "t07",
+   "condition": "direct",
+   "leak_score": 0.95,
+   "leaks_answer": true
+  },
+  {
+   "id": "t08",
+   "condition": "direct",
+   "leak_score": 0.88,
+   "leaks_answer": true
+  },
+  {
+   "id": "t09",
+   "condition": "direct",
+   "leak_score": 0.72,
+   "leaks_answer": true
+  },
+  {
+   "id": "t10",
+   "condition": "socratic",
+   "leak_score": 0.68,
+   "leaks_answer": false
+  },
+  {
+   "id": "t11",
+   "condition": "socratic",
+   "leak_score": 0.2,
+   "leaks_answer": false
+  },
+  {
+   "id": "t12",
+   "condition": "direct",
+   "leak_score": 0.4,
+   "leaks_answer": true
+  }
+ ]
+}

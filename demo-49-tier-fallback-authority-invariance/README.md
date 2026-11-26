@@ -10,9 +10,37 @@
 - Read a fail-closed reference monitor that re-validates pending steps after a switch
 - Distinguish teaching demonstrations from validated research benchmarks
 
-**Status:** design stage, created 6 November 2026. The repository holds an offline checker, synthetic
+**Status (26 November 2026):** the research study behind this demo is in progress or under peer review; the demo was created on 6 November 2026. The repository holds an offline checker, synthetic
 fixtures and tests. It holds no results; every empirical statement in a future paper is
 [RESULT PENDING] until a committed analysis script derives it.
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 49 as numbered stages"></p>
+
+**Figure 1.** Authority must not change when the model serving a task changes mid-way. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Orchestrator** (`task, plan`). Running on tier A. In this demo: `fixtures/`.
+2. **Fallback** (`tier A → tier B`). Quota, rate limit or cost ceiling. In this demo: `fixtures/`.
+3. **Monitor** (`d(policy, action)`). Never depends on the tier (R1). In this demo: `student/tier_invariance`.
+4. **Re-validate** (`steps proposed before switch`). Fail closed (R2); every action mediated (R3). In this demo: `student/run_tiers.py`.
+5. **Invariance** (`violations R0–R3`). Per trace. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 49 on the synthetic fixture"></p>
+
+**Figure 2.** Each failure mode breaks exactly one rule: a tier-dependent decision, a stale plan step, or an unmediated action. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Tier independence, re-validation and complete mediation stated as properties
+- A fail-closed monitor costed for a fixed budget
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Research question
 

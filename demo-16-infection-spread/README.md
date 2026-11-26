@@ -7,7 +7,40 @@
 - Explain epidemic spread over agent graphs (R0 as p times mean degree)
 - Simulate deterministic breadth-first spread from node 0 on four six-node topologies
 - Show uncontained spread reaches 6/6 everywhere while chain containment holds at 2/6
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 16 as numbered stages"></p>
+
+**Figure 1.** An uninstructed control code in the same position separates instructed relay from ordinary copying. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Ticket** (`marker m (instructed) | code c`). Matched chains differ only in the instruction. In this demo: `fixtures/relay_control.json`.
+2. **Agent 1** (`reads ticket`). In this demo: `student/relay_control.py`.
+3. **Agent 2** (`reads agent 1`). In this demo: `student/relay_control.py`.
+4. **Agent 3** (`reach(m), reach(c)`). Did the code arrive? In this demo: `student/relay_control.py`.
+5. **Instruction effect** (`reach(m) − reach(c)`). Per model and boundary arm. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 16 on the synthetic fixture"></p>
+
+**Figure 2.** Without a boundary mechanism only m3 relays the instructed marker more than an ordinary code; with one, every model relays it less than the control. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/relay_control.py` (instructed markers against uninstructed control codes along a three-agent chain). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- Many payloads, a random marker per trial, several relay phrasings, models and boundary mechanisms
+- Ticket facts checked to survive the defence
+- A network simulation with propagated uncertainty
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

@@ -30,6 +30,9 @@ demo: setup
 	@cd $(DEMO_DIR) && $(PYTHON) student/run_web.py
 	@echo ""
 	@echo "Wrote results/web_census.json"
+	@echo ""
+	@echo "--- Current procedure (simplified): HTTP 200 at an agent-facing path, checked byte by byte for soft-404s ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/soft404_gate.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

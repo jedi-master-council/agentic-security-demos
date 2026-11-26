@@ -278,6 +278,45 @@ After any exercise, re-run Step 2 (tests) and Step 5 (evaluation) and record how
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=01
+python3 tools/figures/build.py 01
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/format_effect.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+config  free-text hit  typed-schema hit  difference  (sealed before reveal)
+cfg-A            1.00              0.50       -0.50  a2c9a281de15/7dca764aca86
+cfg-B            0.83              0.50       -0.33  97c2a5b872a3/934c5749b9d4
+cfg-C            0.83              0.50       -0.33  08784ff943a9/5ca8205a3696
+mean paired difference -0.39; exact sign-flip p = 0.25 (floor with 3 configurations = 0.25)
+lesson: the output format can move where a model looks; with few configurations no test can be significant.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

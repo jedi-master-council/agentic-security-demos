@@ -7,7 +7,36 @@
 - Explain four pipeline failure modes: graceful handling, cascade, silent-wrong output, and cost blowup
 - Show how a retry budget of 2 absorbs transient faults but not permanent ones
 - Read a dependability scorecard: graceful 2/6 without retries, 5/6 with retries
-- Distinguish this teaching toy from the pending study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 23 as numbered stages"></p>
+
+**Figure 1.** Payload faults that look like valid data produce silent wrong answers more often than transport faults that raise errors. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Agent loop** (`framework + model`). A task that uses tools. In this demo: `fixtures/`.
+2. **Fault proxy** (`fault ∈ six types`). Transport or payload faults injected. In this demo: `student/faults.py`.
+3. **Oracle** (`graceful | cascade | silent-wrong`). Compares the answer with ground truth. In this demo: `student/run_faults.py`.
+4. **Static audit** (`broad except handlers`). Do handlers swallow errors? In this demo: `student/faults.py`.
+5. **Fault handling** (`silent-wrong rate by fault class`). Against a registered margin. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 23 on the synthetic fixture"></p>
+
+**Figure 2.** A bounded retry budget turns most faults into graceful outcomes; a permanent fault still cascades. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A pre-registered campaign over several frameworks and local models
+- A blinded check of the oracle
+- A static census of exception handlers across many frameworks
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

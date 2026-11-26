@@ -13,7 +13,40 @@
 - Explain what tool poisoning is (a tool description carrying instructions to the model, not the user)
 - Define a rug pull (a version update that silently adds capabilities or rewrites the description)
 - Run a miniature census: poisoning prevalence, version drift, capability bundling, maintainer concentration
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 21 as numbered stages"></p>
+
+**Figure 1.** A dated registry walk shows where agent tool servers are hosted and how their endpoints change between versions. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Registry walk** (`version records`). Every server, every version, dated. In this demo: `fixtures/registry_hosting.json`.
+2. **Hosting** (`host share, platform suffix`). Where the tool layer runs. In this demo: `student/registry_hosting.py`.
+3. **Cadence** (`gap between versions`). How fast it changes. In this demo: `student/registry_hosting.py`.
+4. **Endpoint change** (`URL Δ under bump type`). Patch, minor or major. In this demo: `student/registry_hosting.py`.
+5. **Measurement** (`concentration · cadence · drift`). Plus secret-header requirements. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 21 on the synthetic fixture"></p>
+
+**Figure 2.** Endpoints sit under a few platform suffixes, most new versions follow within a day, and both endpoint changes in the toy arrive under a patch bump. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/registry_hosting.py` (hosting concentration, version cadence and endpoint changes in a registry walk). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- The complete official registry walk on a fixed date
+- Intervals for every share
+- Description poisoning and capability tallies (the toy's first part)
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

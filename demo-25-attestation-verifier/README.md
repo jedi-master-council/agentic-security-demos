@@ -7,7 +7,36 @@
 - Explain install-time attestation verification: install a package only when its provenance is attested
 - Contrast fail-closed (block 6/10 unattested) with fail-open (warn instead of blocking)
 - State clearly that the 4-attested / 6-unattested split is a hand-picked toy, not an ecosystem measurement
-- Distinguish this teaching toy from the pending study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 25 as numbered stages"></p>
+
+**Figure 1.** A fail-closed provenance check blocks every unattested package; its cost is what it blocks and its value is what it catches. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Registry** (`servers → packages`). Names declared by each server. In this demo: `fixtures/`.
+2. **Attestation state** (`signed build provenance?`). Registry-reported per release. In this demo: `fixtures/`.
+3. **Install check** (`fail-closed | fail-open`). Block or warn when unattested. In this demo: `student/verifier.py`.
+4. **Advisory join** (`malicious-package list`). What the check would catch. In this demo: `student/run_verify.py`.
+5. **Cost and catch** (`blocked share · caught share`). Remote-only servers offer nothing to check. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 25 on the synthetic fixture"></p>
+
+**Figure 2.** Fail-closed blocks all 6 unattested packages; fail-open installs them with a warning. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- The official registry joined to attestation state for all declared names
+- Coverage by release count
+- Cluster bootstrap intervals
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

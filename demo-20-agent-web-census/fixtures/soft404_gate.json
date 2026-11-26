@@ -1,0 +1,77 @@
+{
+ "note": "Twelve synthetic crawl records for the path /llms.txt: the HTTP status the crawler stored and the archived bytes.",
+ "records": [
+  {
+   "host": "h01",
+   "tier": "top",
+   "status": 200,
+   "body": "# Example site\n\n> Short summary for language models.\n\n## Docs\n- [API](https://example.org/api.md)\n"
+  },
+  {
+   "host": "h02",
+   "tier": "top",
+   "status": 200,
+   "body": "<!DOCTYPE html><html><head><title>Not found</title></head><body>Sorry</body></html>"
+  },
+  {
+   "host": "h03",
+   "tier": "top",
+   "status": 200,
+   "body": "# Example site\n\n> Short summary for language models.\n\n## Docs\n- [API](https://example.org/api.md)\n"
+  },
+  {
+   "host": "h04",
+   "tier": "top",
+   "status": 404,
+   "body": ""
+  },
+  {
+   "host": "h05",
+   "tier": "top",
+   "status": 200,
+   "body": "# Example site\n\n> Short summary for language models.\n\n## Docs\n- [API](https://example.org/api.md)\n"
+  },
+  {
+   "host": "h06",
+   "tier": "top",
+   "status": 200,
+   "body": "<html><body>Welcome to our shop</body></html>"
+  },
+  {
+   "host": "h07",
+   "tier": "unranked",
+   "status": 200,
+   "body": "<!DOCTYPE html><html><head><title>Not found</title></head><body>Sorry</body></html>"
+  },
+  {
+   "host": "h08",
+   "tier": "unranked",
+   "status": 200,
+   "body": "<!DOCTYPE html><html><head><title>Not found</title></head><body>Sorry</body></html>"
+  },
+  {
+   "host": "h09",
+   "tier": "unranked",
+   "status": 200,
+   "body": "# Example site\n\n> Short summary for language models.\n\n## Docs\n- [API](https://example.org/api.md)\n"
+  },
+  {
+   "host": "h10",
+   "tier": "unranked",
+   "status": 200,
+   "body": "<!doctype html><html lang=en><body>Home</body></html>"
+  },
+  {
+   "host": "h11",
+   "tier": "unranked",
+   "status": 301,
+   "body": ""
+  },
+  {
+   "host": "h12",
+   "tier": "unranked",
+   "status": 200,
+   "body": "<!DOCTYPE html><html><head><title>Not found</title></head><body>Sorry</body></html>"
+  }
+ ]
+}

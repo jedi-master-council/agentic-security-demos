@@ -9,6 +9,34 @@
 - Distinguish the teaching output from a confirmatory research result
 - Name the target venue and why the topic is scoped to that venue
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 70 as numbered stages"></p>
+
+**Figure 1.** Separation-of-duty conflicts appear only after roles are expanded into effective permissions. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Assignments** (`users → roles`). Effective RBAC. In this demo: `fixtures/`.
+2. **Expand** (`roles → permissions`). Effective permission sets. In this demo: `student/sod.py`.
+3. **SoD pairs** (`mutually exclusive`). E.g. approve and post payment. In this demo: `student/sod.py`.
+4. **Detect** (`pair ⊆ perms(u)`). Per user. In this demo: `student/run_sod.py`.
+5. **Conflicts** (`users in conflict`). Deterministic. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 70 on the synthetic fixture"></p>
+
+**Figure 2.** One user holds both approve-payment and post-payment once roles are expanded. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Public access-control datasets
+- Scaling to large role graphs
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Deterministic detection of mutually exclusive permission pairs in effective RBAC assignments. The fixture holds 8 labelled synthetic cases.

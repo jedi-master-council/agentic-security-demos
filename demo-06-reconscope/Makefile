@@ -31,6 +31,9 @@ demo: setup
 	@echo ""
 	@echo "Generating evaluation results..."
 	@cd $(DEMO_DIR) && $(PYTHON) student/generate_evaluation.py
+	@echo ""
+	@echo "--- Current procedure (simplified): text-heuristic labels against a transport-layer execution oracle on the same trials ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/label_vs_oracle.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

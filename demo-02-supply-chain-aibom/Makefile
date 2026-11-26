@@ -39,6 +39,9 @@ demo: setup
 	@echo ""
 	@echo "Generating JSON results..."
 	@cd $(DEMO_DIR) && $(PYTHON) student/generate_results.py
+	@echo ""
+	@echo "--- Current procedure (simplified): what a fail-closed supply-chain gate would block across a census of CI configurations ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/enforcement_cost.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

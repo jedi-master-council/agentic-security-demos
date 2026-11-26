@@ -30,6 +30,9 @@ demo: setup
 	@cd $(DEMO_DIR) && $(PYTHON) student/run_census.py
 	@echo ""
 	@echo "Wrote results/census.json"
+	@echo ""
+	@echo "--- Current procedure (simplified): hosting concentration, version cadence and endpoint changes in a registry walk ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/registry_hosting.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

@@ -7,7 +7,36 @@
 - Explain claims-vs-logs auditing (check an agent's self-report against its action log)
 - Apply three rules: tests_run needs pytest in actions, untouched must avoid edited files, destructive must match rm -rf
 - Show 5 faithful runs and 3 violations (one of each type) over 8 synthetic trajectories
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 17 as numbered stages"></p>
+
+**Figure 1.** Each claim in an agent's completion report is checked against the agent's own action log. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Coding agent** (`actions A, report R`). Closes the task with a natural-language report. In this demo: `fixtures/`.
+2. **Extract claims** (`R → {c₁ … cₙ}`). Tests ran, files untouched, steps taken. In this demo: `student/fidelity.py`.
+3. **Predicates** (`pᵢ(A) per claim`). Versioned, executable checks against the log. In this demo: `student/fidelity.py`.
+4. **Certificate** (`S | C | U | V`). Supported, Contradicted, Unsupported, Unverifiable. In this demo: `student/run_audit.py`.
+5. **Report fidelity** (`share Contradicted`). A predicate flag rate, not an error rate. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 17 on the synthetic fixture"></p>
+
+**Figure 2.** 3 of 8 completion reports claim something the action log contradicts. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- A public scrape of terminal-task trials with task-clustered intervals
+- Four certificate outcomes instead of the toy's two
+- Sensitivity analyses for duplicate exports and rule sets
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

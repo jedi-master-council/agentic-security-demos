@@ -13,7 +13,36 @@
 - Explain what a conformal risk gate is (execute an action only when its risk score is below a calibrated threshold)
 - Calibrate a threshold on one episode set to meet a nominal risk budget (alpha 0.30)
 - Show the guarantee holds on same-distribution episodes but breaks under benchmark shift
-- Distinguish this teaching toy from the preregistered study it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 14 as numbered stages"></p>
+
+**Figure 1.** A conformal bound is a promise about exchangeable traffic; under shift the realised risk can exceed it. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Calibration set** (`scores of injections`). Exchangeable with the test traffic? In this demo: `fixtures/`.
+2. **Conformal threshold** (`τ̂ : risk ≤ α`). Split-conformal on calibration scores. In this demo: `student/conformal_gate.py`.
+3. **Tool call** (`score s(x)`). Classifier scores the call's input. In this demo: `student/run_gate.py`.
+4. **Gate** (`HOLD ⇔ s ≥ τ̂`). Integrity and availability both counted. In this demo: `student/run_gate.py`.
+5. **Dependability** (`risk vs availability`). Same corpus against shifted corpus. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 14 on the synthetic fixture"></p>
+
+**Figure 2.** On the calibration corpus the conformal gate keeps risk under α = 0.3; on the shifted corpus the same threshold fails. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Many corpora and replays of recorded agent trajectories
+- Leave-one-suite-out calibration and label-free safeguards
+- A white-box attacker measured in inserted words
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

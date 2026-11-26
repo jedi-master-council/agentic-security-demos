@@ -30,6 +30,9 @@ demo: setup
 	@cd $(DEMO_DIR) && $(PYTHON) student/run_spread.py
 	@echo ""
 	@echo "Wrote results/spread.json"
+	@echo ""
+	@echo "--- Current procedure (simplified): instructed markers against uninstructed control codes along a three-agent chain ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/relay_control.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

@@ -68,6 +68,25 @@ both commands. Record: does the count drop to 4/8? Why does labelling one
 edge change the measurement but not the enforcement question — and where
 does enforcement live (see Demo 04 AuthorityBound)?
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=44
+python3 tools/figures/build.py 44
+```
+
+<!-- END generated: figures-step -->
+
 ## Reproducibility Table
 
 | Field | Your run |

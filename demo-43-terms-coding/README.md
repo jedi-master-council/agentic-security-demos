@@ -9,6 +9,39 @@
 - Show the accountability gradient (disclaimers common, delegation consent rare)
 - Distinguish this teaching toy from the pending content analysis it illustrates
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 43 as numbered stages"></p>
+
+**Figure 1.** Oversight that platform terms expect can only be exercised if the tool's schema offers a confirmation step. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Tool catalogue** (`input schemas`). A third-party catalogue. In this demo: `fixtures/confirmation_gap.json`.
+2. **Categorise** (`state-altering?`). Four vendor categories. In this demo: `student/confirmation_gap.py`.
+3. **Keyword check** (`confirm · approve · consent`). A confirmation step in the schema? In this demo: `student/confirmation_gap.py`.
+4. **Gap** (`altering ∧ ¬confirm`). Where oversight cannot be exercised. In this demo: `student/confirmation_gap.py`.
+5. **Enforcement gap** (`share without confirmation`). Terms expect oversight; schemas lack the hook. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 43 on the synthetic fixture"></p>
+
+**Figure 2.** Three of eight state-altering tools expose a confirmation parameter that the keyword rule finds; post_tweet's require_approval is missed by the rule itself. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### New in this update (26 November 2026)
+
+The research procedure for this topic has moved on since the demo was first written. A new step teaches the current procedure in simplified form: `student/confirmation_gap.py` (state-altering tool schemas checked for a confirmation step). `make demo` now runs it after the original exercise, and `tests/test_current_procedure.py` pins its behaviour.
+
+### What the research version adds (withheld while under peer review)
+
+- A large third-party catalogue of protocol tools
+- Runtime verification affordances beside the schema keywords
+- Terms coding (the toy's first part) as context
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Terms of service allocate responsibility between platform and deployer. Coding

@@ -1,0 +1,186 @@
+{
+ "note": "Six synthetic agent-written analyses of one small dataset. Steps use a tiny whitelisted operation set; the report lists the numbers the prose states, and the last one is the answer.",
+ "data": {
+  "a": [
+   2.0,
+   4.0,
+   6.0,
+   8.0
+  ],
+  "b": [
+   1.0,
+   1.5,
+   2.5,
+   3.0
+  ]
+ },
+ "tolerance": 0.01,
+ "runs": [
+  {
+   "id": "r1",
+   "steps": [
+    {
+     "op": "mean",
+     "in": "a",
+     "out": "m"
+    },
+    {
+     "op": "ratio",
+     "in": [
+      "m",
+      "mb"
+     ],
+     "out": "q"
+    },
+    {
+     "op": "mean",
+     "in": "b",
+     "out": "mb"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    2.0,
+    2.5
+   ],
+   "reference_answer": 2.5
+  },
+  {
+   "id": "r2",
+   "steps": [
+    {
+     "op": "mean",
+     "in": "a",
+     "out": "m"
+    },
+    {
+     "op": "mean",
+     "in": "b",
+     "out": "mb"
+    },
+    {
+     "op": "ratio",
+     "in": [
+      "m",
+      "mb"
+     ],
+     "out": "q"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    2.0,
+    2.5
+   ],
+   "reference_answer": 2.5
+  },
+  {
+   "id": "r3",
+   "steps": [
+    {
+     "op": "mean",
+     "in": "a",
+     "out": "m"
+    },
+    {
+     "op": "mean",
+     "in": "b",
+     "out": "mb"
+    },
+    {
+     "op": "ratio",
+     "in": [
+      "m",
+      "mb"
+     ],
+     "out": "q"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    2.0,
+    2.6
+   ],
+   "reference_answer": 2.5
+  },
+  {
+   "id": "r4",
+   "steps": [
+    {
+     "op": "mean",
+     "in": "a",
+     "out": "m"
+    },
+    {
+     "op": "max",
+     "in": "b",
+     "out": "xb"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    3.0,
+    2.5
+   ],
+   "reference_answer": 2.5
+  },
+  {
+   "id": "r5",
+   "steps": [
+    {
+     "op": "median",
+     "in": "a",
+     "out": "md"
+    },
+    {
+     "op": "mean",
+     "in": "b",
+     "out": "mb"
+    },
+    {
+     "op": "ratio",
+     "in": [
+      "md",
+      "mb"
+     ],
+     "out": "q"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    2.0,
+    2.5
+   ],
+   "reference_answer": 2.5
+  },
+  {
+   "id": "r6",
+   "steps": [
+    {
+     "op": "mean",
+     "in": "a",
+     "out": "m"
+    },
+    {
+     "op": "sum",
+     "in": "b",
+     "out": "sb"
+    },
+    {
+     "op": "ratio",
+     "in": [
+      "m",
+      "sb"
+     ],
+     "out": "q"
+    }
+   ],
+   "report_numbers": [
+    5.0,
+    8.0,
+    0.625
+   ],
+   "reference_answer": 2.5
+  }
+ ]
+}

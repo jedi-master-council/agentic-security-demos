@@ -1,24 +1,42 @@
 {
+ "note": "Six synthetic guardrail models: a public-benchmark score and the share of recorded tool-attack replays each blocks.",
+ "replay_pass": 0.7,
  "models": [
   {
-   "id": "m1",
-   "benchmark_score": 0.92,
-   "replay_outcome": 0.85
+   "id": "g1",
+   "family": "content-safety",
+   "benchmark": 0.94,
+   "replay_block": 0.41
   },
   {
-   "id": "m2",
-   "benchmark_score": 0.78,
-   "replay_outcome": 0.66
+   "id": "g2",
+   "family": "content-safety",
+   "benchmark": 0.9,
+   "replay_block": 0.38
   },
   {
-   "id": "m3",
-   "benchmark_score": 0.64,
-   "replay_outcome": 0.71
+   "id": "g3",
+   "family": "content-safety",
+   "benchmark": 0.86,
+   "replay_block": 0.45
   },
   {
-   "id": "m4",
-   "benchmark_score": 0.55,
-   "replay_outcome": 0.58
+   "id": "g4",
+   "family": "injection",
+   "benchmark": 0.78,
+   "replay_block": 0.83
+  },
+  {
+   "id": "g5",
+   "family": "injection",
+   "benchmark": 0.71,
+   "replay_block": 0.76
+  },
+  {
+   "id": "g6",
+   "family": "injection",
+   "benchmark": 0.62,
+   "replay_block": 0.71
   }
  ]
 }

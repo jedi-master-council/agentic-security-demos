@@ -43,6 +43,25 @@ Demo 56: fixed-effect mean on synthetic study rows
   k 4  mean 0.3448  se 0.0788  Q 2.1207 (df 3)
 ```
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=56
+python3 tools/figures/build.py 56
+```
+
+<!-- END generated: figures-step -->
+
 ## What to look for
 
 - S4 (yi=0.40, vi=0.01) is the most precise row and pulls the mean toward 0.40.

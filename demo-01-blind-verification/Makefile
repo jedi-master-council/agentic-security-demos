@@ -42,6 +42,9 @@ demo: setup
 	@echo ""
 	@echo "Results:"
 	@cat $(DEMO_DIR)/results/comparison_table.json | $(PYTHON) -m json.tool
+	@echo ""
+	@echo "--- Current procedure (simplified): free-text versus typed-schema commitments, sealed before reveal, compared per configuration ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/format_effect.py
 
 clean:
 	@rm -f $(DEMO_DIR)/commitments_*.json $(DEMO_DIR)/commitment_hashes_*.json

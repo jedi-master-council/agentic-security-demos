@@ -7,7 +7,36 @@
 - Explain memory-integrity poisoning: planted instructions inside stored entries that steer later behaviour
 - Run the MemScope auditor over 8 synthetic entries and confirm it flags exactly the 3 poisoned ones with 0 false positives
 - State the auditor's limits: literal case-insensitive patterns only, no semantic detection
-- Distinguish this teaching toy from the pending talk it illustrates (no data collected there yet)
+- Distinguish this teaching toy from the research study it illustrates (in progress or under peer review; its data and results are not released here)
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 28 as numbered stages"></p>
+
+**Figure 1.** A memory auditor reports origin, instruction-likeness and persistence without changing the store. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Memory store** (`entries e`). Opened through an adapter. In this demo: `fixtures/`.
+2. **Origin recorded?** (`hash(e), source`). Does the store keep provenance? In this demo: `student/memascope.py`.
+3. **Instruction-likeness** (`rules + classifier`). Scored per entry, never edited. In this demo: `student/memascope.py`.
+4. **Canary** (`write → later retrieve`). Through the framework's own paths, on a copy. In this demo: `student/run_memascope.py`.
+5. **Audit report** (`flagged entries · persistence`). Read-only: no edit, no delete. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 28 on the synthetic fixture"></p>
+
+**Figure 2.** The auditor flags 3 of 8 stored entries and changes none of them. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Adapters for real framework stores
+- An open-weight classifier run locally
+- A benign canary planted into a copy of the store
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Conceptual Explanation
 

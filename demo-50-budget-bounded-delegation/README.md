@@ -10,9 +10,38 @@
 - Explain why partial grants are opt-in rather than the default
 - Distinguish teaching demonstrations from validated research benchmarks
 
-**Status:** design stage, created 6 November 2026. The repository holds an offline ledger,
+**Status (26 November 2026):** the research study behind this demo is in progress or under peer review; the demo was created on 6 November 2026. The repository holds an offline ledger,
 synthetic fixtures and tests. It holds no results; every empirical statement in a future paper is
 [RESULT PENDING] until a committed analysis script derives it.
+
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 50 as numbered stages"></p>
+
+**Figure 1.** If budgets travel as attenuating capabilities, no chain can spend more than its root. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Root principal** (`budget B`). The only source of spend. In this demo: `fixtures/`.
+2. **Delegate** (`grant g ≤ remaining`). Attenuating capability. In this demo: `student/delegation_budget`.
+3. **Ledger** (`invariants B1–B5`). Conservation along every chain. In this demo: `student/delegation_budget`.
+4. **Conditions** (`C0 … C3`). Defaults, fixed, attenuated, partial. In this demo: `student/run_budget.py`.
+5. **Overrun and work** (`overrun rate · completed work`). Per condition. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 50 on the synthetic fixture"></p>
+
+**Figure 2.** The ledger denies every grant or spend that would break conservation, so no plan exceeds the root budget. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Seeded synthetic delegation trees across workload regimes
+- Bootstrap intervals for overrun rates
+- A second stage on real pipelines
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
 
 ## Research question
 

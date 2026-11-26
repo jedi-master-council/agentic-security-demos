@@ -300,6 +300,52 @@ From the **repository root**: `make demo DEMO=10`
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=10
+python3 tools/figures/build.py 10
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/blocked_vs_contained.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+prop  verdict  out-of-scope  outcome
+p01   ALLOW    no            in scope
+p02   BLOCK    yes           BLOCKED, then RESTORED by a rewrite
+p03   ALLOW    no            in scope
+p04   ALLOW    yes           MISSED: resolver admits the destination
+p05   BLOCK    yes           blocked and contained
+p06   BLOCK    yes           BLOCKED, then RESTORED by a rewrite
+p07   ALLOW    no            in scope
+p08   ALLOW    no            in scope
+p09   ALLOW    yes           MISSED: resolver admits the destination
+p10   BLOCK    yes           blocked and contained
+out-of-scope proposals 6 (denominator keeps the unparseable one): blocked 4, contained 2
+lesson: count containment, not blocks; a block that the next rewrite undoes contained nothing.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

@@ -9,6 +9,35 @@
 - Show the benchmark gap exceeds 0.20 while the scale gap stays within 0.05
 - Distinguish synthesis of published numbers from new measurements
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 35 as numbered stages"></p>
+
+**Figure 1.** A size trend across benchmarks can be the benchmark mix; holding the suite fixed tests it. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Published results** (`rate, model, suite`). Extracted rows. In this demo: `fixtures/`.
+2. **Moderators** (`size, date, regime`). Coded per row. In this demo: `student/meta.py`.
+3. **Meta-regression** (`y ~ size + suite`). Suite as a fixed effect. In this demo: `student/meta.py`.
+4. **Compare** (`with and without suite`). Does size survive? In this demo: `student/run_meta.py`.
+5. **Scaling claim** (`slope(size | suite)`). Design stage. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 35 on the synthetic fixture"></p>
+
+**Figure 2.** The rate depends on the benchmark, not on size: within each benchmark the points are flat. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Published agent-safety and injection results extracted under a protocol
+- Release date and training regime as moderators
+- Design stage
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Misbehaviour is often plotted against model size, but the test suite matters

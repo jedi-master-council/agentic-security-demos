@@ -1,31 +1,111 @@
 {
- "schemas": [
+ "note": "Two tool schemas and eight boundary payloads, validated by two toy interpretations that mirror common framework behaviours.",
+ "schemas": {
+  "transfer": {
+   "properties": {
+    "amount": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "currency": {
+     "type": "string",
+     "enum": [
+      "GBP",
+      "EUR"
+     ]
+    }
+   },
+   "required": [
+    "amount",
+    "currency"
+   ]
+  },
+  "read": {
+   "properties": {
+    "path": {
+     "type": "string"
+    },
+    "limit": {
+     "type": "integer",
+     "nullable": false
+    }
+   },
+   "required": [
+    "path"
+   ]
+  }
+ },
+ "payloads": [
   {
-   "id": "sc1",
-   "field": "count",
-   "type": "integer",
-   "frameworks": {
-    "fw-a": "accepts any integer",
-    "fw-b": "rejects negatives"
-   }
+   "id": "p1",
+   "schema": "transfer",
+   "args": {
+    "amount": 10,
+    "currency": "GBP"
+   },
+   "dimension": "control"
   },
   {
-   "id": "sc2",
-   "field": "path",
-   "type": "string",
-   "frameworks": {
-    "fw-a": "resolves relative to cwd",
-    "fw-b": "resolves relative to home"
-   }
+   "id": "p2",
+   "schema": "transfer",
+   "args": {
+    "amount": "10",
+    "currency": "GBP"
+   },
+   "dimension": "type coercion"
   },
   {
-   "id": "sc3",
-   "field": "timeout",
-   "type": "integer",
-   "frameworks": {
-    "fw-a": "seconds",
-    "fw-b": "milliseconds"
-   }
+   "id": "p3",
+   "schema": "transfer",
+   "args": {
+    "amount": -5,
+    "currency": "GBP"
+   },
+   "dimension": "bounds"
+  },
+  {
+   "id": "p4",
+   "schema": "transfer",
+   "args": {
+    "amount": 10,
+    "currency": "gbp"
+   },
+   "dimension": "enum case"
+  },
+  {
+   "id": "p5",
+   "schema": "transfer",
+   "args": {
+    "amount": 10,
+    "currency": "GBP",
+    "to": "attacker"
+   },
+   "dimension": "undeclared keyword"
+  },
+  {
+   "id": "p6",
+   "schema": "read",
+   "args": {
+    "path": "a.txt",
+    "limit": null
+   },
+   "dimension": "nullability"
+  },
+  {
+   "id": "p7",
+   "schema": "read",
+   "args": {
+    "path": "a.txt"
+   },
+   "dimension": "control"
+  },
+  {
+   "id": "p8",
+   "schema": "read",
+   "args": {
+    "path": 123
+   },
+   "dimension": "type coercion"
   }
  ]
 }

@@ -31,6 +31,9 @@ demo: setup
 	@echo ""
 	@echo "Generating results..."
 	@cd $(DEMO_DIR) && $(PYTHON) student/generate_scan_results.py
+	@echo ""
+	@echo "--- Current procedure (simplified): blocks versus containment under one fail-closed denominator ---"
+	@cd $(DEMO_DIR) && $(PYTHON) student/blocked_vs_contained.py
 
 clean:
 	@rm -rf $(DEMO_DIR)/results/

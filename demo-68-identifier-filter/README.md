@@ -39,6 +39,34 @@ Study assistants built on hosted models send what learners type to a third party
 - Explain which control or baseline makes the outcome interpretable
 - Distinguish the teaching output from a confirmatory research result
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 68 as numbered stages"></p>
+
+**Figure 1.** What gets past an identifier filter is measured span by span, then as re-identification risk. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Learner messages** (`with identifiers`). Scripted. In this demo: `fixtures/`.
+2. **Filter** (`rule-based redaction`). Before the hosted model. In this demo: `student/idfilter.py`.
+3. **Residue** (`spans that got through`). Span-level recall. In this demo: `student/idfilter.py`.
+4. **Re-identification** (`k = 1 records`). Unique combinations left. In this demo: `student/run_idfilter.py`.
+5. **Risk** (`recall · residue · k = 1 share`). Per identifier type. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 68 on the synthetic fixture"></p>
+
+**Figure 2.** Names are caught; obfuscated e-mail addresses, student numbers and postcodes get through. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Scripted learner messages at scale
+- Design stage
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Venues
 
 | Option | Venue | Dates and rules |

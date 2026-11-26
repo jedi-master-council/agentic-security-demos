@@ -17,6 +17,35 @@
 - Design fail-closed release gates
 - Detect tampering and omission
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 05 as numbered stages"></p>
+
+**Figure 1.** Witnessed receipts make an omitted or altered step detectable before release. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Agent run** (`trace t₁ … tₙ`). Each step emits an event. In this demo: `fixtures/`.
+2. **Witness** (`rᵢ = Sig(H(tᵢ) ‖ H(rᵢ₋₁))`). Receipts chained and signed outside the agent. In this demo: `student/eviassure.py`.
+3. **Completeness** (`count(r) = count(t)`). An omitted step breaks the chain. In this demo: `student/eviassure.py`.
+4. **Release gate** (`verify(chain) ∧ policy`). Evidence, not claims, decides. In this demo: `student/benchmark.py`.
+5. **Release** (`SHIP | HOLD`). Omission or tampering holds the release. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 05 on the synthetic fixture"></p>
+
+**Figure 2.** Proof length grows logarithmically with the trace while build and verification time grow roughly linearly; the verdicts on tampered and incomplete traces do not depend on the machine. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Formal statements of witnessed trace completeness with proofs
+- A fault model, fault injection and an availability analysis
+- Adversarial-collector campaigns and integrity baselines
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 **Evidence-backed release assurance** uses cryptographic evidence to support release decisions. Instead of trusting "it passed tests," you verify a tamper-evident chain of evidence:

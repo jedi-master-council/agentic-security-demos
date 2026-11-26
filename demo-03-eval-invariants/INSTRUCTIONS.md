@@ -232,6 +232,46 @@ From the **repository root**: `make demo DEMO=03`
 
 ---
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=03
+python3 tools/figures/build.py 03
+```
+
+## Step G — Run the Current Procedure (Simplified)
+
+The research procedure for this topic has changed since the first version of this demo. This step teaches the current version.
+
+```bash
+python3 student/leakage_rules.py
+python3 -m pytest tests/test_current_procedure.py -v
+```
+
+**Expected output**:
+
+```text
+thresholds: whole-corpus Jaccard >= 0.05, per-item containment >= 0.5
+reference size  Jaccard recall  containment recall  containment false-positive rate
+            25            1.00                1.00                             0.00
+            60            0.00                1.00                             0.20
+           120            0.00                1.00                             0.40
+           240            0.00                1.00                             0.40
+lesson: a leakage rule must be validated against planted items, and its threshold re-checked when the reference grows.
+```
+
+<!-- END generated: figures-step -->
+
 ## Troubleshooting
 
 | Symptom | Cause | Fix |

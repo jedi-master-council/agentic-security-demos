@@ -9,6 +9,35 @@
 - Show pinned vulns account for 3/10 of the sample
 - Distinguish deployment config review from vulnerability lifecycle work (Demo 42)
 
+<!-- BEGIN generated: how-it-works (tools/figures/docs.py) -->
+## How it works
+
+<p align="center"><img src="figures/fig1_procedure.svg" width="100%" alt="Figure 1: the procedure of Demo 30 as numbered stages"></p>
+
+**Figure 1.** Defaults in shipped configuration become the operator's posture; a codebook makes them countable. Numbered boxes are stages (role on top, rule or variable beneath, in monospace); dashed grey panels mark a trust domain or scope; a dashed red arrow marks where an adversary acts. Teaching schematic: it simplifies the research procedure and leaves out its corpora, models and thresholds.
+
+### Step by step
+
+1. **Deployment artefact** (`compose, helm, config`). Copied by operators. In this demo: `fixtures/`.
+2. **Codebook** (`flag rules`). Bind, auth, privilege, versions. In this demo: `student/checker.py`.
+3. **Composites** (`exposure · privilege`). Security-bearing combinations. In this demo: `student/checker.py`.
+4. **Drift** (`pinned version vulnerable?`). Advisories at the snapshot. In this demo: `student/run_defaults.py`.
+5. **Insecure by default** (`flagged share`). Wilson and repository bootstrap intervals. Run `make demo` to print it.
+
+<p align="center"><img src="figures/fig2_worked_example.svg" width="100%" alt="Figure 2: worked example of Demo 30 on the synthetic fixture"></p>
+
+**Figure 2.** 6 of 10 stacks ship an insecure default; the most frequent reason in the toy is pinned vuln. Values come from `make demo` on the synthetic fixture: they are illustrative and are not research results.
+
+### What the research version adds (withheld while under peer review)
+
+- Deduplicated configurations across several serving stacks
+- A versioned codebook and snapshot date
+- Repository-level bootstrap
+
+The study's data, exact protocol, thresholds and results are not part of this teaching demo. They will be linked here once the paper is published open access.
+
+<!-- END generated: how-it-works -->
+
 ## Conceptual Explanation
 
 Language-model stacks ship with example configs that operators copy. This toy

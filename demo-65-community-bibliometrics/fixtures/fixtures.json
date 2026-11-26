@@ -1,0 +1,109 @@
+{
+ "note": "Twelve synthetic UK-affiliated works. Model A screens every work into S (agent security), E (AI in education) or neither; model B re-screens a sample. Author names are invented.",
+ "works": [
+  {
+   "id": "w01",
+   "authors": [
+    "Ash",
+    "Birch"
+   ],
+   "label_model_a": "S",
+   "label_model_b": "S"
+  },
+  {
+   "id": "w02",
+   "authors": [
+    "Birch",
+    "Cedar"
+   ],
+   "label_model_a": "S",
+   "label_model_b": null
+  },
+  {
+   "id": "w03",
+   "authors": [
+    "Dale"
+   ],
+   "label_model_a": "S",
+   "label_model_b": "S"
+  },
+  {
+   "id": "w04",
+   "authors": [
+    "Elm",
+    "Fir"
+   ],
+   "label_model_a": "E",
+   "label_model_b": "E"
+  },
+  {
+   "id": "w05",
+   "authors": [
+    "Fir",
+    "Gale"
+   ],
+   "label_model_a": "E",
+   "label_model_b": null
+  },
+  {
+   "id": "w06",
+   "authors": [
+    "Hart"
+   ],
+   "label_model_a": "E",
+   "label_model_b": "S"
+  },
+  {
+   "id": "w07",
+   "authors": [
+    "Cedar",
+    "Elm"
+   ],
+   "label_model_a": "E",
+   "label_model_b": "E"
+  },
+  {
+   "id": "w08",
+   "authors": [
+    "Ivy"
+   ],
+   "label_model_a": "-",
+   "label_model_b": "-"
+  },
+  {
+   "id": "w09",
+   "authors": [
+    "Ash",
+    "June"
+   ],
+   "label_model_a": "S",
+   "label_model_b": null
+  },
+  {
+   "id": "w10",
+   "authors": [
+    "Kite",
+    "Gale"
+   ],
+   "label_model_a": "E",
+   "label_model_b": "E"
+  },
+  {
+   "id": "w11",
+   "authors": [
+    "Lark"
+   ],
+   "label_model_a": "S",
+   "label_model_b": "S"
+  },
+  {
+   "id": "w12",
+   "authors": [
+    "Moss",
+    "Ivy"
+   ],
+   "label_model_a": "-",
+   "label_model_b": null
+  }
+ ]
+}

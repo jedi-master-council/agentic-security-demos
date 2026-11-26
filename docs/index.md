@@ -24,7 +24,7 @@ make setup
 # Run all tests (760 tests, safe, offline, deterministic)
 make test
 
-# Run a specific demo (folders 01–79; 61–65 live in separate repositories)
+# Run a specific demo (folders 01–90)
 make demo DEMO=01
 ```
 

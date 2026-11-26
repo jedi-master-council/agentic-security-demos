@@ -58,6 +58,25 @@ Fixtures are placeholders that exercise the checker; they are not results.
 
 `results/tier_invariance.json` holds the same violations.
 
+---
+
+<!-- BEGIN generated: figures-step (tools/figures/docs.py) -->
+## Step F — Read the Figures
+
+Open `README.md` and look at the two figures under **How it works**:
+
+- `figures/fig1_procedure.svg`: the procedure as numbered stages. Match each stage to the file named in the step-by-step list.
+- `figures/fig2_worked_example.svg`: the numbers this demo prints, drawn. Check one value in the figure against your own terminal output.
+
+To regenerate both figures after changing a fixture (needs `matplotlib`), from the repository root:
+
+```bash
+make demo DEMO=49
+python3 tools/figures/build.py 49
+```
+
+<!-- END generated: figures-step -->
+
 ## What to look for
 
 - `compliant_switch` changes tier but keeps the same decisions: a fallback is not
