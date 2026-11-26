@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (PoPETs 2027 Issue 3 four-paper slate by topic fit, 26 November 2026)
+- Issue 3 (30 November 2026, 23:59:59 AoE) is filled to the per-author cap of **four** with the only unsubmitted, non-DSN demos whose core claim is a privacy result: **22** (agent memory leakage and erasure), **86** (personal-data exposure census in recorded trajectories), **68** (identifier residue and k = 1 re-identification in learner text) and **67** (multi-table memorisation probe against remapped controls).
+- Demo 22 stays at Issue 3 (its AD-01 had been amended to Issue 4 on 12 November; this entry restores Issue 3). Demo 86 and 68 move from Issue 4 to Issue 3. Demo 67 moves from ACL 2027 through ARR (4 January 2027) to Issue 3.
+- Demos 69 (AI access terms extraction), 48 (OAuth scope over-privilege), 51 (guardrail accessibility equity), 57 (governance corpus) and 72 (control mapping) stay on their existing venues: their privacy contribution is adjacent, not core, and PoPETs' 2027 scope requires strong ties to privacy.
+- Fallbacks after a Reject: 22 → ACM TOPS then IEEE S&P 2028; 86 → USENIX Security 2028 Cycle 1 then ACM TOPS; 68 → ACM TOPS then IEEE TIFS; 67 → ACL 2027 through ARR or TACL (option B, author decision 26 November 2026), then TMLR, then ICLR 2028; ARR 4 January is usable only if PoPETs rejects before that date, otherwise TACL. A Reject at Issue 3 bars Issue 4 (the skip-one-issue rule), so Issue 4 is not a fallback.
+- Decision record: `../POPETS2027_ISSUE3_SLATE_DECISION_2026-11-26.md`.
+
 ### Changed (Computers & Security removed for agent-security demos, 26 November 2026)
 - Computers & Security does not consider submissions with AI or ML as a significant component, or on the security of AI/ML systems themselves (moratorium since early 2024), so it is no venue for these demos. Replaced in the Venues & Publications table, the demo table and `docs/venues.md`: demo 87 Option A becomes ACM CCS 2027 Cycle 1, with ASE 2027 as Option B and NDSS 2028 fall as Option C (`demo-87-capability-diff/venue.yaml` updated to match); demo 06 Option B becomes IEEE TDSC; demo 25 Option B becomes ACM TOSEM; demo 86 Option C becomes ACM TOPS. Demo 70 (role-based access control, no AI component) keeps Computers & Security.
 
