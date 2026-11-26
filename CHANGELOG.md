@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (venue map, October–November 2026)
+- The Venues & Publications table and the status links in the demo table were refreshed several times.
+
 ### Changed (teaching demos aligned with the current research procedures; figures added, 26 November 2026)
 - Every demo (01–90) now opens its README with **How it works**: a numbered procedure figure (`figures/fig1_procedure.svg`), a step-by-step list mapping each stage to a file in the demo, a worked-example figure drawn from the demo's own output (`figures/fig2_worked_example.svg`), and a short list of what the research version adds, which stays withheld while it is under peer review. `INSTRUCTIONS.md` gains a step for reading and rebuilding the figures. The generator lives in `tools/figures/` (see its README).
 - Demos whose research procedure had moved on gained a current-procedure step with fixture and tests (`tests/test_current_procedure.py`), run by `make demo`: 01 (`format_effect.py`, free-text against typed-schema commitments), 02 (`enforcement_cost.py`, what a fail-closed CI gate would block), 03 (`leakage_rules.py`, leakage rules validated against planted items as the reference grows), 04 (`zero_audit.py`, reading a zero against its exercised denominator and utility), 06 (`label_vs_oracle.py`, text labels against an execution oracle), 10 (`blocked_vs_contained.py`), 16 (`relay_control.py`, instructed markers against uninstructed controls), 20 (`soft404_gate.py`), 21 (`registry_hosting.py`) and 43 (`confirmation_gap.py`).
@@ -16,66 +19,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Status lines in demos 13–28 and 49–51 no longer say that no data have been collected; they say the study is in progress or under peer review.
 - Fixed `make demo` for demo 31 (it called a script that does not exist) and the root `Makefile` demo list, which omitted 61–65 and 80–90.
 
-### Changed (demo 50 venue, 26 November 2026)
-- Demo 50 (Budget Delegation) Option A returns from CSF 2027 Winter to ACM AsiaCCS 2027 Round 2 (papers 11 December 2026), by author decision: the paper is an applied middleware measurement with no formal model or proof, and its AsiaCCS package was already rebuilt. The AsiaCCS 2027 call (read 26 November 2026) sets no per-author limit; the self-imposed slate is now 8 (06, 08, 25, 32, 42, 46, 50, 60). CSF Winter keeps 24 and 49.
-
-### Changed (IEEE EuroS&P 2027 slate submitted, 23 November 2026)
-- Root `README`: marked the seven IEEE EuroS&P 2027 demos (07 Malware Triage, 10 Vulnerability Assessment, 11 Degenerate Reporting, 12 Provenance-Bound Authorization, 13 Typed Commitments & Coverage Cues, 17 Report Fidelity, 44 Toolflow Taint) as 🟢 EuroS&P, submitted on 23 November 2026 ahead of the 25 November registration and 2 December paper deadlines. Demos-table status cells and the Option A cells in the venues table updated to 🟢; the caps note records the seven as submitted.
-
-### Changed (demo 21 submitted to DSN 2027, 22 November 2026)
-- Root `README` and `docs/venues.md`, demo 21 (MCP Ecosystem Census): Option A is now IEEE/IFIP DSN 2027 (Research Track, regular paper), submitted on 20 November 2026. The WWW 2027 submission was desk-rejected on 19 November 2026 because the wrong PDF was uploaded; the paper was never reviewed there and is no longer at WWW. Options B (IMC) and C (AsiaCCS) are unchanged.
-
-### Changed (demo 02 submitted to IEEE TSE, 22 November 2026)
-- Root `README` and `docs/venues.md`, demo 02 (Supply Chain AIBOM Drift): Option A is now IEEE Transactions on Software Engineering, submitted on 22 November 2026. Option B is the Journal of Systems and Software and Option C is Information and Software Technology; both are rolling journals and activate only after the previous option's decision. The earlier plan (EMSE, then IEEE TSE, then MSR) is superseded: EMSE has decided and MSR 2027's dates have passed.
-- Root `README`, demo table: the status of demo 02 now links to IEEE TSE.
-
 ### Changed (teaching map synchronised, 22 November 2026)
-- Root `README`: the headline now states 79 demos (74 in this repository plus 61–65 in separate repositories). Demo-table venues for 14, 16 and 23 corrected from AsiaCCS to DSN 2027, matching the venue table; the quick-start venue labels for 14, 21, 28, 44, 45, 46 and 47 refreshed; the 45–48 focus descriptions rewritten as summaries rather than private-repository notes.
 - Venue table: every venue and deadline link now carries `target="_blank" rel="noopener noreferrer"`. GitHub's README sanitiser removes `target`, so the documentation site applies new-tab behaviour with `docs/javascripts/newtab.js`; on github.com, Ctrl/Cmd-click or middle-click keeps the map open.
-- Venue facts: the USENIX Security cap now records all seven slots, including demo 69, and the five ICML rows use the official 14 January abstract / 22 January paper dates instead of the earlier projection.
 - Documentation: test count corrected from 688 to 760 and folder count from 60 to 74 throughout; demo pages 66–79 added; the four tutorial pages and the course labs added to the navigation; new [Venue Map](docs/venues.md) page mirrors the root table.
 - Documentation build: removed the dead `polyfill.io` script, created the missing `extra.css` and new-tab script, fixed every broken relative link reported by `mkdocs build --strict`, and replaced the placeholder analytics ID, contact address and Zenodo DOI.
 - Metadata: canonical GitHub owner `jedi-master-council` used in the docs site, `CITATION.cff` and `pyproject.toml`; placeholder e-mail addresses removed.
 
-### Changed (IEEE S&P 2027 Cycle 2 slate submitted, 16 November 2026)
-- Root `README`: marked the six IEEE S&P 2027 Cycle 2 demos (04 Prompt Injection & Tool Authority, 09 MITM Interception, 26 Sandbox Probes, 29 Provenance Graphs, 30 Default Configs, 33 Protocol Coverage SoK) as 🟢 S&P (submitted 16 November 2026, ahead of the 17 November AoE deadline). Demos-table status cells and the Option A cells in the venues table updated to 🟢; the caps note records the six as submitted.
-
-### Changed (AsiaCCS rebalance + teaching docs 49–60, 11 November 2026)
-- Root `README`: AsiaCCS R2 Option-A slate trimmed from 22 papers to 7 (06, 08, 25, 32-SoK, 42, 46, 60) to avoid one-author overload. Displaced demos moved to the nearest-fitting top-tier deadlines: ICML 2027 — 03, 15, 35, 55, 56 (abstracts ~23 Jan, papers ~28 Jan, projected); USENIX Security C2 — 41, 47, 48, 53, 54 (papers 26 Jan; USENIX now 6 of the 7-per-cycle cap with 51); CSF Winter — 49, 50 (papers 28 Jan); DSN 2027 — 52 (abstracts 25 Nov, papers 2 Dec; DSN now hosts 14, 16, 23, 52). Scope exceptions documented in the venues note: demo 57 → CSCW 2027 rolling as Option A; demo 59 → FAccT 2028 (call unpublished); both lack a nearer top-tier conference that fits. Demos table status cells updated to match; caps note rewritten (stale demo-16 sentence removed).
+### Changed (teaching docs 49–60, 11 November 2026)
 - Teaching docs: 12 new pages `docs/demos/49…60` (tier fallback, budget delegation, guardrail equity, simulation V&V, human validation, stress transfer, scaffolding retention, learning meta-analysis, governance corpus, work exposure, foresight Delphi, engbio battery) with objectives, result tables, safety notices and run commands; `mkdocs.yml` nav extended; `docs/demos/overview.md` catalogue count 48→60 with comparison, prerequisites, theme and ordering entries for 49–60.
-
-### Changed (Demos table status hyperlinks, 1 November 2026)
-- Root `README`: converted the plain text venue status entries in the Demos table (`## 🎯 Demos`) into direct hyperlinks leading to venue and submission call-for-papers webpages across all 48 demonstrations.
-
-### Changed (FAccT 2027 slate submitted, 1 November 2026)
-- Root `README`: marked all 5 ACM FAccT 2027 demos (31 Declaration Gap, 37 Detector Cost, 38 Assurance Claims, 39 Incident Taxonomy, 45 Exact Nulls for Localisation Claims) as 🟢 FAccT (submitted ahead of the 3 November 2026 AoE deadline). Option A cells in the venues table updated to 🟢 [FAccT].
-
-### Changed (compact status marks, 23 October 2026)
-- Root `README` demos table: Status column is now plain text — a colour dot plus the venue abbreviation (replaces the small badge images; normal-size, readable, no dates shown there).
-- Root `README` venues table: option cells show the venue abbreviation (→ conference page) and a dates-only line underneath (→ submission portal); status wording, check marks, notes and undated markers (incl. TBD) removed. Colour-dot meanings are intentionally undocumented.
-
-### Changed (venues table restructure, 23 October 2026)
-- Root `README` venues section: one 4-column table (Demo | Option A | Option B | Option C) replacing the 7-column table. Deadline columns merged into each option cell: venue abbreviation links to the conference page, deadline line underneath links to the submission portal (abstract + full-paper dates kept).
-- Years removed from venue names (WWW'27 → WWW etc.). Next-edition backups that became exact duplicates after year removal collapsed to "—" (option B/C of demos 03, 06, 08, 11, 12, 13, 14, 16, 17, 20, 23, 24, 25, 32, 34, 35, 40, 41, 42).
-- Colour indicators switched from shields pills to emoji state dots (GitHub strips `<font>`; pills were image-heavy). The four slate bullets and the old legend were dropped.
-- Venue links verified (HTTP 200; issre.org and queue.acm.org block curl but resolve in browsers). EuroS&P backups link eurosp2027.ieee-security.org (SIGSAC TC page 404s). New verified links added for dormant backups: AAMAS (ifaamas.org), SaTML (satml.org), DMLR (data.mlr.press), TNNLS, TIP, EMNLP (ACL Anthology), ICSE, FSE (esec-fse.org).
 
 ### Added (WWW-set docs coverage, 16 October 2026)
 - `docs/demos/` pages for the eight WWW'27 demos (18, 19, 20, 21, 27, 28, 36, 43) plus `mkdocs.yml` nav entries; each page verified against its demo (5 tests, runner command, results file). `docs/index.md` quick-start range corrected from 01–12 to 01–47.
 - Verified for the WWW set: 40/40 tests pass, all 8 runners execute cleanly with byte-identical committed results, INSTRUCTIONS expected outputs match, CITATION.cff files valid, no venue names in demo code/fixtures/tests (only historical private-repo names in README provenance lines).
-
-### Changed (venue refresh: Computers & Security removal + CoSe de-duplication, 16 October 2026)
-- Root `README`: removed Computers & Security / CoSe from all venue tables (header list, FAccT slate, demos 37/38/46 rows, acknowledgments). The journal's guide for authors confirms an AI/ML moratorium since early 2024, so all agentic-AI demos are out of scope there (0% chance).
-- Demo 37 (Detector Cost): Plan B CoSe → IEEE TIFS (♾️ rolling; scope covers intrusion detection, adversarial ML and AI-driven decision-system security), Plan C stays TDSC. Sequential only: FAccT'27 → TIFS → TDSC.
-- Demo 38 (Assurance Claims): Plan B stays Journal of Cybersecurity (matches `demo-38-system-card-assurance-claims-joc` provenance; Oxford journal explicitly publishes AI-cybersecurity work), Plan C CoSe → ACM Journal on Responsible Computing (♾️ rolling; scope lists fairness/accountability/transparency plus adversarial ML). Sequential only.
-- Demo 46: Plan A AsiaCCS'27 Round 2 (11 Dec 2026, AI Security track), Plan B USENIX SAIS'27 (4 Feb 2027), Plan C IEEE TDSC (♾️ rolling). Replaces Computers & Security due to the journal's AI/ML moratorium and satisfies the soon-deadline requirement without hitting author submission caps.
-- FAccT slate header corrected from 4 to 5 papers (demos 31, 37, 38, 39 plus 45); no author cap, slate counts unchanged, so no cap risk.
-- Demo 04: removed Plan B / Plan C overlap (both listed CCS'27) — Plan B USENIX Sec'28, Plan C CCS'27 Cycle B.
-- Refreshed dates verified 16 Oct 2026: WWW'27 abstract 18 Oct / paper 25 Oct 2026; FAccT'27 abstract 27 Oct / paper 3 Nov 2026; S&P'27 C2 abstract 10 Nov / paper 17 Nov 2026; AsiaCCS'27 R2 11 Dec 2026 (AI Security track; R1 rejects cannot resubmit R2); DSN'27 abstract 25 Nov / paper 2 Dec 2026; PoPETs'27 Iss. 3 30 Nov 2026; USENIX'27 C2 reg. 19 Jan / papers 26 Jan 2027; CSF'27 Winter 28 Jan 2027 (Fall cycle 15 Oct 2026 has passed); ACNS'27 C2 21 Jan 2027; SAIS'27 4 Feb 2027; CCS'27 CFP TBD (expected Cycle A ~mid-Jan, Cycle B ~late Apr 2027). Prioritisation rule applied: Plan A = soonest fitting conference with capacity, backups ordered by soonest-actionable date then estimated success rate (FAccT ~33% '26, S&P ~13–15%, USENIX/CCS ~15–18%, rolling journals).
-
-### Changed (demo 01 venue plan, 15 October 2026)
-- Root `README`, demo 01: Plan A Expert Systems with Applications (Elsevier, JCR Q1), Plan B ACM TOSEM (JCR Q1), Plan C Information Processing & Management (Elsevier, JCR Q1); one venue at a time. Demo 47's row no longer refers to demo 01.
-- Root `README`, demo 47: Plan B Engineering Applications of AI (Elsevier, JCR Q1) and Plan C Information Sciences (Elsevier, JCR Q1), replacing a journal that no longer considers AI/ML submissions and a JCR Q2 journal.
 
 ### Added (demo 46 teaching toy, 15 October 2026)
 - **demo-46-embedding-drift**: stdlib cosine-shift toy linked to the private research repo. Overview row moved from skeleton to active. Research repo remains a simulated study.
@@ -84,20 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **demo-47-blind-seal**: teaching companion for pre-reveal seals. Three synthetic cases (hit, miss, post-seal edit). Standard library only.
 - Root `README`: catalogue count 47, overview row, quick-start command, venue row (Plan A USENIX SAIS'27, 4 Feb 2027; Plan B Computers & Security; Plan C JISA, each only after the previous decision).
 - Root `Makefile`: `demo-47-blind-seal` in `DEMO_DIRS` and a `demo-47` target.
-
-### Changed (venue notes and anonymity, 13 October 2026)
-- Root `README`, demo catalogue: the Venue column is removed, so no row pairs a demo title with a venue. Demo 13's row is renamed to its own title, "Typed Commitments & Coverage Cues".
-- Root `README`, venue slates: rows now name demos by number only ("Demo 18"); the topic columns (WWW titles, USENIX angle, FAccT angle, S&P focus) are removed.
-- Root `README`, demo 01: venue plan revised (superseded by the 15 October 2026 entry).
-- Root `README`, venue notes: the S&P'27 cap (six papers per author per cycle, all registrations desk-rejected above it, enforced 10 Nov 2026) and the WWW'27 cap (seven per author per type) are recorded with links to the official calls; the FAccT'27 load is noted as five papers including demo 45.
-- 33 demo READMEs (demos 13-45): target-venue names removed from Learning Objectives and Research Connection text. The studies, data status and boundaries are unchanged.
-
-### Changed (venue notes, 8 October 2026)
-- Root `README`, demo 02 (Supply Chain AIBOM Drift): Plan A re-targeted to Empirical Software Engineering (EMSE, Springer; rolling), Plan B IEEE TSE (only after an EMSE decision), Plan C MSR'27 (only after a TSE decision). Previously TOSEM / CCS'27 / EMSE. Backups remain sequential, never simultaneous.
-
-### Changed (venue notes, 3 October 2026)
-- Root `README`: venue notes for several teaching demos were revised.
-- `demo-26`, `demo-29`, `demo-30` and `demo-33` READMEs: Research Connection wording updated.
 
 ### Added (12-demo expansion, September 2026)
 - **demo-12-provenancebound**: teaching companion to Conference Paper 12 (`demo-12-provenance-authz-calendar-sacmat`, SACMAT 2027). Provenance-aware authorization for untrusted calendar content: derived provenance (structure-only, fail-closed), lexical detector with Unicode canonicalization, naive verb+endpoint agent (inert, oracle-refusing), provenance-aware deny policy (high-risk untrusted always blocked, even on detector miss `cal_008`). 8 synthetic invites, 44 tests, standard structure (`README`/`INSTRUCTIONS`/`Makefile`/`fixtures`/`results`/`solutions`/`student`/`tests`).
