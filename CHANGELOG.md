@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (venue rows re-synced with the 26 November map, 27 November 2026)
+- The fallback table and `docs/venues.md` now match the research folders for demos 82, 85 and 88: demo 82 Option C is IEEE TIFS (was TACL), demo 85 Option B is IEEE TDSC and Option C ACM TOPS (were ACM DTRAP and J. Computer Security), and demo 88 Option C is IEEE TIFS (was DSN 2028).
+- The demo folders' `venue.yaml` and `docs/VENUE.md` for demos 70–79, 84 and 85 were refreshed to the same plan (no TMLR as Option B for 74–79; DSN 2027, TDSC and TOPS recorded for 84–85).
+
 ### Added (demo 90 catalogue page and research module, 27 November 2026)
 - Demo 90 (The Unread Manual) gains its catalogue page (`docs/demos/90-unread-manual.md`), a navigation entry, a Quick Comparison row and an optional research module in the course guide (`docs/course/research-unread-manual.md`).
 - The demo counts in the overview and the documentation index now cover 90 demos: 85 in this repository and five listed external repositories.
