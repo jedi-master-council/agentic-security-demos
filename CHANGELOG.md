@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added (demo 90 catalogue page and research module, 27 November 2026)
+- Demo 90 (The Unread Manual) gains its catalogue page (`docs/demos/90-unread-manual.md`), a navigation entry, a Quick Comparison row and an optional research module in the course guide (`docs/course/research-unread-manual.md`).
+- The demo counts in the overview and the documentation index now cover 90 demos: 85 in this repository and five listed external repositories.
+
 ### Changed (PoPETs 2027 Issue 3 four-paper slate by topic fit, 26 November 2026)
 - Issue 3 (30 November 2026, 23:59:59 AoE) is filled to the per-author cap of **four** with the only unsubmitted, non-DSN demos whose core claim is a privacy result: **22** (agent memory leakage and erasure), **86** (personal-data exposure census in recorded trajectories), **68** (identifier residue and k = 1 re-identification in learner text) and **67** (multi-table memorisation probe against remapped controls).
 - Demo 22 stays at Issue 3 (its AD-01 had been amended to Issue 4 on 12 November; this entry restores Issue 3). Demo 86 and 68 move from Issue 4 to Issue 3. Demo 67 moves from ACL 2027 through ARR (4 January 2027) to Issue 3.

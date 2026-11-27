@@ -214,7 +214,10 @@ make verify-safety
 | 10 | [ScanBound](lab-10-scanbound.md) | `demo-10-scanbound/` | Scope-bound vulnerability scanning |
 | 11 | [Degenerate Reporting](lab-11-degenerate-reporting.md) | `demo-11-degenerate-reporting/` | Audit baselines, base rates, metric sanity |
 | 12 | [ProvenanceBound](lab-12-provenancebound.md) | `demo-12-provenancebound/` | Provenance-aware calendar authorization |
+| Research | [The Unread Manual](research-unread-manual.md) | `demo-90-unread-manual/` | Exposure vs acquisition in agent action logs |
 | Final | [Assessment](lab-11-final-assessment.md) | — | Quiz + portfolio + reflection |
+
+The research module is optional. It uses the same offline teaching demo as the rest of the course but asks a measurement question rather than a security-control question, and it is assessed through the exercise sheet and the portfolio reflection rather than a graded lab.
 
 ---
 

@@ -32,7 +32,7 @@ make demo DEMO=01
 
 ## 📚 Course Modules (01–12)
 
-The twelve course-format modules below have full labs. The complete catalogue — 74 demos in this repository plus five listed external repositories — is in the [Demos Overview](demos/overview.md); the venue plan is in the [Venue Map](venues.md).
+The twelve course-format modules below have full labs. The complete catalogue — 85 demos in this repository plus five listed external repositories — is in the [Demos Overview](demos/overview.md); the venue plan is in the [Venue Map](venues.md).
 
 | # | Demo | Topic | Key Concepts | Difficulty |
 |---|------|-------|--------------|------------|

@@ -122,6 +122,7 @@ nav:
     - Horn Repair: demos/77-horn-repair.md
     - Sequential Covering: demos/78-sequential-covering.md
     - Contrast Sets: demos/79-contrast-sets.md
+    - Unread Manual: demos/90-unread-manual.md
   - Venue Map: venues.md
   - Course:
     - Course Guide: course/COURSE_GUIDE.md
@@ -139,6 +140,7 @@ nav:
     - Lab 11 — Degenerate Reporting: course/lab-11-degenerate-reporting.md
     - Lab 12 — ProvenanceBound: course/lab-12-provenancebound.md
     - Final Assessment: course/lab-11-final-assessment.md
+    - Research Module — The Unread Manual: course/research-unread-manual.md
   - Tutorials:
     - Beginner Exercises: tutorials/beginner.md
     - Standard Exercises: tutorials/standard.md

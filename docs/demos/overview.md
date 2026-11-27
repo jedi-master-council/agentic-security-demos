@@ -1,6 +1,6 @@
 # Demos Overview
 
-The catalogue covers **79 demos**: 74 in this repository — 12 course-format modules (01–12, with full labs) and 62 short-format teaching toys (13–60 and 66–79, ~30 min each) — plus five listed external repositories (61–65). The path diagram below shows the core progression through the 12 course modules; the Quick Comparison table covers every in-repository demo.
+The catalogue covers **90 demos**: 85 in this repository — 12 course-format modules (01–12, with full labs) and 73 short-format teaching toys (13–60 and 66–90, ~30 min each) — plus five listed external repositories (61–65). The path diagram below shows the core progression through the 12 course modules; the Quick Comparison table covers every demo with a catalogue page.
 
 ## Learning Path (core modules 01–12)
 
@@ -104,6 +104,7 @@ graph TD
 | **77** | Horn Repair | Smallest clause deletion restores consistency | 30 min |
 | **78** | Sequential Covering | Ordered single-feature rules learn a decision list | 30 min |
 | **79** | Contrast Sets | Growth rates mark emerging contrasts | 30 min |
+| **90** | The Unread Manual | Count reads, not mentions; compare within task | 30 min |
 
 Demos 61–65 are listed in the root README but kept in separate repositories; they have no folder here.
 
