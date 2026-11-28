@@ -4,10 +4,10 @@
 
 <h1 align="center">Agentic AI Security Demos</h1>
 <p align="center">
-  <strong>A curated collection of 90 reproducible teaching demonstrations for agentic AI security, all in this repository, distilled from research targeting top-tier venues (SaTML, CCS, NeurIPS, IEEE SP, USENIX, NDSS, RAID, ASIACCS, ESORICS, ACSAC, ICML, ICLR, AAAI, IJCAI, ACL, ICSE, WWW, EuroS&P, PoPETs, DSN, CSF, ACNS, Black Hat, DEF CON, TIFS, TDSC, TOPS, CSUR, COMST, TPAMI, TMLR, Nature MI, Journal of Cybersecurity, IEEE S&P Magazine, Scientific Data, CACM, TSE, FAccT, Computers & Security, IEEE TAI, ACM TIST, Pattern Recognition, IEEE TNNLS, IEEE TKDE, JAIR, AIJ, AAAI, KDD). All scenarios, numbers and verdicts here are synthetic coursework — they describe no real publication.</strong>
+  <strong>93 reproducible teaching demos for agentic AI security: prompt injection, tool authority, supply chains, memory, provenance and evaluation. Research prototypes target venues including IEEE S&amp;P, USENIX Security, CCS, NDSS, EuroS&amp;P and DSN. All scenarios, numbers and verdicts are synthetic coursework — not publications.</strong>
 </p>
 
-> 🐣 **Padawan-practice notice (read before citing).** These are teaching demos for agentic AI security — training missions for the classroom, not Jedi trials. Like Padawan exercises, each demo **may or may not be converted into a full paper**, and any paper **may or may not be accepted** at its listed venue. The venue column names the *training ground* that inspired the exercise, never a publication claim. No preprints, no datasets deposited, no reviewer verdicts — just lightsabers set to stun (synthetic fixtures, offline only).
+> **Teaching demos, not publications.** A demo may later become a paper; none is a publication claim. Venue names are intended targets only. Fixtures are synthetic and run offline.
 
 <p align="center">
   <a href="https://github.com/jedi-master-council/agentic-security-demos/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/jedi-master-council/agentic-security-demos/ci.yml?branch=main&label=Build&style=flat-square" alt="Build Status"></a>
@@ -36,11 +36,11 @@
 | # | Demo | Focus | Status |
 |---|------|-------|--------|
 | 01 | **Blind Verification** | Blind, pre-reveal commitments; whether a typed output schema changes where an assessor looks | 🟢 <a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener noreferrer">ACM TOSEM</a> |
-| 02 | **Supply Chain AIBOM Drift** | What a fail-closed supply-chain gate (pinning, workflow permissions, triggers) would block across CI configurations; AIBOM drift gate | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> |
-| 03 | **Eval Design Invariants** | Executable pre-publication invariants; leakage rules validated against planted items and threshold transport | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a> |
-| 04 | **Prompt Injection & Tool Authority** | Authority confinement for tool-using agents; reading a reported zero attack rate against its exercised denominator and utility | 🟢 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P C2</a> |
+| 02 | **Supply Chain AIBOM Drift** | Fail-closed supply-chain gate across CI configurations; AIBOM drift | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> |
+| 03 | **Eval Design Invariants** | Pre-publication invariants; leakage rules tested with planted items | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a> |
+| 04 | **Prompt Injection & Tool Authority** | Tool-authority confinement; a zero attack rate read against its denominator and utility | 🟢 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P C2</a> |
 | 05 | **Evidence Release Assurance** | Witnessed, omission-resistant evidence chains for release gating | 🟢 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858" target="_blank" rel="noopener noreferrer">IEEE TDSC</a> |
-| 06 | **Network Recon** | Provenance-aware reconnaissance; text-heuristic labels against a transport-layer execution oracle | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
+| 06 | **Network Recon** | Provenance-aware recon; text heuristics versus a transport-layer oracle | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
 | 07 | **Malware Triage** | Statistical reconstruction of malware triage decisions | 🟢 <a href="https://eurosp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">EuroS&P</a> |
 | 08 | **File Inclusion** | Provenance-tracked file inclusion for agent workflows | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
 | 09 | **MITM Interception** | Ephemeral buffer interception for credential extraction detection | 🟢 <a href="https://sp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">IEEE S&P C2</a> |
@@ -55,7 +55,7 @@
 | 18 | **Cross-lingual Gap** | Cross-lingual transfer of injections and the detector language gap | 🟢 <a href="https://www2027.thewebconf.org/" target="_blank" rel="noopener noreferrer">WWW</a> |
 | 19 | **Lineage Risk** | Inherited risk along fine-tune lineages on the model hub | 🟢 <a href="https://www2027.thewebconf.org/" target="_blank" rel="noopener noreferrer">WWW</a> |
 | 20 | **Agent Web Census** | Agent-facing files on the web: HTTP 200 checked byte by byte for soft-404s | 🟢 <a href="https://www2027.thewebconf.org/" target="_blank" rel="noopener noreferrer">WWW</a> |
-| 21 | **MCP Ecosystem Census** | MCP registry: tool-poisoning markers, hosting concentration, version cadence and endpoint changes (toy census) | 🟢 <a href="https://dsn2027-berlin.github.io/call-for-contributions/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
+| 21 | **MCP Ecosystem Census** | MCP registry census: tool-poisoning markers, hosting, versions, endpoints | 🟢 <a href="https://dsn2027-berlin.github.io/call-for-contributions/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
 | 22 | **Memory Leakage** | Contextual-integrity leakage via agent memory stores | 🟠 <a href="https://petsymposium.org/2027" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
 | 23 | **Fault Injection** | Dependability of agent pipelines under pipeline faults | 🟠 <a href="https://dsn2027-berlin.github.io/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
 | 24 | **Delegation Checks** | Authorization and agent-to-agent delegation properties | 🟡 <a href="https://csf2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">CSF Winter</a> |
@@ -79,10 +79,10 @@
 | 42 | **Patch Lifecycle** | Vulnerability lifecycle and patch adoption lag | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
 | 43 | **Terms Coding** | Accountability in platform terms; confirmation steps missing from state-altering tool schemas | 🟢 <a href="https://www2027.thewebconf.org/" target="_blank" rel="noopener noreferrer">WWW</a> |
 | 44 | **Toolflow Taint** | Cross-tool dataflow integrity tracking | 🟢 <a href="https://eurosp2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">EuroS&P</a> |
-| 45 | **Exact Nulls for Localisation Claims** | Exact hypergeometric significance, ratio-to-null transfer failure and design-limit corollary; code lives in the private `demo-45-localisation-nulls` repository | 🟢 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT</a> |
-| 46 | **Embedding-swap Cosine Shift** | `1 − cosine` on two synthetic vectors against the frozen simulated-study mean 0.1222; code lives in the private `demo-46-simulated-embedding-drift-aibom` repository | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
-| 47 | **Pre-reveal Seal** | Hash a localisation commitment before the answer key opens, so a post-seal edit is a mismatch; code lives in the private `demo-47-blind-verification-eval-sais` repository | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
-| 48 | **OAuth Over-privilege** | OAuth scope over-privilege and scope creep in agent integrations; code lives in the private `demo-48-scope-creep-oauth-overprivilege-tops` repository | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
+| 45 | **Exact Nulls for Localisation Claims** | Exact nulls for localisation claims; code in the private `demo-45-localisation-nulls` repo | 🟢 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT</a> |
+| 46 | **Embedding-swap Cosine Shift** | `1 − cosine` shift against the frozen mean 0.1222; code in the private `demo-46-simulated-embedding-drift-aibom` repo | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
+| 47 | **Pre-reveal Seal** | Pre-reveal hash of a localisation commitment; code in the private `demo-47-blind-verification-eval-sais` repo | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
+| 48 | **OAuth Over-privilege** | OAuth scope over-privilege and scope creep; code in the private `demo-48-scope-creep-oauth-overprivilege-tops` repo | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
 | 49 | **Tier Fallback** | Authority invariance when an orchestrator changes model tier mid-task | 🟡 <a href="https://csf2027.ieee-security.org/" target="_blank" rel="noopener noreferrer">CSF Winter</a> |
 | 50 | **Budget Delegation** | Token and cost budgets conserved across a multi-agent delegation tree | 🟠 <a href="https://asiaccs2027.cityu.edu.mo/" target="_blank" rel="noopener noreferrer">AsiaCCS R2</a> |
 | 51 | **Guardrail Equity** | Accessibility-related false-positive disparity in input guardrails | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
@@ -93,17 +93,17 @@
 | 56 | **Learning Meta-analysis** | Inverse-variance fixed-effect summary of synthetic study rows | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a> |
 | 57 | **Governance Corpus** | Codebook validation and rater agreement on synthetic HE policy excerpts | 🔵 <a href="https://cscw.acm.org/rolling.html" target="_blank" rel="noopener noreferrer">CSCW</a> |
 | 58 | **Work Exposure** | Task-level exposure and an agentic-action share for synthetic HE roles | 🟡 <a href="https://2027.ijcai.org/" target="_blank" rel="noopener noreferrer">IJCAI</a> |
-| 59 | **Foresight Delphi** | Median, IQR and consensus on synthetic ratings bound to a briefing hash | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028</a> |
+| 59 | **Foresight Delphi** | Median, IQR and consensus on synthetic ratings bound to a briefing hash | 🔵 <a href="https://www.sciencedirect.com/journal/technological-forecasting-and-social-change" target="_blank" rel="noopener noreferrer">Technological Forecasting &amp; Social Change</a> |
 | 60 | **EngBio Battery** | Score three synthetic analysis tasks against predeclared references | 🟡 <a href="https://2027.ijcai.org/ijcai-2027-call-for-papers-main-track/" target="_blank" rel="noopener noreferrer">IJCAI</a> |
-| 61 | **Re-execution Checks** | Machine re-execution and number-provenance checks of agent-written analyses of public biological data | 🟡 <a href="https://icml.cc/Conferences/2027/CallForPapers" target="_blank" rel="noopener noreferrer">ICML 2027</a> |
-| 62 | **LLM Learner Policy** | Schema adherence, persona sensitivity and calibration of an LLM learner policy against non-LLM baselines on public 2013 learner data | 🟡 <a href="https://educationaldatamining.org/edm2027/call-for-papers/" target="_blank" rel="noopener noreferrer">EDM 2027</a> |
-| 63 | **Policy-Coding Reliability** | How reliably two model families code public institutional AI policies across two archive waves | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a> |
-| 64 | **Socratic Answer Guard** | Calibration of an answer guard for a Socratic study assistant on scripted adversarial learner dialogues | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a> |
-| 65 | **Security–Education Bibliometrics** | A registered bibliometric screen of whether UK agentic-AI security and AI-in-education research communities co-author, 2023 to 2026 | 🟡 <a href="https://issi2027.ntu.edu.tw/submission-guidelines" target="_blank" rel="noopener noreferrer">ISSI 2027</a> |
-| 66 | **QPU Budget Arms** | Accepted results per simulated QPU-second for default, rule-based and simulate-first workflow arms | 🟠 <a href="https://isc-hpc.com/submissions/research-paper/" target="_blank" rel="noopener noreferrer">ISC 2027</a> |
-| 67 | **Multi-Table Memorisation Probe** | Row and cross-table completion scores against a remapped-table null at a fixed false-positive rate | 🟠 <a href="https://petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
-| 68 | **Identifier Filter** | Span-level recall, residue and k = 1 re-identification after rule-based redaction of scripted learner messages | 🟠 <a href="https://www.petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
-| 69 | **Grounded Terms Extraction** | Verbatim-quote grounding and value consistency for extracted tier, data-use, price, continuity and exit terms | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
+| 61 | **Re-execution Checks** | Re-execution and number-provenance checks of agent-written analyses | 🟡 <a href="https://icml.cc/Conferences/2027/CallForPapers" target="_blank" rel="noopener noreferrer">ICML 2027</a> |
+| 62 | **LLM Learner Policy** | Schema adherence, persona sensitivity and calibration of an LLM learner policy against baselines | 🟡 <a href="https://educationaldatamining.org/edm2027/call-for-papers/" target="_blank" rel="noopener noreferrer">EDM 2027</a> |
+| 63 | **Policy-Coding Reliability** | How reliably two model families code public institutional AI policies across two archive waves | 🔵 <a href="https://link.springer.com/journal/11948" target="_blank" rel="noopener noreferrer">Science and Engineering Ethics</a> |
+| 64 | **Socratic Answer Guard** | Calibration of an answer guard on scripted adversarial learner dialogues | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a> |
+| 65 | **Security–Education Bibliometrics** | Registered bibliometric screen of UK agentic-security and AI-education co-authorship, 2023–2026 | 🟡 <a href="https://issi2027.ntu.edu.tw/submission-guidelines" target="_blank" rel="noopener noreferrer">ISSI 2027</a> |
+| 66 | **QPU Budget Arms** | Accepted results per simulated QPU-second across three workflow arms | 🟠 <a href="https://isc-hpc.com/submissions/research-paper/" target="_blank" rel="noopener noreferrer">ISC 2027</a> |
+| 67 | **Multi-Table Memorisation Probe** | Row and cross-table completion against a remapped-table null | 🟠 <a href="https://petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
+| 68 | **Identifier Filter** | Span recall, residue and k = 1 re-identification after redaction | 🟠 <a href="https://www.petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
+| 69 | **Grounded Terms Extraction** | Verbatim-quote grounding and value consistency for extracted contract terms | 🟡 <a href="https://www.usenix.org/conference/usenixsecurity27" target="_blank" rel="noopener noreferrer">USENIX Sec C2</a> |
 | 70 | **SoD Conflicts** | Deterministic detection of mutually exclusive permission pairs in effective RBAC assignments | 🔵 <a href="https://computersandsecurity.org/aims-and-scope/" target="_blank" rel="noopener noreferrer">Computers & Security</a> |
 | 71 | **Feature-Erasure Search** | Complete heuristic search for the cheapest feature erasures that flip a linear score | 🔵 <a href="https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/information-for-authors-tai" target="_blank" rel="noopener noreferrer">IEEE TAI</a> |
 | 72 | **Control Mapping** | Set-based alignment of public technique catalogues to public control catalogues | 🔵 <a href="https://dl.acm.org/journal/tist/author-guidelines" target="_blank" rel="noopener noreferrer">ACM TIST</a> |
@@ -114,23 +114,27 @@
 | 77 | **Horn Repair** | Smallest clause-deletion set that stops forward chaining from deriving false | 🔵 <a href="https://aij.ijcai.org/call-for-papers/" target="_blank" rel="noopener noreferrer">AIJ</a> |
 | 78 | **Sequential Covering** | Greedy sequential covering that learns an ordered list of single-feature rules | 🔵 <a href="https://aaai.org/conference/aaai/" target="_blank" rel="noopener noreferrer">AAAI 2028</a> |
 | 79 | **Contrast Sets** | Item support in two windows and the growth rate that marks an emerging contrast set | 🟡 <a href="https://kdd2027.kdd.org/research-track-call-for-papers/" target="_blank" rel="noopener noreferrer">KDD 2027 C2</a> |
-| 80 | **SoK: Injection Defences** | A systematised review of indirect prompt-injection defences with a double-coded extraction protocol over the defence literature | 🔵 <a href="https://dl.acm.org/journal/csur" target="_blank" rel="noopener noreferrer">ACM CSUR</a> |
-| 81 | **The Agent-Security Benchmark** | Frozen gates, pinned corpora and registered falsification packaged as a re-runnable agent-security benchmark with baselines | 🔵 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS 2027 E&D</a> |
-| 82 | **Guardrail Score Transfer** | Whether guardrail-model benchmark scores predict behaviour on recorded tool-attack trajectories; the score-to-replay cross-tabulation | 🔵 <a href="https://aclrollingreview.org/" target="_blank" rel="noopener noreferrer">EMNLP 2027 (ARR)</a> |
-| 83 | **MCP Registry Census** | Description-injection and authorisation-gap surface across MCP server manifests at registry scale, at two dated snapshots | 🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">CCS 2027 C1</a> |
-| 84 | **Longitudinal Security Drift** | A ten-framework, multi-release census of agentic frameworks' security-relevant surface: the drift graph per transition | 🟠 <a href="https://dsn2027-berlin.github.io/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
-| 85 | **The Enforcement Matrix** | Whether provenance labels are enforced at the sink per framework, per sink class and per mediation mode — or merely documented | 🟠 <a href="https://dsn2027-berlin.github.io/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
-| 86 | **Personal-Data Exposure Census** | Personal-data shapes in recorded agent trajectories' tool arguments, per tool class and per sink, against a registered shape lexicon | 🟠 <a href="https://petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
-| 87 | **The Skill-Plugin Supply Chain** | Declared tool access versus statically extractable capability per skill in the agent marketplaces, in both overstatement directions | 🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">CCS 2027 C1</a><br>🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">~mid-Jan 2027 (call unpublished)</a> |
+| 80 | **SoK: Injection Defences** | Systematised review of indirect prompt-injection defences, double-coded | 🔵 <a href="https://dl.acm.org/journal/csur" target="_blank" rel="noopener noreferrer">ACM CSUR</a> |
+| 81 | **The Agent-Security Benchmark** | Frozen gates, pinned corpora and registered falsification as a re-runnable benchmark | 🔵 <a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS 2027 E&D</a> |
+| 82 | **Guardrail Score Transfer** | Whether guardrail benchmark scores predict tool-attack behaviour | 🔵 <a href="https://aclrollingreview.org/" target="_blank" rel="noopener noreferrer">EMNLP 2027 (ARR)</a> |
+| 83 | **MCP Registry Census** | Description-injection and authorisation gaps across MCP manifests, two snapshots | 🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">CCS 2027 C1</a> |
+| 84 | **Longitudinal Security Drift** | Ten-framework, multi-release census of security-relevant surface drift | 🟠 <a href="https://dsn2027-berlin.github.io/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
+| 85 | **The Enforcement Matrix** | Whether provenance labels are enforced at the sink, by framework and mode | 🟠 <a href="https://dsn2027-berlin.github.io/" target="_blank" rel="noopener noreferrer">DSN 2027</a> |
+| 86 | **Personal-Data Exposure Census** | Personal-data shapes in agent tool arguments, by tool class and sink | 🟠 <a href="https://petsymposium.org/cfp27.php" target="_blank" rel="noopener noreferrer">PoPETs 2027 Issue 3</a> |
+| 87 | **The Skill-Plugin Supply Chain** | Declared versus extractable tool capability per marketplace skill | 🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">CCS 2027 C1</a><br>🟡 <a href="https://www.sigsac.org/ccs/CCS2027/" target="_blank" rel="noopener noreferrer">~mid-Jan 2027 (call unpublished)</a> |
 | 88 | **Detection Benchmark: Injected Actions** | A labelled injected-action detection benchmark with baseline detectors and per-stratum metrics | 🔵 <a href="https://raid2027.org/" target="_blank" rel="noopener noreferrer">RAID 2027</a> |
-| 89 | **Tool-Schema Interpretation Divergence** | Where agentic frameworks interpret the same tool schema differently, measured per schema-framework pair | 🔵 <a href="https://conf.researchr.org/track/icse-2028/icse-2028-papers" target="_blank" rel="noopener noreferrer">ICSE 2028</a> |
-| 90 | **The Unread Manual** | Whether coding agents read the repository guidance they can see: exposure against acquisition, and outcomes within task | 🟡 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a> |
+| 89 | **Tool-Schema Interpretation Divergence** | Where frameworks interpret the same tool schema differently | 🔵 <a href="https://conf.researchr.org/track/icse-2028/icse-2028-papers" target="_blank" rel="noopener noreferrer">ICSE 2028</a> |
+| 90 | **The Unread Manual** | Whether coding agents read the repository guidance they can see | 🟡 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a> |
+| 91 | **Tutor Feedback Fidelity** | LLM-generated tutor replies against authentic tutor replies on OULAD forum threads: moves, personalisation, safety | 🔵 <a href="https://www.sciencedirect.com/journal/computers-and-education-artificial-intelligence" target="_blank" rel="noopener noreferrer">Computers &amp; Education: AI</a> |
+| 92 | **Adversarial Testimony** | Epistemic trust and deference for agent reports whose information channels can be corrupted | 🔵 <a href="https://link.springer.com/journal/11023" target="_blank" rel="noopener noreferrer">Minds and Machines</a> |
+| 93 | **Pipeline Reliability** | Failure-mode taxonomy, hazard rates and Bayesian fault trees from public execution traces | 🔵 <a href="https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety" target="_blank" rel="noopener noreferrer">Reliability Eng. &amp; System Safety</a> |
 
-Each demo is a **self-contained, reproducible teaching artefact**. Its README opens with **How it works**: a numbered procedure figure (`figures/fig1_procedure.svg`), a step-by-step list that maps each stage to a file, and a worked-example figure drawn from the demo's own output (`figures/fig2_worked_example.svg`). The procedures are simplified from research that is in progress or under peer review; data, exact protocols and results are withheld until publication. Figures are rebuilt with `python3 tools/figures/build.py` (see `tools/figures/README.md`). Each demo also has:
-- 📦 Frozen dependencies & environment specifications
-- 📊 Pre-computed evidence packages (JSON)
-- 🧪 Comprehensive test suites (≥90% coverage)
-- 📄 Venue-aligned documentation & claim ledgers
+Each demo is self-contained and reproducible. Its README has a **How it works** section: a procedure figure, a step-by-step list mapped to files, and a worked example from the demo's own output. Figures rebuild with `python3 tools/figures/build.py` (see `tools/figures/README.md`). Each demo also has:
+
+- 📦 Frozen dependencies and environment specs
+- 📊 Pre-computed evidence (JSON)
+- 🧪 Test suites (≥90% coverage)
+- 📄 Claim ledgers and venue notes
 - 🔬 Statistical validation scripts
 
 ---
@@ -149,7 +153,7 @@ pip install -e ".[dev]"
 # Run every demo's test suite
 make test
 
-# Run one demo's suite (folders demo-01 … demo-90)
+# Run one demo's suite (folders demo-01 … demo-93)
 make test DEMO=01
 ```
 
@@ -161,18 +165,11 @@ All demos run offline from the repository root — no API keys, no network.
 Each demo folder also has step-by-step `INSTRUCTIONS.md` with expected outputs.
 
 ```bash
-# Run a teaching demo (folders demo-01 … demo-90)
+# Run a teaching demo (folders demo-01 … demo-93)
 make demo DEMO=01   # Blind Verification
-make demo DEMO=04   # Prompt Injection Authority
+make demo DEMO=04   # Prompt Injection & Tool Authority
 make demo DEMO=07   # Malware Triage
-make demo DEMO=13   # Typed Commitments & Coverage Cues
-make demo DEMO=14   # Conformal Action Gating (DSN 2027 toy)
-make demo DEMO=21   # MCP Ecosystem Census (DSN toy)
-make demo DEMO=28   # Memory Poisoning (WWW demo-track toy)
-make demo DEMO=44   # Toolflow Taint (EuroS&P toy)
-make demo DEMO=45   # Exact Nulls for Localisation Claims (FAccT toy)
-make demo DEMO=46   # Embedding-swap Cosine Shift (AsiaCCS toy)
-make demo DEMO=47   # Pre-reveal Seal (USENIX Security C2 toy)
+make demo DEMO=90   # The Unread Manual
 
 # Run a demo's test suite
 make test DEMO=01
@@ -183,6 +180,8 @@ make all-demos
 # Check offline-safety constraints (no network imports, no credentials)
 make verify-safety
 ```
+
+All demos follow the same pattern: replace `DEMO=01` with any folder number.
 
 ### 30-second wiring check
 
@@ -218,7 +217,7 @@ All demos follow the **Agentic Security Reproducibility Standard**:
 
 ## 🏛️ Venues & Publications
 
-> Each venue name links to the venue's page. Where a date is shown under it, the date links to the call for papers or the submission portal.
+> Venue names link to the venue; dates link to the call or portal.
 
 | Demo | Option A | Option B | Option C |
 |:---:|---|---|---|
@@ -280,11 +279,11 @@ All demos follow the **Agentic Security Reproducibility Standard**:
 | 56 | 🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">ICML</a><br>🟡 <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer">abs 14 Jan · papers 22 Jan</a> | 🔵 <a href="https://www.sciencedirect.com/journal/educational-research-review" target="_blank" rel="noopener noreferrer">Educational Research Review</a> | 🔵 <a href="https://bera-journals.onlinelibrary.wiley.com/journal/14678535" target="_blank" rel="noopener noreferrer">BJET</a> |
 | 57 | 🔵 <a href="https://cscw.acm.org/rolling.html" target="_blank" rel="noopener noreferrer">CSCW</a> | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028 (call unpublished)</a> | 🔵 <a href="https://chi.acm.org/" target="_blank" rel="noopener noreferrer">CHI 2028 (call unpublished)</a> |
 | 58 | 🟡 <a href="https://2027.ijcai.org/" target="_blank" rel="noopener noreferrer">IJCAI</a><br>🟡 <a href="https://2027.ijcai.org/ijcai-2027-call-for-papers-main-track/" target="_blank" rel="noopener noreferrer">abs 4 Jan · papers 11 Jan</a> | 🔵 <a href="https://www.aies-conference.com/" target="_blank" rel="noopener noreferrer">AIES 2027 (call unpublished)</a> | 🔵 <a href="https://cscw.acm.org/rolling.html" target="_blank" rel="noopener noreferrer">ACM CSCW rolling</a> |
-| 59 | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028 (call unpublished)</a> | 🔵 <a href="https://cscw.acm.org/rolling.html" target="_blank" rel="noopener noreferrer">CSCW</a> | 🔵 <a href="https://chi.acm.org/" target="_blank" rel="noopener noreferrer">CHI 2028 (call unpublished)</a> |
+| 59 | 🔵 <a href="https://www.sciencedirect.com/journal/technological-forecasting-and-social-change" target="_blank" rel="noopener noreferrer">Technological Forecasting &amp; Social Change</a> | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028 (call unpublished)</a> | 🔵 <a href="https://cscw.acm.org/rolling.html" target="_blank" rel="noopener noreferrer">CSCW</a> |
 | 60 | 🟡 <a href="https://2027.ijcai.org/" target="_blank" rel="noopener noreferrer">IJCAI</a><br>🟡 <a href="https://2027.ijcai.org/ijcai-2027-call-for-papers-main-track/" target="_blank" rel="noopener noreferrer">abs 4 Jan · papers 11 Jan</a> | 🔵 <a href="https://www.nature.com/natmachintell/" target="_blank" rel="noopener noreferrer">Nature MI</a> | 🔵 <a href="https://www.cell.com/patterns" target="_blank" rel="noopener noreferrer">Patterns</a> |
 | 61 | 🟡 <a href="https://icml.cc/Conferences/2027/CallForPapers" target="_blank" rel="noopener noreferrer">ICML 2027</a><br>🟡 <a href="https://openreview.net/group?id=ICML.cc/2027/Conference" target="_blank" rel="noopener noreferrer">abs 14 Jan · papers 22 Jan</a> | 🔵 <a href="https://jmlr.org/tmlr/" target="_blank" rel="noopener noreferrer">TMLR</a> | 🔵 <a href="https://acm-rep.github.io/2027" target="_blank" rel="noopener noreferrer">ACM REP 2028 (call unpublished)</a> |
 | 62 | 🟡 <a href="https://educationaldatamining.org/edm2027/call-for-papers/" target="_blank" rel="noopener noreferrer">EDM 2027</a><br>🟡 <a href="https://educationaldatamining.org/edm2027/important-dates/" target="_blank" rel="noopener noreferrer">abs 8 Feb · papers 15 Feb</a> | 🔵 <a href="https://jedm.educationaldatamining.org/index.php/JEDM" target="_blank" rel="noopener noreferrer">JEDM</a> | 🔵 <a href="https://aied-conference.org/" target="_blank" rel="noopener noreferrer">AIED 2028 (call unpublished)</a> |
-| 63 | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a><br>🟡 <a href="https://aied-conference.org/2027/important-dates" target="_blank" rel="noopener noreferrer">abs 22 Jan · papers 1 Feb</a> | 🔵 <a href="https://pacmhci.acm.org/" target="_blank" rel="noopener noreferrer">CSCW (PACM HCI)</a> | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028 (call unpublished)</a> |
+| 63 | 🔵 <a href="https://link.springer.com/journal/11948" target="_blank" rel="noopener noreferrer">Science and Engineering Ethics</a><br>🔵 rolling | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a><br>🟡 <a href="https://aied-conference.org/2027/important-dates" target="_blank" rel="noopener noreferrer">abs 22 Jan · papers 1 Feb</a> | 🔵 <a href="https://facctconference.org/" target="_blank" rel="noopener noreferrer">FAccT 2028 (call unpublished)</a> |
 | 64 | 🟡 <a href="https://aied-conference.org/2027/call-for-papers/main-track" target="_blank" rel="noopener noreferrer">AIED 2027</a><br>🟡 <a href="https://aied-conference.org/2027/important-dates" target="_blank" rel="noopener noreferrer">abs 22 Jan · papers 1 Feb</a> | 🔵 <a href="https://jedm.educationaldatamining.org/index.php/JEDM" target="_blank" rel="noopener noreferrer">JEDM</a> | 🔵 <a href="https://educationaldatamining.org/" target="_blank" rel="noopener noreferrer">EDM 2028 (call unpublished)</a> |
 | 65 | 🟡 <a href="https://issi2027.ntu.edu.tw/submission-guidelines" target="_blank" rel="noopener noreferrer">ISSI 2027</a><br>🟡 <a href="https://www.conftool.pro/issi2027/" target="_blank" rel="noopener noreferrer">papers 15 Jan</a> | 🔵 <a href="https://link.springer.com/journal/11192" target="_blank" rel="noopener noreferrer">Scientometrics</a> | 🔵 <a href="https://direct.mit.edu/qss" target="_blank" rel="noopener noreferrer">QSS</a> |
 | 66 | 🟠 <a href="https://isc-hpc.com/submissions/research-paper/" target="_blank" rel="noopener noreferrer">ISC 2027</a><br>🟠 <a href="https://isc-hpc.com/submissions/research-paper/" target="_blank" rel="noopener noreferrer">abs 14 Dec · papers 21 Dec</a> | 🔵 <a href="https://qce.quantum.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE QCE 2027 (call unpublished)</a> | 🔵 <a href="https://dl.acm.org/journal/tqc" target="_blank" rel="noopener noreferrer">ACM TQC</a> |
@@ -312,6 +311,9 @@ All demos follow the **Agentic Security Reproducibility Standard**:
 | 88 | 🔵 <a href="https://raid2027.org/" target="_blank" rel="noopener noreferrer">RAID 2027</a><br>🔵 ~Apr 2027 (call unpublished) | 🔵 <a href="https://aaai.org/" target="_blank" rel="noopener noreferrer">AAAI-28 (call unpublished)</a> | 🔵 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206" target="_blank" rel="noopener noreferrer">IEEE TIFS</a> |
 | 89 | 🔵 <a href="https://conf.researchr.org/track/icse-2028/icse-2028-papers" target="_blank" rel="noopener noreferrer">ICSE 2028</a><br>🔵 abs 24 Jun · papers 1 Jul 2027 | 🔵 <a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener noreferrer">ACM TOSEM</a> | 🔵 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32" target="_blank" rel="noopener noreferrer">IEEE TSE</a> |
 | 90 | 🟡 <a href="https://link.springer.com/journal/10664" target="_blank" rel="noopener noreferrer">EMSE</a><br>🟡 rolling | 🔵 <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software" target="_blank" rel="noopener noreferrer">JSS</a> | 🔵 <a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank" rel="noopener noreferrer">IST</a> |
+| 91 | 🔵 <a href="https://www.sciencedirect.com/journal/computers-and-education-artificial-intelligence" target="_blank" rel="noopener noreferrer">Computers &amp; Education: AI</a> | 🔵 <a href="https://link.springer.com/journal/41055" target="_blank" rel="noopener noreferrer">IJETHE</a> | 🔵 <a href="https://link.springer.com/journal/10639" target="_blank" rel="noopener noreferrer">Education &amp; Information Technologies</a> |
+| 92 | 🔵 <a href="https://link.springer.com/journal/11023" target="_blank" rel="noopener noreferrer">Minds and Machines</a> | 🔵 <a href="https://link.springer.com/journal/10676" target="_blank" rel="noopener noreferrer">Ethics &amp; Information Technology</a> | 🔵 <a href="https://link.springer.com/journal/13347" target="_blank" rel="noopener noreferrer">Philosophy &amp; Technology</a> |
+| 93 | 🔵 <a href="https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety" target="_blank" rel="noopener noreferrer">Reliability Eng. &amp; System Safety</a> | 🔵 <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=11" target="_blank" rel="noopener noreferrer">IEEE Trans. Reliability</a> | 🔵 <a href="https://www.sciencedirect.com/journal/safety-science" target="_blank" rel="noopener noreferrer">Safety Science</a> |
 ---
 
 ## 📖 Citation
@@ -354,9 +356,7 @@ Individual demo citations available in each subdirectory's `CITATION.cff`.
 
 ## 🤝 Contributing
 
-> 🌟 **Episode V – The Empire Strikes Back.** Every pull request is a trial in the snow:
-> the Empire (CI) strikes back with offline tests, safety greps and schema checks. Only
-> Padawans who bring evidence survive Hoth. See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - 🐛 Reporting vulnerabilities or reproducibility issues
 - 💡 Proposing new demos or venues
@@ -364,36 +364,28 @@ Individual demo citations available in each subdirectory's `CITATION.cff`.
 - 🧪 Extending test suites
 - 📝 Improving documentation
 
-**Research Contribution Guidelines (the Jedi Code):**
-1. All claims must be backed by frozen evidence packages (no Order-66 surprises)
-2. Statistical claims require pre-registered analysis plans
-3. New demos must target a top-tier venue with clear scope (choose your training ground)
-4. Breaking changes require RFC process (consult the Council first)
+**Contribution rules:**
+1. Claims need frozen evidence packages.
+2. Statistical claims need pre-registered analysis plans.
+3. New demos target a top-tier venue with a clear scope.
+4. Breaking changes go through an RFC.
 
 ---
 
 ## 📄 License
 
-Distributed under the **MIT License** — 🌟 *a long time ago in an open-source galaxy…*
-free to fork like Rebel plans, no warranty (Alderaan was also uninsured). See [LICENSE](LICENSE) for more information.
-
-Individual demos may have additional licenses for third-party components (see `DEPENDENCIES.md`).
+Distributed under the **MIT License**. See [LICENSE](LICENSE). Some demos include third-party components under their own licences (see `DEPENDENCIES.md`).
 
 ---
 
 ## 🙏 Acknowledgments
 
-🌟 **The Rebel Alliance thanks:**
-
-- **Research compute credits** — fuel for the X-wings
-- **GitHub Accelerator** — the hidden Rebel base (open-source support)
-- **Anonymous reviewers** at SaTML, CCS, NeurIPS, IEEE SP, USENIX, NDSS, RAID, ASIACCS, ESORICS, ACSAC, ICML, ICLR, AAAI, IJCAI, ACL, ICSE, WWW, EuroS&P, PoPETs, DSN, CSF, ACNS, TIFS, TDSC, TOPS, CSUR, COMST, TPAMI, TMLR, Nature MI, Journal of Cybersecurity, Scientific Data, CACM, TSE, FAccT — the Jedi Council: wise, anonymous, occasionally striking back (Episode V)
-- **Agentic AI Security community** — the Ewoks who actually help (feedback and replication)
+Thanks to research compute providers, the GitHub Accelerator, anonymous reviewers, and the agentic AI security community.
 
 ---
 
 <p align="center">
-  <strong>Training Padawans in agentic AI security, one reproducible demo at a time — may the Force (of offline, synthetic fixtures) be with you.</strong>
+  <strong>Offline, reproducible teaching demos for agentic AI security.</strong>
 </p>
 
 <p align="center">
