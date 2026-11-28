@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (journal-first re-plan and demos 91–93, 28 November 2026)
+- Demo 59 (Foresight Delphi) Option A is now Technological Forecasting & Social Change (rolling journal); FAccT 2028 moves to Option B, CSCW to Option C.
+- Demo 63 (Policy-Coding Reliability) Option A is now Science and Engineering Ethics (rolling journal); AIED 2027 moves to Option B, FAccT 2028 stays Option C.
+- Three new journal-first demos added: 91 Tutor Feedback Fidelity (Computers & Education: AI; B IJETHE, C Education & Information Technologies), 92 Adversarial Testimony (Minds and Machines; B Ethics & Information Technology, C Philosophy & Technology), 93 Pipeline Reliability (Reliability Engineering & System Safety; B IEEE Transactions on Reliability, C Safety Science).
+- The headline count and `CONTRIBUTING.md` now state 93 demos (85 here, eight in separate repositories).
+
+### Changed (README copy tightened, 27 November 2026)
+- The overview, demo descriptions and closing sections are shorter and specific; Star Wars asides and the long venue list are removed.
+- `CONTRIBUTING.md` now states the correct count: 90 demos (85 here, five external).
+
 ### Changed (venue rows re-synced with the 26 November map, 27 November 2026)
 - The fallback table and `docs/venues.md` now match the research folders for demos 82, 85 and 88: demo 82 Option C is IEEE TIFS (was TACL), demo 85 Option B is IEEE TDSC and Option C ACM TOPS (were ACM DTRAP and J. Computer Security), and demo 88 Option C is IEEE TIFS (was DSN 2028).
 - The demo folders' `venue.yaml` and `docs/VENUE.md` for demos 70–79, 84 and 85 were refreshed to the same plan (no TMLR as Option B for 74–79; DSN 2027, TDSC and TOPS recorded for 84–85).

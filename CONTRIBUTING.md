@@ -1,6 +1,6 @@
 # Contributing to agentic-security-demos
 
-Thank you for contributing to agentic-security-demos! This repository holds **79 teaching demos (74 in this repository and five in separate repositories)** and maintains high standards for reproducibility, scientific rigor, and venue alignment.
+This repository holds **93 teaching demos** (85 here and eight in separate repositories) and maintains high standards for reproducibility, scientific rigor and venue alignment.
 
 ## 📋 Table of Contents
 - [Code of Conduct](#code-of-conduct)
@@ -171,4 +171,4 @@ fix(agentic-security-demos): resolve eBPF map collision in capture_admission
 - 🔒 **Security**: [open a private advisory](https://github.com/jedi-master-council/agentic-security-demos/security/advisories/new) (responsible disclosure)
 - 📚 **Docs**: [Documentation](https://jedi-master-council.github.io/agentic-security-demos/)
 
-Thank you for advancing agentic AI security science! 🔬🛡️
+Thank you for advancing agentic AI security research.
